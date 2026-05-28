@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Home",
+    "url": "/Index.html",
+    "snippet": "Welcome to Kelly Santos' portfolio website showcasing UX design case studies and projects. [cite: 66]",
+    "full_text": "Welcome to Kelly Santos' portfolio website showcasing UX design case studies and projects. This landing page introduces the main areas of work, including a featured case study, recent updates, and a brief statement on my design philosophy focused on user-centered solutions and accessibility."
+  },
+  {
+    "title": "Portfolio",
+    "url": "/Portfolio.html",
+    "snippet": "Explore a collection of UX design case studies including web apps, e-commerce platforms, and mobile applications. [cite: 67]",
+    "full_text": "Explore a collection of UX design case studies including web apps, e-commerce platforms, and mobile applications. This page features visual cards for each project, categorized by industry (e.g., Education, Finance, Social Good) and demonstrating my end-to-end design process from research to high-fidelity prototyping."
+  },
+  {
+    "title": "Bee Protectors Website",
+    "url": "/BeeProtectorsWebsite.html",
+    "snippet": "A digital platform designed to raise awareness about bee protection, featuring educational content and conservation initiatives. [cite: 68]",
+    "full_text": "A digital platform designed to raise awareness about bee protection, featuring educational content and conservation initiatives. This case study details the information architecture redesign, the implementation of a donation flow, and the creation of an interactive map for local volunteer opportunities. Key results include a 30% increase in volunteer sign-ups."
+  },
+  {
+    "title": "Box Hill Art School Study Case",
+    "url": "/BoxHillArtSchoolApp.html",
+    "snippet": "Box Hill Art School App features intuitive navigation, a streamlined payment process, and more for enhancing user-friendliness. [cite: 69]",
+    "full_text": "Box Hill Art School App features intuitive navigation, a streamlined payment process, and more for enhancing user-friendliness. The project involved a two-stage redesign focusing on class registration. The solution included user flow mapping, heuristic evaluation of the legacy system, and high-fidelity wireframes for a new course calendar view and subscription model."
+  },
+  {
+    "title": "Cafeteria App Study Case",
+    "url": "/CafeteriaApp.html",
+    "snippet": "A mobile app designed to streamline cafeteria ordering and payment processes for schools and institutions. [cite: 70]",
+    "full_text": "A mobile app designed to streamline cafeteria ordering and payment processes for schools and institutions. This study highlights the challenges of high-volume ordering at peak times. The design solution involved touchless QR code payment integration, a personalized 'favorite orders' feature, and a clear, single-view cart management system to reduce checkout errors."
+  },
+  {
+    "title": "Cafeteria App - French Version",
+    "url": "/CafeteriaApp FR.html",
+    "snippet": "Version française de l'application Cafeteria pour commander et payer facilement. [cite: 71]",
+    "full_text": "Version française de l'application Cafeteria pour commander et payer facilement. Ce cas d'étude détaille la localisation complète, y compris la traduction de l'interface utilisateur, les tests d'utilisabilité avec des locuteurs natifs français et l'adaptation des formats de date et de devise pour le marché francophone."
+  },
+  {
+    "title": "About me",
+    "url": "/About-me.html",
+    "snippet": "Learn about Kelly Santos, a UX designer passionate about creating user-centered solutions and improving digital experiences. [cite: 72]",
+    "full_text": "Learn about Kelly Santos, a UX designer passionate about creating user-centered solutions and improving digital experiences. My background includes 5 years in product strategy and visual design. I am proficient in Figma, Sketch, and Adobe Creative Suite. View my resume for detailed experience and education."
+  },
+  {
+    "title": "Contact",
+    "url": "/Contact.html",
+    "snippet": "Get in touch with Kelly Santos for inquiries about UX design projects, collaboration opportunities, or design consultations. [cite: 73]",
+    "full_text": "Get in touch with Kelly Santos for inquiries about UX design projects, collaboration opportunities, or design consultations. The form requires your name, email, and detailed message. I aim to respond to all professional inquiries within 48 hours. Connect with me on LinkedIn for updates."
+  },
+  {
+    "title": "Resume",
+    "url": "/Resume.html",
+    "snippet": "View Kelly Santos' professional resume, experience, skills, and educational background in UX design and product strategy. [cite: 74]",
+    "full_text": "View Kelly Santos' professional resume, experience, skills, and educational background in UX design and product strategy. The resume is available for download in PDF format. Key skills include user research, wireframing, prototyping, design systems management, and agile methodology."
+  },
+  {
+    "title": "Search Results",
+    "url": "/search-results.html",
+    "snippet": "Instant search results across the portfolio website with live filtering and navigation. [cite: 75]",
+    "full_text": "This page displays the instant search results across the portfolio website with live filtering and navigation. It uses client-side JavaScript to process the search index and display relevant titles and contextual snippets based on the user's query."
+  }
+]

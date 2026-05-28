@@ -1,0 +1,18 @@
+.empathy-maps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 2fr));
+    width: 100%;
+    height: fit-content;
+    align-items: start;
+   gap: var(--spacing-sm);
+
+
+}
+.empathy-maps img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    border-radius: var(--spacing-xs);
+    border: 1px solid var(--border-component-primary-light);
+    box-shadow: var(--box-shadow);
+}

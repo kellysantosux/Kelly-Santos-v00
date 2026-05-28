@@ -1,0 +1,152 @@
+.header_container {
+  display: flex;
+  max-width: 1253.11px;
+  width: 96.76%;
+  height: fit-content;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: var( --bg-header);
+  border: 1.6px solid var(--border-header);
+  border-radius: var(--border-radius-xs);
+  box-shadow: var(--box-shadow-cs);
+  margin-top: var(--padding-base);
+  padding: var(--padding-sm) 0;
+  z-index: 1000;  
+}
+
+
+header {
+  display: flex;
+  max-width: 1253.11px;
+  width: 96.76%;
+  height: fit-content;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+}
+
+
+header>.logo-no-margin {
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  justify-content: left;
+  margin-bottom: auto;
+}
+
+header>.logo {
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  justify-content: left;
+  margin-bottom: auto;
+}
+
+.logo img {
+  height: 100%;
+  max-height: 68px;
+  object-fit: cover;
+}
+
+header>.logo_light {
+  display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+  .logo {
+
+    object-fit: cover;
+  }
+
+}
+
+@media only screen and (max-width: 1024px) {
+  header {
+    align-items: center;
+    flex-direction: column;
+    gap: var(--spacing-base);
+  }
+
+  a.logo {
+    width: 100%;
+    height: 36px;
+    object-fit: cover;
+  }
+
+}
+
+@media only screen and (max-width: 428px) {
+
+  .header_container {
+    width: 100%;
+    box-shadow: none;
+    position: fixed;
+    top: 0px;
+    margin-top: 0;
+    background-color: var(--bg-body-mobile);
+    border-color: var(--border-header-mobile);
+    padding: 0;
+    border-radius: 0;
+  }
+
+  header>a {
+    display: none;
+  }
+
+  header {
+    flex-direction: column;
+    justify-items: center;
+    width: 100%;
+    align-items: flex-start;
+    gap: 0;
+    /*padding:3.49%;*/
+    padding: var(--padding-medium);
+    gap: var(--spacing-base);
+        border-radius: 0;
+  }
+
+  /*
+  header a.logo {
+    display: none
+   
+  }
+
+ header>.logo_light {
+  display: flex;
+  width: fit-content;
+  justify-content: left;
+}
+
+.logo_light img {
+  max-height: 32px;
+  object-fit: cover;
+
+}
+*/
+  div.container_breadcrumb {
+    display: none;
+  }
+
+
+
+}
+
+@media print {
+
+  .header_container {
+    box-shadow: none;
+    border: 0px;
+    margin-bottom: var(--spacing-base);
+  }
+
+  header {
+    border: 0;
+    box-shadow: none;
+    padding: 0;
+    /* Removes internal padding for edge-to-edge look */
+
+
+  }
+}

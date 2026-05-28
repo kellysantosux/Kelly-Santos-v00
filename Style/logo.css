@@ -1,0 +1,103 @@
+.logo_container {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    background-color: transparent;
+    flex-direction: column;
+    justify-content: right;
+    align-items: flex-end;
+
+}
+
+.name_container {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.name_container  h1{
+    font-size: 2.986rem;
+letter-spacing: -0.16px;
+font-weight: 800;
+line-height: 1.1;
+
+}
+
+.profession_container {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    padding-right: 1.333px;
+    margin-top:-9.333px;
+}
+
+.profession_container  p {
+    font-size: 1.38rem;
+letter-spacing: -0.127px;
+line-height: 1;
+}
+
+@media only screen and (max-width: 728px) {
+
+.name_container  h1{
+    font-size: 2.240rem;
+}
+
+.profession_container {
+    margin-top:-7.001px;
+}
+.profession_container  p {
+    font-size: 1.035rem;
+
+}
+}
+
+@media only screen and (max-width: 600px) {
+
+.name_container  h1{
+    font-size: 1.680rem;
+}
+
+.profession_container {
+    margin-top:-5.252px;
+}
+.profession_container  p {
+    font-size: 0.776rem;
+
+}
+}
+
+@media only screen and (max-width: 505px) {
+
+.name_container  h1{
+    font-size: 2.016rem;
+}
+
+.profession_container {
+    margin-top:-5.834px;
+}
+.profession_container  p {
+    font-size: 0.8625rem;
+
+}
+}
+
+@media only screen and (max-width: 428px) {
+
+.name_container  h1{
+    font-size: 2.016rem;
+}
+
+.profession_container {
+    margin-top:-5.834px;
+}
+.profession_container  p {
+    font-size: 0.8625rem;
+
+}
+}

@@ -1,0 +1,94 @@
+/* Styling for the main table element using the class selector */
+.tables {
+    width: 100%; /* Make the table responsive and take full width */
+    border-collapse: collapse; /* Collapse borders into a single line */
+    margin: 20px 0; /* Add some vertical spacing above and below the table */
+    border-color: var( --border-component-secondary-dark);
+
+}
+tbody{
+    vertical-align: super;
+}
+
+.tables q
+{
+    font-style: italic;
+    font-weight: var(--font-weight-medium);
+}
+
+/* Styling for the table header cells (td in thead) and body cells (td in tbody) */
+.tables td {
+    width: fit-content; 
+    padding: 1rem; /* Switched to fixed units for guaranteed spacing  */
+    border: 0.5px solid var( --border-component-secondary-dark); /* Liinght grey border for separation */
+    text-align: left; /* Left align text  all cells */
+    line-height: 1.5; /* Improve readability of text blocks */
+    vertical-align: top; /* Fixed from 'super' to keep text aligned  */
+
+}
+
+.--w30{
+    width: 30%;
+    }
+
+/* Styling for the table header row cells */
+.tables thead td {
+    color: var(--text-main-primary-dark); /* White text for high contrast */
+    font-weight: bold; /* Bold text for header distinction */
+    text-transform: uppercase; /* Uppercase for a clear header */
+    letter-spacing: 0.5px;
+
+}
+
+
+/* Zebra striping for improved readability (alternating row colors) */
+.tables tbody tr:nth-child(odd) {
+    background-color: var(--bg-component-secondary-light); /* Very light grey for even rows */
+}
+
+
+/* Fix for the first column weight */
+.tables tbody tr td:first-child {
+    font-weight: bold; 
+    min-width: 100px;
+}
+/* Ensure the 'Because' column takes up the most room */
+/*
+.tables td:last-child {
+    width: 100%; 
+}
+*/
+
+
+
+/* Ensure bold text within cells is clearly visible */
+.tables b {
+    color: var(--text-main-primary-dark); /* A slightly darker green for emphasized text */
+    
+}
+
+@media only screen and (max-width:428px) {
+
+.tables tbody tr td:first-child {
+
+    min-width: 10px;
+}
+
+/* Styling for the table header cells (td in thead) and body cells (td in tbody) */
+.tables td {
+  
+    padding: 0.25rem; /* Switched to fixed units for guaranteed spacing  */
+
+
+}
+    }
+
+
+@media print {
+ .tables{
+        -webkit-print-color-adjust: exact !important; /* For Chrome, Safari, Edge */
+        print-color-adjust: exact !important;         /* Standard property */
+          break-inside: avoid;
+    }
+
+}

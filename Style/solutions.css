@@ -1,0 +1,140 @@
+.potential-solutions {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(220px, 1fr));
+    width: 100%;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: var(--spacing-base);
+    padding: 0 var(--spacing-lg);
+    margin-bottom: var(--spacing-lg);
+
+
+
+}
+
+.potential-solution-cards {
+    text-decoration: none;
+    display: flex;
+    width: fit-content;
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: left;
+    text-align: left;
+    background-color: var(--bg-component-primary-light);
+    color: var(--text-main-primary-dark);
+    border-radius: var(--border-radius-xs);
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+    padding: var(--spacing-base);
+    gap: var(--spacing-base);
+
+}
+
+
+.potential-solution-cards h4 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-items: flex-start;
+    justify-content: left;
+    text-align: left;
+    background-color: var(--bg-component-primary-light);
+    border-radius: var(--border-radius-xs);
+    box-shadow: var(--box-shadow);
+    padding: var(--spacing-base);
+    gap: var(--spacing-base);
+
+}
+
+.--background-orange {
+    background-color: #FA5715;
+}
+
+.--background-teal {
+    background-color: #0C5F61;
+}
+
+.--background-green {
+    background-color: #148083;
+}
+
+.--background-pink {
+    background-color: #C32148;
+}
+
+
+.image-needs-wrapper {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    gap: var(--spacing-base);
+}
+
+
+.potential-solution-cards-image {
+    display: flex;
+    width: auto;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border-radius: var(--border-radius-xs);
+    border: var(--spacing-sm) solid var( --border-component-primary-light);
+    box-shadow: var(--box-shadow);
+}
+
+.potential-solution-cards-image img {
+
+    object-fit: cover;
+}
+
+
+.potential-solution-cards .description {
+    display: flex;
+    width: 62%;
+    height: auto;
+    flex-direction: column;
+    justify-content: left;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+    text-align: left;
+    background-color: var(--bg-component-primary-light);
+    color: var(--text-main-primary-dark);
+    padding: var(--spacing-base);
+    border-radius: var(--border-radius-xs);
+    box-shadow: var(--box-shadow);
+
+}
+
+.solution {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    justify-content: left;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+    text-align: left;
+    background-color: var( --bg-component-primary-light);
+    padding: var(--spacing-base);
+    border-radius: var(--border-radius-xs);
+    box-shadow: var(--box-shadow);
+
+}
+
+
+
+
+
+@media only screen and (max-width: 380px) {
+
+    .potential-solution-cards {
+
+        padding: 0;
+
+    }
+}

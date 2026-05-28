@@ -1,0 +1,352 @@
+.search-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  height: fit-content;
+  justify-items: right;
+  align-items: center;
+  position: relative;
+}
+
+
+.search-container {
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+  align-items: center;
+  /* Removed justify-items: center; as it's not applicable to flex */
+  border-radius: var(--border-radius-lg);
+  /* cite: 2, 34 */
+  border: 1px solid var( --border-action-primary-dark);
+  position: relative;
+  /* cite: 2, 35 */
+  background-color: var( --action-primary-bg-dark);
+  appearance: textfield;
+  position: relative;
+}
+
+#search-input {
+  padding: 10px 40px 10px 16px;
+  /* cite: 3, 36 */
+  max-width: 426px;
+  /* cite: 4, 36 */
+  min-width: 220px;
+  /* cite: 4, 36 */
+  width: 100%;
+  /* cite: 4, 36 */
+  height: 35.33px;
+  /* cite: 4, 37 */
+  border-radius: var(--border-radius-lg);
+  /* cite: 5, 37 */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  border-style: none;
+  border: 2px solid var(--border-action-primary-dark);
+  appearance: auto;
+  /* ARIA: Ensure this element has role="combobox" and aria-controls set via JS */
+}
+
+#search-input:focus {
+
+  background-color: var(--action-primary-bg-gray);
+  /* IMPROVED: Prominent, accessible focus indicator (WCAG 2.1) */
+  width: 297.06px;
+  /* cite: 17, 48 */
+}
+
+.search-button {
+  display: flex;
+  /* cite: 9, 41 */
+  width: 35.33px;
+  /* cite: 9, 41 */
+  height: 35.33px;
+  /* IMPROVED: Fill the container height */
+  /* height: 39.33px; was fixed and removed */
+  position: absolute;
+  /* cite: 9, 42 */
+  top: 0;
+  /* cite: 9, 42 */
+  right: 0px;
+  /* cite: 9, 42 */
+  padding: 8px;
+  /* cite: 10, 43 */
+  background-color: var(--action-primary-bg-dark);
+  /* cite: 11, 43 */
+  color: var(--icon-light);
+  /* cite: 11, 43 */
+  border: 1.6px solid transparent;
+  cursor: pointer;
+  /* Use a radius that matches the container's radius on the right side */
+  border-radius: var(--border-radius-lg);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  outline: 1.6px solid transparent;
+}
+
+/* IMPROVED: Add a subtle lift on hover for better feedback */
+.search-button:hover {
+
+  opacity: 0.8;
+  outline: 1.6px solid var(--outline-action-primary-dark);
+  background-color: var(--action-primary-bg-dark);
+  border: 1.6px solid var( --border-action-primary-light);
+
+}
+
+.search-button:hover i {
+  color: var( --icon-light);
+}
+
+.search-container .search-button i {
+  font-size: var(--font-size-h6);
+    color: var( --icon-light);
+}
+
+/* --- Dropdown Styling --- */
+ul{
+  display: block;
+    list-style-type: none;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+
+}
+
+.recent-searches-dropdown {
+  display: flex;
+  /* cite: 15, 47 */
+  position: absolute;
+  /* cite: 15, 47 */
+  top: 100%;
+  /* cite: 15, 48 */
+  right: 0;
+  /* cite: 16, 48 */
+  width: 297.06px;
+  /* cite: 17, 48 */
+  /* IMPROVED: Use negative margin to visually overlap the search bar's border perfectly */
+  margin-top: 8px /* Adjusted to visually align with the search bar's border */;
+
+  list-style: none;
+  /* cite: 19, 51 */
+  padding-left: 0;
+  /* cite: 20, 52 */
+  background-color:var( --action-item-primary-light);
+  border-radius: 0 0 var(--border-radius-xs) var(--border-radius-xs);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  /* cite: 21, 53 */
+  z-index: 9999;
+  /* cite: 22, 54 */
+  /* ARIA: Ensure this element has role="listbox" via JS */
+}
+
+
+
+.recent-searches-dropdown::before {
+  /* Style for the "Recent Searches" heading */
+  display: flex;
+  /* cite: 15, 47 */
+  position: absolute;
+  /* cite: 15, 47 */
+  top: 100%;
+    width: 297.06px;
+      max-width: 100%;
+  max-height: 472.82px;
+  /* cite: 15, 48 */
+  right: 0;
+  /* cite: 16, 48 */
+  width: 297.06px;
+  /* cite: 17, 48 */
+  /* IMPROVED: Use negative margin to visually overlap the search bar's border perfectly */
+ /* cite: 18, 51 */
+  list-style: none;
+  /* cite: 19, 51 */
+  padding-left: 0;
+  /* cite: 20, 52 */
+  background-color:var(--action-item-primary-light);
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  /* cite: 21, 53 */
+  z-index: 9999;
+  /* cite: 22, 54 */
+  /* ARIA: Ensure this element has role="listbox" via JS */
+}
+
+.recent-searches-dropdown li {
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  color: var(--text-main-gray);
+  line-height: 1.5;
+}
+
+.ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+}
+
+
+
+
+#extract-text {
+  display: flex;
+  width: 100%;
+  width: fit-content;
+  text-wrap: nowrap;
+  padding-inline: 4px;
+
+  color: var(--text-main-gray);  }
+
+.location
+{
+  display: flex;
+ width: 100%;
+  height: fit-content;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+padding: 0 4px;
+  gap: 4px;
+  background-color:  var(--action-item-primary-light);
+    border-radius: var(--border-radius-xxs);
+    margin-top: 12px;
+
+
+}
+
+.location p, p.separator {
+  text-wrap: nowrap;
+    width: fit-content;
+font-weight: var(--font-weight-medium);
+color: var(--text-main-gray);
+
+}
+.recent-searches-dropdown .search-results .result-snippet {
+  
+  color: var(--text-main-gray);
+  font-size: 0.9rem;
+}
+
+span.highlight-term {
+    display:flex;
+    width: fit-content;
+    padding-inline: 4px;
+     color: var(--text-highlighted-blue);
+         font-weight: var(--font-weight-bold);
+}
+
+
+
+/* CSS to highlight the matched search term in the snippet */
+.recent-searches-dropdown .search-results .result-snippet .highlight-term {
+  background-color: var(--action-item-secondary-light);
+  /* Choose a visible highlight color */
+  color: var(--text-main-dark);
+  /* Ensure text remains readable */
+  font-weight: bold;
+  padding: 1px 3px;
+  border-radius: 3px;
+}
+
+/* Ensure the selected item remains clearly visible during keyboard navigation */
+.recent-searches-dropdown li.selected {
+  background-color: var(--action-item-secondary-gray);
+  /* Light grey highlight */
+}
+
+.recent-searches-dropdown li.selected,
+.recent-searches-dropdown li:hover {
+  background-color: var(--action-item-hover);
+}
+
+.recent-searches-dropdown .recent-header {
+  font-weight: 600;
+  padding: 8px 12px;
+  color: var(--text-main-dark);
+}
+
+.recent-searches-dropdown li:hover {
+  background-color: var(--action-primary-bg-gray);
+  /* Light gray background on hover */
+}
+
+/* Style for the highlighted item (the first one) */
+.recent-searches-dropdown .highlight {
+  background-color: var(--action-item-primary-light);
+  font-weight: bold;
+  /* Optional: to make it stand out more */
+}
+
+
+
+@media only screen and (max-width: 1280px) {
+
+  .search-wrapper {
+
+    width: 100%;
+    justify-content: right;
+
+  }
+
+  .search-container {
+    margin-left: auto;
+  }
+
+
+
+}
+
+@media only screen and (max-width: 428px) {
+
+  .search-container {
+    width: 100%;
+    margin: auto;
+    border: 1.6px solid var(--light-shade-cyan-blue);
+    /* cite: 2, 34 */
+
+  }
+
+  #search-input {
+    width: 100%;
+    min-width: 0;
+    padding-top: 8px;
+    height: 35.33px;
+    /* Reduce horizontal padding on small screens */
+
+    padding-bottom: 8px;
+    /* Reduce horizontal padding on small screens */
+  }
+
+  #search-input:focus {
+    width: 426px;
+    width: 100%;
+    background-color: var( --action-primary-bg-gray);
+    /* IMPROVED: Prominent, accessible focus indicator (WCAG 2.1) */
+
+  }
+
+  /* Make sure the search button remains inside the container on small screens */
+  .search-button {
+    position: absolute;
+    right: 0px;
+    outline: 0;
+  }
+
+
+  .recent-searches-dropdown {
+    top: 100%;
+    /* cite: 15, 48 */
+    right: auto;
+    left: 18.08px;
+    /* Align to the left edge of the container on small screens */
+    padding-inline: 18.08px;
+    /* cite: 18, 51 */
+    width: 371.11px;
+    /* Ensure the dropdown doesn't exceed the container width */
+    margin-top: var(--margin-base);
+    border-radius: var(--border-radius-xs);
+
+
+  }
+}

@@ -1,0 +1,2022 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cafeteria App</title>
+  <link rel="icon" type="image/svg" href="/Assets/logo/01-ksux-favicon.svg">
+  <link rel="stylesheet" href="./Style/rootPrimary.css">
+  <link rel="stylesheet" href="./Style/bodyPrimary.css">
+  <link rel="stylesheet" href="./Style/header.css">
+
+  <link rel="stylesheet" href="./Style/mainMenu.css">
+  <link rel="stylesheet" href="./Style/menu.css">
+  <link rel="stylesheet" href="./Style/menu2.css">
+  <link rel="stylesheet" href="./Style/breadcrumb.css">
+  <link rel="stylesheet" href="./Style/search.css">
+  <link rel="stylesheet" href="./Style/back-button.css">
+  <link rel="stylesheet" href="./Style/mainSection.css">
+  <link rel="stylesheet" href="./Style/cta-dark.css">
+
+  <link rel="stylesheet" href="./Style/case-study-hero.css">
+  <link rel="stylesheet" href="./Style/case-study.css">
+  <link rel="stylesheet" href="./Style/mainCaseStudy.css">
+
+  <link rel="stylesheet" href="./Style/tableOfcontents.css">
+  <link rel="stylesheet" href="./Style/dropdown.css">
+  <link rel="stylesheet" href="./Style/scrollbar.css">
+
+  <link rel="stylesheet" href="./Style/titles-articles.css">
+  <link rel="stylesheet" href="./Style/data.css">
+  <link rel="stylesheet" href="./Style/chart.css">
+  <link rel="stylesheet" href="./Style/empathy-maps.css">
+  <link rel="stylesheet" href="./Style/pain-points.css">
+  <link rel="stylesheet" href="./Style/tables.css">
+  <link rel="stylesheet" href="./Style/solutions.css">
+  <link rel="stylesheet" href="./Style/thanks.css">
+
+  <link rel="stylesheet" href="./Style/contactMemail.css">
+  <link rel="stylesheet" href="./Style/bottomNav.css">
+  <link rel="stylesheet" href="./Style/footerLight.css">
+  <link rel="stylesheet" href="./Style/footerNav.css">
+  <link rel="stylesheet" href="./Style/print.css">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=step" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=heart_smile" />
+</head>
+
+<body class="--body__portfolio" id="SC3">
+
+  <!-- header_container -->
+  <div class="header_container">
+    <!-- Header-->
+    <header>
+
+      <!-- logo -->
+      <a class="a logo" href="/index.html">
+        <img src="/Assets/Logo/01-logoDark.svg" alt="Kelly Santos Logo.">
+      </a>
+
+      <!-- logo -->
+      <a class="a logo_light" href="/index.html">
+        <img src="/Assets/Logo/02-logoLight.svg" alt="Kelly Santos Logo.">
+      </a>
+      <!-- logo-->
+      <!--rightContainer-->
+      <div class="rightContainer">
+
+        <!-- nav -->
+        <nav>
+
+          <!-- menu__main -->
+          <ul class="menu__main">
+            <!-- menu__toggle -->
+            <li class="menu__toggle__wrap">
+
+              <!-- menu__list-->
+              <ul class="menu__list">
+
+                <li class="menu__item">
+                  <a class="menu__link" href="/index.html">
+                    <span class="menu__span"><i class="material-icons">home</i>
+                      Home
+                    </span>
+                  </a>
+                </li>
+
+                <li class="menu__item --has-submenu">
+
+                  <a class="menu__link" href="/portfolio.html">
+                    <span class="menu__span"> <i class="material-icons">import_contacts</i> Portfolio
+                    </span>
+                    <span class="menu__span-dropdown"><i class="material-icons">keyboard_arrow_down</i> </span></a>
+
+                  <!-- submenu -->
+                  <ul class="submenu">
+
+                    <li class="submenu__item"> <a href="/box-hill-art-school-app.html" class="submenu__link">Box Hill
+                        Art School
+                        App </a> </li>
+                    <li class="submenu__item"> <a class="submenu__link" href="/bee-protectors-website.html">Bee
+                        Protectors
+                        Website</a>
+
+                    </li>
+
+
+                    <li class="submenu__item"> <a href="/cafeteria-app.html" class="submenu__link">Cafeteria App</a>
+                    </li>
+                  </ul>
+                  <!-- submenu -->
+                </li>
+
+                <li class="menu__item">
+                  <a class="menu__link" href="/about.html">
+                    <span class="menu__span"><i class="material-icons">assignment_ind</i>
+                      About
+                    </span>
+                  </a>
+                </li>
+
+                <li class="menu__item">
+                  <a class="menu__link" href="/contact.html">
+                    <span class="menu__span"> <i class="material-icons">email</i>
+                      Contact
+                    </span>
+                  </a>
+                </li>
+
+                <li class="menu__item">
+                  <a class="menu__link" href="/resume.html">
+                    <span class="menu__span"><i class="material-icons">library_books</i>
+                      Resume
+                    </span>
+                  </a>
+                </li>
+
+              </ul>
+              <!-- menu__list-->
+
+            </li>
+            <!-- menu__toggle -->
+
+          </ul>
+          <!-- menu__main -->
+
+        </nav>
+        <!-- nav -->
+
+        <!-- Search -->
+
+        <div class="search-wrapper">
+          <form class="search-container" action="searchresults.html" method="GET" onsubmit="return validateSearch()">
+            <input type="search" id="search-input" name="q" placeholder="Search..." autocomplete="off">
+            <button type="submit" class="search-button">
+              <i class="material-icons">search</i>
+            </button>
+          </form>
+        </div>
+
+        <!-- End Search -->
+
+        <!-- menu2 -->
+
+        <div class="menu2__container">
+
+          <!-- menu2 2 -->
+          <span class="menu2__toogle">
+            <span class="menu2__span2menu">
+              <span class="menu2__toogle-open">
+                <i class="material-icons">menu2</i>
+              </span>
+              <span class="menu2__toogle-close">
+                <i class="material-icons">close</i>
+              </span>
+            </span>
+          </span>
+          <!-- menu2 2 -->
+
+
+          <!-- menu2__wrap -->
+          <div class="menu2__wrap">
+
+            <!-- menu2__list-->
+            <ul class="menu2__list">
+
+              <!-- menu2__item --has__submenu2 -->
+              <li class="menu2__item --has__submenu2">
+
+                <a class="menu2__link" href="/index.html">
+                  <span class="menu2__span">
+                    <i class="material-icons">article</i> Home
+                  </span>
+                </a>
+
+
+              </li>
+              <!-- menu2__item --has__submenu2 -->
+
+
+              <!-- menu2__item --has__submenu2 -->
+              <li class="menu2__item --has__submenu2">
+
+                <a class="menu2__link" href="/portfolio.html">
+                  <span class="menu2__span"> <i class="material-icons">group</i> Portfolio
+                  </span>
+                  <span class="menu2__span-dropdown"><i class="material-icons">keyboard_arrow_down</i>
+                  </span></a>
+
+                <!-- submenu2 -->
+                <ul class="submenu2">
+                  <li class="submenu2__item">
+                    <a class="submenu2__link" href="/box-hill-art-school-app.html"> Box Hill Art School App</a>
+                  </li>
+
+                  <li class="submenu2__item">
+                    <a class="submenu2__link" href="/bee-protectors-website.html"> Bee Protectors Website</a>
+                  </li>
+
+
+
+                  <li class="submenu2__item">
+                    <a class="submenu2__link" href="/cafeteria-app.html"> Cafeteria App</a>
+                  </li>
+
+                </ul>
+                <!-- submenu2 -->
+
+              </li>
+
+
+              <!-- menu2__item --has__submenu2 -->
+              <li class="menu2__item">
+
+                <a class="menu2__link --has__submenu2" href="/about.html">
+                  <span class="menu2__span"><i class="material-icons"> assignment_ind</i> About
+                  </span>
+                </a>
+
+              </li>
+              <!-- menu2__item --has__submenu2 -->
+
+              <!-- menu2__item --has__submenu2 -->
+              <li class="menu2__item">
+
+                <a class="menu2__link --has__submenu2" href="/contact.html">
+                  <span class="menu2__span"> <i class="material-icons">email</i> Contact
+                  </span>
+                </a>
+
+              </li>
+              <!-- menu2__item --has__submenu2 -->
+
+              <!-- menu2__item --has__submenu2 -->
+              <li class="menu2__item">
+
+                <a class="menu2__link --has__submenu2" href="/resume.html">
+                  <span class="menu2__span"> <i class="material-icons">library_books</i> Resume
+                  </span>
+                </a>
+
+              </li>
+              <!-- menu2__item --has__submenu2 -->
+            </ul>
+            <!-- menu2__list-->
+
+          </div>
+          <!-- menu2__wrap -->
+
+
+
+        </div>
+        <!-- menu2 -->
+    </header>
+    <!-- header -->
+  </div>
+  <!-- header_container -->
+  <!--main -->
+  <main>
+
+    <!--article-->
+    <article>
+
+      <!--breadcrumb-->
+      <div class="container_breadcrumb ">
+        <ul class="breadcrumb">
+          <li> <a class="sm" href="/index.html"> Home </a></li>
+          <li> <a class="sm" href="/portfolio.html"> Portfolio </a></li>
+          <li> <a class="active sm" href="/cafeteria-app.html">Cafeteria App</a></li>
+        </ul>
+      </div>
+      <!--breadcrumb-->
+
+      <!--backButton-->
+      <div class="backButton">
+        <a class="sm --neutral" href="javascript:void(0)">
+          <i class="material-icons"> arrow_back</i>
+          Back
+        </a>
+      </div>
+      <!--backButton-->
+
+
+      <!--section article-section-->
+      <section class="--noborder">
+
+        <!-- hero section -->
+        <div class="hero-container">
+
+          <!-- containerDescription -->
+          <div class="containerDescription">
+
+            <h1>Cafeteria App</h1>
+            <img src="/Assets/Portfolio/Cafeteria/Cafeteria App.png"alt="Case study cover of Cafeteria App. The left side on a white 
+              background the text: Cafeteria App Case Study, By Kelly Santos, 2022. 
+              The right side shows Four smartphones showcasing the Cafeteria app.
+              The right side shows 4 screens displaying the app logo, coffee menu with prices, 
+              close-up images of coffee drinks, and Sign-in and Sign-up options.">
+
+            <!-- about-case -->
+            <div class="about-case">
+
+              <p class="--b">Case Study | Kelly Santos | 2022 </p>
+
+              <p class="sm">
+                       This case study details the step-by-step development process of Cafeteria App, using the Design Thinking methodology, which resulted in an app that
+                combines the functionality for ordering drinks, book tables, making
+                payments, and splitting bills, all in one place.
+              </p>
+
+            </div>
+            <!-- about-case -->
+
+          </div>
+          <!-- containerDescription -->
+
+          <!--portfolio_cover-->
+          <div class="container_portfolio_cover">
+            <img src="/Assets/Portfolio/Cafeteria/Cafeteria App.png" alt="Case study cover of Cafeteria App. The left side on a white background 
+              the text: Cafeteria App Case Study, By Kelly Santos, 2022. 
+              The right side shows Four smartphones showcasing the Cafeteria app.
+              The right side shows 4 screens displaying the app logo, coffee menu with prices, 
+              close-up images of coffee drinks, and Sign-in and Sign-up options.">
+          </div>
+          <!--portfolio_cover-->
+        </div>
+        <!-- hero section -->
+
+      </section>
+      <!--section-->
+
+      <!--tc-casestudy-->
+      <div class="tc-casestudy">
+
+        <!-- tableOfcontents -->
+        <div class="table-of-contents__container">
+
+          <!-- tableOfcontents 2 -->
+          <span class="table-of-contents__toogle">
+            <span class="table-of-contents__span2toc">
+
+              <p class="s6">Table of Contents</p>
+
+              <span class="table-of-contents__toogle-open">
+                <i class="material-icons">keyboard_arrow_down</i>
+              </span>
+              <span class="table-of-contents__toogle-close">
+                <i class="material-icons">close</i>
+              </span>
+            </span>
+          </span>
+          <!-- tableOfcontents 2 -->
+
+
+          <!-- table-of-contents__wrap -->
+          <div class="table-of-contents__wrap">
+
+            <!-- table-of-contents__list-->
+            <ul class="table-of-contents__list">
+
+              <!-- table-of-contents__item --has__toc-submenu -->
+              <li class="table-of-contents__item --has__toc-submenu">
+
+                <a class="table-of-contents__link" href="#C1">
+                  <span class="table-of-contents__span">
+                    <i class="material-icons">article</i> Project overview
+                  </span>
+                  <span class="table-of-contents__span-dropdown"><i class="material-icons">keyboard_arrow_down</i>
+                  </span></a>
+
+                <!-- toc-submenu -->
+                <ul class="toc-submenu">
+
+                  <li class="toc-submenu__item">
+                    <a class="toc-submenu__link" href="#C1-1">About the project</a>
+                  </li>
+
+                  <li class="toc-submenu__item">
+                    <a class="toc-submenu__link" href="#C1-2"> Key objectives</a>
+                  </li>
+
+                  <li class="toc-submenu__item">
+                    <a class="toc-submenu__link" href="#C1-3"> Project Details</a>
+                  </li>
+
+
+                  <li class="toc-submenu__item">
+                    <a class="toc-submenu__link" href="#C1-4"> Scope of Work</a>
+                  </li>
+
+                </ul>
+                <!-- toc-submenu -->
+
+              </li>
+              <!-- table-of-contents__item --has__toc-submenu -->
+
+              <!-- table-of-contents__item --has__toc-submenu -->
+              <li class="table-of-contents__item">
+
+
+                <a class="table-of-contents__link --has__toc-submenu" href="#C2">
+                  <span class="table-of-contents__span"> <i class="material-icons">ballot</i> Methodology
+                  </span>
+                </a>
+
+              </li>
+              <!-- table-of-contents__item --has__toc-submenu -->
+
+              <!-- table-of-contents__item --has__toc-submenu -->
+              <li class="table-of-contents__item --has__toc-submenu">
+
+                <a class="table-of-contents__link" href="#C3">
+                  <span class="table-of-contents__span"> <i class="material-icons">group</i> Empathise
+                  </span>
+                  <span class="table-of-contents__span-dropdown">
+                    <i class="material-icons">keyboard_arrow_down</i>
+                  </span>
+                </a>
+
+                <!-- toc-submenu -->
+                <ul class="toc-submenu">
+
+                  <li class="toc-submenu__item">
+                    <a class="toc-submenu__link" href="#C3-1">Observation</a>
+                  </li>
+
+                  <li class="toc-submenu__item">
+                    <a class="toc-submenu__link" href="#C3-2">Competitive Audit</a>
+                  </li>
+
+                  <li class="toc-submenu__item">
+                    <a class="toc-submenu__link" href="#C3-3">User Interviews</a>
+                  </li>
+
+
+                  <li class="toc-submenu__item">
+                    <a class="toc-submenu__link" href="#C3-4">Personas</a>
+                  </li>
+
+                  <li class="toc-submenu__item">
+                    <a class="toc-submenu__link" href="#C3-5">User Journeys</a>
+                  </li>
+
+                  <li class="toc-submenu__item">
+                    <a class="toc-submenu__link" href="#C3-6">Pain Points</a>
+                  </li>
+
+
+                </ul>
+                <!-- toc-submenu -->
+
+              </li>
+
+              <!-- table-of-contents__item --has__toc-submenu -->
+              <li class="table-of-contents__item --has__toc-submenu">
+
+                <a class="table-of-contents__link" href="#C4">
+                  <span class="table-of-contents__span">
+                    <i class="material-icons">ads_click</i> Define
+                  </span>
+                  <span class="table-of-contents__span-dropdown">
+                    <i class="material-icons">keyboard_arrow_down</i>
+                  </span>
+                </a>
+
+                <!-- toc-submenu -->
+                <ul class="toc-submenu">
+
+                  <li class="toc-submenu__item">
+                    <a class="toc-submenu__link" href="#C4-1">Problem Statement</a>
+                  </li>
+
+                  <li class="toc-submenu__item">
+                    <a class="toc-submenu__link" href="#C4-2">Storyboard</a>
+                  </li>
+
+                  <li class="toc-submenu__item">
+                    <a class="toc-submenu__link" href="#C4-3">Goal Statement</a>
+                  </li>
+
+                </ul>
+                <!-- toc-submenu -->
+
+              </li>
+              <!-- table-of-contents__item --has__toc-submenu -->
+
+              <!-- table-of-contents__item --has__toc-submenu -->
+              <li class="table-of-contents__item --has__toc-submenu">
+
+                <a class="table-of-contents__link" href="#C5">
+                  <span class="table-of-contents__span">
+                    <i class="material-icons">emoji_objects</i> Ideate
+                  </span>
+                  <span class="table-of-contents__span-dropdown">
+                    <i class="material-icons">keyboard_arrow_down</i>
+                  </span>
+                </a>
+
+                <!-- toc-submenu -->
+                <ul class="toc-submenu">
+
+                  <li class="toc-submenu__item">
+                    <a class="toc-submenu__link" href="#C5-1"> Hypothesis Statement</a>
+                  </li>
+
+                  <li class="toc-submenu__item">
+                    <a class="toc-submenu__link" href="#C5-2"> Need-Solution Framing</a>
+                  </li>
+
+                  <li class="toc-submenu__item">
+                    <a class="toc-submenu__link" href="#C5-3"> Inf. Architecture</a>
+                  </li>
+
+                  <li class="toc-submenu__item">
+                    <a class="toc-submenu__link" href="#C5-4"> User-Flow</a>
+                  </li>
+
+                </ul>
+                <!-- toc-submenu -->
+              </li>
+              <!-- table-of-contents__item --has__toc-submenu -->
+
+              <!-- table-of-contents__item --has__toc-submenu -->
+              <li class="table-of-contents__item --has__toc-submenu">
+
+                <a class="table-of-contents__link" href="#C6">
+                  <span class="table-of-contents__span">
+                    <i class="material-icons">architecture</i> Prototype
+                  </span>
+                  <span class="table-of-contents__span-dropdown">
+                    <i class="material-icons">keyboard_arrow_down</i>
+                  </span>
+                </a>
+
+                <!-- toc-submenu -->
+                <ul class="toc-submenu">
+
+                  <li class="toc-submenu__item">
+                    <a class="toc-submenu__link" href="#C6-1">Design Phase</a>
+                  </li>
+
+                  <li class="toc-submenu__item">
+                    <a class="toc-submenu__link" href="#C6-2"> Hi-Fi Prototype</a>
+                  </li>
+                </ul>
+                <!-- toc-submenu -->
+              </li>
+              <!-- table-of-contents__item --has__toc-submenu -->
+              <!-- table-of-contents__item --has__toc-submenu -->
+              <li class="table-of-contents__item --has__toc-submenu">
+
+                <a class="table-of-contents__link" href="#C7">
+                  <span class="table-of-contents__span">
+                    <i class="material-icons">3p</i> Test
+                  </span>
+                  <span class="table-of-contents__span-dropdown">
+                    <i class="material-icons">keyboard_arrow_down</i>
+                  </span>
+                </a>
+                <!-- toc-submenu -->
+                <ul class="toc-submenu">
+                  <li class="toc-submenu__item">
+                    <a class="toc-submenu__link" href="#C7-1">Usability Study</a>
+                  </li>
+
+                  <li class="toc-submenu__item">
+                    <a class="toc-submenu__link" href="#C7-2"> Refinement</a>
+                  </li>
+
+                  <li class="toc-submenu__item">
+                    <a class="toc-submenu__link" href="#C7-3"> Accessibility</a>
+                  </li>
+
+                  <li class="toc-submenu__item">
+                    <a class="toc-submenu__link" href="#C7-4">Final Prototype</a>
+                  </li>
+
+                </ul>
+                <!-- toc-submenu -->
+              </li>
+              <!-- table-of-contents__item --has__toc-submenu -->
+
+              <!-- table-of-contents__item --has__toc-submenu -->
+              <li class="table-of-contents__item --has__toc-submenu">
+
+                <a class="table-of-contents__link" href="#C8">
+                  <span class="table-of-contents__span">
+                    <i class="material-icons">add</i>Takeaways
+                  </span>
+                  <span class="table-of-contents__span-dropdown">
+                    <i class="material-icons">keyboard_arrow_down</i>
+                  </span>
+                </a>
+
+                <!-- toc-submenu -->
+                <ul class="toc-submenu">
+
+                  <li class="toc-submenu__item">
+                    <a class="toc-submenu__link" href="#C8-1"> Impacts</a>
+                  </li>
+
+                  <li class="toc-submenu__item">
+                    <a class="toc-submenu__link" href="#C8-2">What was learned</a>
+                  </li>
+                  <li class="toc-submenu__item">
+                    <a class="toc-submenu__link" href="#C8-3">Acknowledgments</a>
+                  </li>
+
+                </ul>
+                <!-- toc-submenu -->
+
+              </li>
+              <!-- table-of-contents__item --has__toc-submenu -->
+
+            </ul>
+            <!-- table-of-contents__list-->
+
+          </div>
+          <!-- table-of-contents__wrap -->
+
+
+        </div>
+        <!-- tableOfcontents -->
+
+        <!--casestudy-->
+        <div class="casestudy">
+          <!--Project Overview-->
+          <section class="article-section">
+            <h2 id="C1">Project overview</h2>
+            <h3 class="no-numbering" id="C1-1">About the project</h3>
+
+            <div class="container_casestudy-70">
+              <img src="/Assets/Portfolio/Cafeteria/04-Project Goal.svg" alt="A smartphone screen displays a photo of the Cafeteria coffee shop interior, 
+                featuring a long wooden table with X-shaped iron legs, round wooden stools, 
+                copper pendant lights, and customers seated at tables in the background. 
+                Menu boards are visible on the wall, and the phone's blue case frames the image.">
+            </div>
+
+            <p> This project aims to develop a mobile app for The Cafeteria that translates its physical charm into a digital experience,
+              evoking a cozy atmosphere and the scent of fresh coffee while putting its services right at the user's
+              fingertips.
+            </p>
+
+
+
+
+            <h3 class="no-numbering" id="C1-2">Key objectives</h3>
+            <p>Enable users to order drinks, book tables, making payments, all within the app.
+            </p>
+
+            <h3 class="no-numbering" id="C1-3">Project Details</h3>
+            <dl class="project-metadata">
+              <dt>Project duration:</dt>
+              <dd>June 2022 - December 2022</dd>
+              <dt>UX Designer:</dt>
+              <dd>Kelly Santos</dd>
+
+              <dt>Tool:</dt>
+              <dd>Figma</dd>
+            </dl>
+
+            <h3 class="no-numbering" id="C1-4">Scope of Work</h3>
+            <ul class="general-list">
+              <li> Apply a Human-Centred Design (HCD) approach, utilising the Design Thinking Methodology to drive the
+                project from discovery through to execution.</li>
+              <li> Conduct user research and analysis to understand user needs, pain points, behaviours, and
+                refine the problem statement.</li>
+              <li> Design user flows, wireframes, prototypes, and animations.</li>
+              <li> Test the app to ensure usability and iterate the designs based on feedback.</li>
+            </ul>
+
+
+          </section>
+          <!--section-->
+
+          </section>
+          <!--section-->
+
+          <!--Methodology-->
+          <section class="article-section">
+            <h2 id="C2">Methodology</h2>
+            <!--method_explain -->
+            <div class="method_explain">
+              <p class="sm">Design Thinking is a human-centred methodology that uses a five-stage process, Empathise,
+                Define, Ideate, Prototype, and Test, to understand users and solve problems, resulting in
+                solutions that are desirable, feasible, and viable.</p>
+            </div>
+            <!--End method_explain -->
+            <p>This project employed the <strong>Design Thinking Methodology</strong>, guiding the process through user
+              research, ideation, prototyping, and testing to produce the final Cafeteria App design.</p>
+
+            <figure class="figure_casestudy --noborder">
+              <img src="/Assets/Portfolio/Cafeteria/Methodology-Cafeteria.svg"
+                alt="Design Thinking Methodology, five stages: Empathise, Define, Ideate, Prototype, and Test.">
+            </figure>
+          </section>
+          <!--section-->
+
+          <!--section article-section-->
+          <!--Empathise-->
+          <section id="C3" class="article-section">
+
+            <img src="/Assets/Portfolio/BPW/03 - Empathise-decoration.svg"
+              alt="Illustration representing diverse user perspective.">
+
+            <h2>Empathise</h2>
+
+            <!--method_explain -->
+            <div class="method_explain">
+              <p class="sm">Empathise is the first phase of the Design Thinking process; it focuses on employing a
+                variety of tools to uncover and understand the feelings, thoughts, and experiences of users, gathering
+                data and insights to guide the design solutions.</p>
+            </div>
+            <!--End method_explain -->
+
+
+            <p>To ensure a deep understanding of users and their experiences, 6 key methods were utilised to gather
+              and structure data:</p>
+
+            <ul class="general-list">
+              <li>Observations</li>
+              <li>Competitive Audits</li>
+              <li>User interviews</li>
+              <li>User journeys</li>
+              <li>Personas</li>
+              <li>Pain points</li>
+            </ul>
+
+
+            <!--inner-divider -->
+            <!--Observations-->
+            <div class="inner-divider">
+
+              <h4 id="C3-1" class="no-numbering">Observations</h4>
+              <!--method_explain -->
+              <div class="method_explain">
+                <p class="sm">Observation is a method that involves systematically watching and recording behaviours, events, or phenomena. It is a qualitative research approach that allows to gather data in a natural environment, without directly interacting with participants, to better understand the user experience.</p>
+              </div>
+              <!--End method_explain -->
+              <p>
+                An observation session was conducted on Thursday, 8 June 2022, during a visit to the Cafeteria
+                shop. The visit aimed to better understand their environment, services and
+                customers' behaviours, feelings and actions.
+              </p>
+
+
+              <!-- observation-note  -->
+              <div class="observation-note">
+
+                <p class="s6">Observation Note</p>
+              </div>
+              <!-- observation-note  -->
+
+              <table class="tables">
+                <thead>
+                  <tr>
+                    <td>Category</td>
+                    <td>Details Revealed</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Ambiance</strong></td>
+                    <td>The coffee shop offered a cosy space with a warm decoration.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Spatial Layout</strong></td>
+                    <td>The lighting, tables and
+                      stools are harmoniously displayed, making the customers feel welcomed and relaxed.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><strong>Product Offering</strong></td>
+                    <td>The menu is simplified, with
+                      few but assertive options of the classics contributing to the service agility and efficiency.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Traffic Patterns</strong></td>
+                    <td>The space was well-visited all day, mainly during the peak periods when customers faced long
+                      queues.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Customer Behaviour</strong></td>
+                    <td>Customers waited for their coffee while demonstrating impatience, conveying that they were running late or short on time.</td>
+                  </tr>
+                  <tr>
+                </tbody>
+              </table>
+
+
+
+
+              <!-- insigth-note  -->
+              <div class="insigth-note">
+                <p class="s6">Insight</p>
+                <p class="sm">The combination of a cosy and warm space, efficient service and simplified menu
+                  has proven to be an effective strategy for building client loyalty, making the experience be
+                  worthwhile for customers.</p>
+
+              </div>
+              <!-- insigth-note  -->
+
+            </div>
+            <!--inner-divider -->
+            <!--Competitive Audit -->
+            <div id="C3-2" class="inner-divider">
+
+              <h3 class="no-numbering">Competitive Audit</h3>
+              <!--method_explain -->
+              <div class="method_explain">
+                <p class="sm">A competitive audit is a tool used to evaluate the strengths and weaknesses of current
+                  and potential competitors. It provides vital insights into market trends, identifies gaps, and reveals
+                  opportunities to enhance the user experience.</p>
+
+              </div>
+              <!-- method_explain -->
+
+              <p>An online competitive audit was conducted with three competitors
+                (direct and indirect) mostly to
+                identify the pros and cons of the competitors'
+                digital (mobile or web) usability, offering and positioning.
+              </p>
+
+              <h4 class="no-numbering">Competitive Audit Planning</h4>
+
+              <dl class="project-metadata">
+
+                <dt>Competitors:</dt>
+                <dd>03 competitors (02 direct and 01 indirect).</dd>
+                <dt>Duration:</dt>
+                <dd>3-6 hours each.</dd>
+                <dt>Location:</dt>
+                <dd>Online</dd>
+                <dt>Timeframe:</dt>
+                <dd>June 09 and 10, 2022.</dd>
+              </dl>
+              <figure class="figure_casestudy --noborder-pad-top">
+                <figcaption class="no-numbering">Cafeteria App: Competitive Audit Report</figcaption>
+                <img src="/Assets/Portfolio/Cafeteria/00-01-Competitive Audit.svg" alt="A four-page UX design document titled 'Cafeteria App 
+                  Competitive Audit Report by researcher Kelly Santos'. 
+                  The report outlines a competitive analysis of three coffee providers: 
+                  Global Brew (an international chain), 
+                  FastBites McCafé (a fast-food coffee arm), 
+                  and Artisan Bean (a local Melbourne boutique café). 
+                  The pages include sections for audit goals, competitor descriptions, 
+                  a comparison table of digital services, and a breakdown of strengths and 
+                  weaknesses regarding website usability and market positioning.">
+              </figure>
+
+            </div>
+            <!--inner-divider -->
+
+            <!--inner-divider -->
+            <div class="inner-divider">
+
+              <h4 class="no-numbering">Competitive Audit Outcome</h4>
+
+              <p>The audit reveals that while competitors excel in visual branding, they fail in digital inclusivity and
+                direct-to-web functionality. </p>
+              <p>FastBites offers robust integration but lacks accessibility, while Global Brew and Artisan Bean ignore
+                direct web-ordering. </p>
+              <p>Cafeteria’s app can bridge this gap by combining premium artisanal positioning with a high-utility
+                interface, prioritizing price transparency, and frictionless "order ahead" features.</p>
+
+            </div>
+            <!--inner-divider -->
+
+            <!--inner-divider -->
+            <!--User Interviews -->
+            <div id="C3-3" class="inner-divider">
+
+              <h3 class="no-numbering">User Interviews</h3>
+              <!--method_explain -->
+              <div class="method_explain">
+                <p class="sm">User interviews is a tool used to gather qualitative data and insights; it involves
+                  conversations with participants to understand their thoughts, feelings, and experiences.</p>
+              </div>
+              <!-- method_explain -->
+
+              <p>Semi-structured, face-to-face interviews were conducted mostly to identify the users' (general
+                public
+                this time) needs, motivations,
+                and pain points related to their daily cafe and dining experiences.
+              </p>
+
+              <h4 class="no-numbering">User Interviews Planning</h4>
+
+              <dl class="project-metadata">
+
+                <dt>Participants:</dt>
+                <dd>20 (10 from the Cafeteria consumers and 10 from the
+                  general public).</dd>
+                <dt>Duration:</dt>
+                <dd>30-45 minutes each.</dd>
+                <dt>Location:</dt>
+                <dd>Interviews were held at the participants' preferred locations.</dd>
+                <dt>Timeframe:</dt>
+                <dd>June 13-17, 2022.</dd>
+              </dl>
+              <figure class="figure_casestudy --noborder-pad-top">
+                <figcaption class="no-numbering">Interview Questions for Cafeteria consumers</figcaption>
+                <img src="/Assets/Portfolio/Cafeteria/00-02-Interviews.svg" alt="A two-page document titled 'Interview Questions for Cafeteria App,' 
+                  authored by UX researcher Kelly Santos. The first page covers Target Audience 
+                  Demographics (name, age, occupation, dining habits) and Needs, Preferences, 
+                  and Motivations, focusing on what makes a coffee shop visit successful. 
+                  The second page continues with questions regarding Pain Points and Obstacles, 
+                  such as time management, transaction experiences, and information accessibility, 
+                  concluding with a Disclaimer on data storage and security.">
+              </figure>
+
+            </div>
+            <!--inner-divider -->
+
+            <!--inner-divider -->
+            <div class="inner-divider">
+
+              <h4 class="no-numbering">User Interviews Outcome</h4>
+
+              <p>
+                The user interview analysis successfully identified a <strong>diverse segment of target users, ranging
+                  from busy professionals to social and leisure seekers</strong>. The research outlines how their
+                varying daily routines influence their experience within coffee shop
+                environments.
+              </p>
+
+              <p>This diversity is evident in the following quote extracts:</p>
+
+              <table class="tables">
+                <tbody>
+
+                  <thead>
+                    <tr>
+                      <td>Quote Extract</td>
+                      <td>Category / Analysis</td>
+                      <td>Implication</td>
+                    </tr>
+                  </thead>
+
+                  <tr>
+                    <td>
+                      <q>I often have to skip my coffee break entirely because the queue is just too long to risk it
+                        before my next meeting.</q>
+                    </td>
+                    <td>
+                      Time Constraints / Barriers
+                    </td>
+                    <td>
+                      Highlights a <strong>high friction point regarding wait times</strong>.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <q>It’s frustrating when we arrive as a group and there’s nowhere to sit, or we can't split a
+                        single bill.</q>
+                    </td>
+                    <td>
+                      Social Dynamics / Friction
+                    </td>
+                    <td>
+                      Highlights a <strong>friction point</strong> related to social dynamics. The app must provide
+                      real-time table availability and a friction-free "split-bill" feature to support group dynamics.
+
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <q>I'd visit more often if I knew for sure they had comfortable seating and a quiet atmosphere for
+                        me to read or work.</q>
+                    </td>
+                    <td>
+                      Environment / Accessibility
+                    </td>
+                    <td>
+                      Confirms that information transparency (noise levels/seating status) is a key motivator for
+                      choosing a location.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+            </div>
+            <!--inner-divider -->
+
+            <!--inner-divider -->
+            <!--Emphasise Outcome-->
+            <div class="inner-divider">
+
+
+              <!--inner-divider -->
+              <!--Personas-->
+              <div id="C3-4" class="inner-divider">
+
+                <h3 class="no-numbering">Personas</h3>
+
+                <!--method_explain Start-->
+                <div class="method_explain">
+                  <p class="sm">A persona is a method used to create a fictional character that represents a group with
+                    common characteristics, such as their demographics, behaviours, motivations, and goals, clearly
+                    informing the project's target users.</p>
+                </div>
+                <!--End method_explain -->
+
+                <p>It was identified two primary user personas: a time-constrained professional seeking efficiency and a
+                  retiree prioritizing comfort and accessibility.</p>
+
+                <!--figure_casestudy -->
+                <figure class="figure_casestudy --noborder --nopadding">
+                  <figcaption>Analla (Manager)</figcaption>
+                  <img src="/Assets/Portfolio/Cafeteria/00-03-Persona Analla.svg" alt="A persona profile for Analla, a 38-year-old hospital manager and mother 
+                    from Melbourne. The page features a photo of a woman looking over her shoulder 
+                    against a coastal background. It details her busy lifestyle and goals for a quiet 
+                    space with fast service for espresso, while highlighting frustrations such as noisy 
+                    environments, long payment queues, and incorrect orders.">
+                </figure>
+                <!--figure_casestudy -->
+
+                <!--figure_casestudy -->
+                <figure class="figure_casestudy --noborder --nopadding">
+                  <figcaption>Ned (Retiree)</figcaption>
+                  <img src="/Assets/Portfolio/Cafeteria/00-03-Persona Ned.svg" alt="A persona profile for Ned, a 60-year-old retiree from Melbourne. 
+                    The page features a close-up photo of an older man with glasses and includes 
+                    sections on his background as an orchid grower, 
+                    his goals of finding comfortable seating and a good menu for tea with friends, 
+                    and frustrations like long wait times and the inability to split bills.">
+                </figure>
+                <!--figure_casestudy -->
+
+              </div>
+
+
+              <!--inner-divider -->
+
+              <!--inner-divider -->
+              <!--User Journey-->
+              <div id="C3-5" class="inner-divider">
+
+                <h3 class="no-numbering">User Journeys</h3>
+                <!--method_explain Start-->
+                <div class="method_explain">
+                  <p class="sm">A user journey is a method that visually maps the path a user takes to achieve a
+                    specific goal, highlighting their actions, thoughts, feelings, and pain points at each stage to
+                    identify opportunities for improvement.</p>
+                </div>
+                <!--End method_explain -->
+
+                <p>The following four Journey Maps track the personas paths to achieve their goal.</p>
+
+
+                <!--figure_casestudy-->
+                <figure class="figure_casestudy --noborder --nopadding">
+
+                  <figcaption>Analla's User journey map (Hospital Manager)</figcaption>
+
+                  <p>Analla’s journey map illustrates her path to enjoying an espresso during her coffee break: from
+                    checking her schedule and driving to the shop, to savouring her drink and finally returning to work.
+                  </p>
+
+
+                  <img src="/Assets/Portfolio/Cafeteria/00-04-User Journey Analla.svg" alt="A User Journey Map table for a persona named Analla. The table tracks 
+                    her journey to get an aromatic espresso across six stages: Going to the Shop, 
+                    Finding a Table, Waiting for the waitress, Making the Order, 
+                    Getting the Order, and Payment. It lists specific tasks, 
+                    emotional states (ranging from anxious to content), 
+                    and improvement opportunities, such as mobile booking 
+                    and real-time order tracking.">
+                </figure>
+                <!--figure_casestudy-->
+
+
+                <!--figure_casestudy-->
+                <figure class="figure_casestudy --noborder --nopadding">
+
+                  <figcaption>Ned's User journey map (Retiree)</figcaption>
+
+                  <p>Ned’s journey map illustrates his experience of catching up with friends at a coffee shop. It
+                    highlights his desire for a cozy, accessible environment while identifying frustrations regarding
+                    the waiting times and the payment process.
+                  </p>
+
+
+                  <img src="/Assets/Portfolio/Cafeteria/00-04-User Journey Ned.svg" alt="A User Journey Map table for Ned, a 60-year-old retiree living in Melbourne. 
+                    The image features a portrait of an older man with glasses and includes sections on his 
+                    background as an orchid grower, his goals such as finding a warm cup of tea and 
+                    comfortable chairs, and frustrations like unavailable tables and the inability to 
+                    split payment bills.">
+                </figure>
+
+                <!--figure_casestudy-->
+
+
+              </div>
+
+              <!--inner-divider -->
+
+              <!--inner-divider -->
+              <!--Pain Points-->
+              <div id="C3-6" class="inner-divider">
+
+                <h3 class="no-numbering">Pain Points</h3>
+                <!--method_explain Start-->
+                <div class="method_explain">
+                  <p class="sm">Pain points are a method used to identify and declare specific problems or frustrations
+                    that target users experience while interacting with a product, service, or system, providing
+                    critical focus for the design process.</p>
+                </div>
+                <!--End method_explain -->
+
+                <p>These two primary pain points represent the most significant barriers preventing users from achieving
+                  their goals.</p>
+
+                <!-- Analla-->
+                <!--figure_casestudy -->
+                <figure class="figure_casestudy --nopadding --noborder">
+
+
+                  <figcaption>Ordering Friction</figcaption>
+                  <p class=" sm --b">Analla | Manager | 38 yo</p>
+                  <!--basic-box -->
+                  <div class="basic-box">
+                    <img src="/Assets/Portfolio/Cafeteria/Analla-pic.svg" alt="Analla's photo, she has short, dark hair and is looking 
+                      away from the camera. The background appears to be a beach 
+                      scene with the ocean and palm trees. She is wearing a patterned top.">
+
+                    <!--comments-->
+                    <div class="comments --pain-points">
+                      <p><strong>Pain points:</strong></p>
+                      <p class="sm">Analla, a busy professional, struggles with unpredictable wait times and queuing
+                        during her limited work breaks. She needs a streamlined digital solution to order her coffee in
+                        advance, allowing her to maximize her break and minimize stress.
+                      </p>
+                    </div>
+                    <!--comments-->
+                  </div>
+                  <!--basic-box -->
+
+                </figure>
+                <!-- figure_casestudy-->
+
+                <!-- Ned -->
+                <!--figure_casestudy -->
+                <figure class="figure_casestudy --nopadding --noborder">
+
+                  <figcaption> Booking and Payment Barriers </figcaption>
+
+                  <p class=" sm --b">Ned | Retiree | 60 yo</p>
+                  <!--basic-box -->
+                  <div class="basic-box">
+                    <img src="/Assets/Portfolio/Cafeteria/Ned-pic.svg" alt="Ned's photo, he is in his 60s. He has thinning, 
+                      light-coloured hair and is wearing glasses and a brown jacket over a 
+                      green shirt. He is looking directly at the camera with a neutral expression. 
+                      The background is blurred but suggests an urban outdoor setting with 
+                      buildings, a street, and a car.">
+
+                    <!--comments-->
+                    <div class="comments --pain-points">
+                      <p><strong>Pain points:</strong></p>
+                      <p class="sm">Ned, a social seeker, struggles with finding available seating and managing group
+                        payments at busy cafes. He needs a reliable way to book tables and split bills easily to ensure
+                        a comfortable and seamless experience with his friends.</p>
+                    </div>
+                    <!--comments-->
+                  </div>
+                  <!--basic-box -->
+
+                </figure>
+                <!-- figure_casestudy-->
+
+
+
+              </div>
+              <!--inner-divider -->
+
+              <!--inner-divider -->
+              <!--Emphasise Outcome-->
+              <div class="inner-divider">
+
+                <h4 class="no-numbering">Emphasise Outcome</h4>
+
+                <p>Research conducted through the Design Thinking methodology confirms that users need a unified
+                  Cafeteria
+                  App to order drinks, book tables, and process payments. </p>
+                <p>Currently, users like Ned face frustrations with seating and bill-splitting, while Analla
+                  struggles with time-consuming queues that disrupt her work schedule.</p>
+                <p> By consolidating these features,
+                  the app will provide a faster and more seamless
+                  experience for all users.</p>
+              </div>
+              <!--inner-divider -->
+
+          </section>
+          <!--section-->
+
+          <!--section article-section-->
+          <!--Define-->
+          <section class="article-section">
+
+            <h2 id="C4">Define</h2>
+
+            <!--method_explain -->
+            <div class="method_explain">
+              <p class="sm">Define is the second phase of the Design Thinking process; it involves taking the
+                information gathered during the Empathise phase to clearly establish the users' needs and problems.</p>
+            </div>
+            <!--method_explain -->
+            <p>To establish a clear project direction, this phase focused on three core outcomes:</p>
+
+            <ul class="general-list">
+              <li>Problem Statement</li>
+              <li>Storyboard</li>
+              <li>Goal Statement</li>
+
+            </ul>
+
+            <!--Problem Statement-->
+            <div id="C4-1" class="inner-divider">
+
+              <h3 class="no-numbering">Problem Statement</h3>
+
+
+              <!--method_explain Start-->
+              <div class="method_explain">
+                <p class="sm">A problem statement is a method that takes the raw data of user pain points and structures it into a clear, actionable, and concise definition of the problem intended to be solved.
+                </p>
+              </div>
+              <!--End method_explain -->
+
+              <p>The following problem statements highlight the pain points and needs identified: <strong>Ordering
+                  Friction</strong> and <strong>Booking and Payment Barriers</strong>, providing a focused foundation
+                for subsequent design solutions.
+              </p>
+
+              <!--figure_casestudy -->
+              <figure class="figure_casestudy --nopadding --noborder">
+
+                <figcaption>Analla's Problem Statement (Ordering Friction)</figcaption>
+                <img src="/Assets/Portfolio/Cafeteria/00-05- Problem Statment Analla.svg" alt="A problem statement card for Analla. It features her 
+                  photo and lists her occupation as Manager. The Who needs section specifies: 
+                  A fast and frictionless way to order her espresso that fits within her tight schedule. 
+                  The Because section notes: This moment of relaxation is critical for her mental 
+                  recharge and productivity for the rest of her day.">
+              </figure>
+              <!--figure_casestudy -->
+
+              <!--figure_casestudy -->
+              <figure class="figure_casestudy --nopadding --noborder">
+                <figcaption>Ned's Problem Statement (Booking and Payment Barriers)</figcaption>
+                <img src="/Assets/Portfolio/Cafeteria/00-05- Problem Statment Ned.svg" alt="A problem statement card for Ned. It features his photo and lists his 
+                  occupation as Retiree. The Who needs section states:
+                   To ensure a comfortable, guaranteed space for his group and a 
+                   simplified bill-splitting process. The Because section explains: 
+                   Minimizing friction allows him to fully enjoy his time with friends and family.">
+              </figure>
+              <!--figure_casestudy -->
+            </div>
+            <!--inner-divider -->
+
+            <!--Storyboard-->
+            <div id="C4-2" class="inner-divider">
+
+              <h3 class="no-numbering">Storyboard | Highlight </h3>
+              <!--method_explain Start-->
+              <div class="method_explain">
+                <p class="sm">A storyboard is a visual representation of a user's journey, illustrating key moments, interactions, and emotions to communicate the narrative and context. It is used to understand, address, and clarify user experiences.</p>
+              </div>
+              <!--End method_explain -->
+
+              <h4 class="no-numbering">Analla's Storyboard</h4>
+
+              <p>The following storyboard visually demonstrates her expectations, when facing a
+                frustration.</p>
+
+
+              <img src="/Assets/Portfolio/Cafeteria/00-05- Storyboard Analla.svg" alt="A six-panel storyboard titled 'Analla’s Journey.' 
+                It illustrates a busy manager finding a gap in her schedule, 
+                arriving at a crowded coffee shop with a long line, and wishing for a solution. 
+                She envisions using a mobile app to pre-order an espresso and book a table, 
+                a solution that allows her to enjoy a relaxing break and return to the office
+                 feeling recharged.">
+
+              <!--comments -->
+              <div class="comments ">
+
+                <p>Analla finds the peak hours at Cafeteria challenging. She believes that if the cafe offered an app
+                  for ordering drinks and book tables, she would have more time to relax and feel reinvigorated after
+                  her break.
+                </p>
+              </div>
+              <!--comments -->
+
+            </div>
+            <!--inner-divider -->
+
+            <!--Goal Statement-->
+            <div id="C4-3" class="inner-divider">
+              <h3 class="no-numbering">Goal Statement</h3>
+
+              <!--method_explain Start-->
+              <div class="method_explain">
+                <p class="sm"> Goal statement is a clear and concise articulation of the desired outcome of a project,
+                  guiding
+                  the design process and ensuring alignment with user needs and business objectives.</p>
+              </div>
+              <!--End method_explain -->
+
+              <p>The following goal statement was defined based on the observation, insights, data, and feedback
+                gathered through the user research:
+              </p>
+
+              <!--goal-->
+              <div class="goal">
+
+
+                <p>The Cafeteria App <strong> will let users seamlessly order drinks, book tables, and manage group
+                    payments</strong>. This will <strong>positively affect both customers and the business</strong> by
+                  providing a faster, more flexible cafe experience while allowing the business to optimize resource
+                  planning and operations. Effectiveness will be measured by analyzing user engagement metrics and
+                  business performance feedback.</p>
+
+              </div>
+              <!--goal-->
+
+            </div>
+            <!--inner-divider -->
+
+          </section>
+          <!--section-->
+
+          <!--Ideate-->
+          <section id="C4" class="article-section">
+            <h2 id="C5">Ideate</h2>
+
+            <!-- Method_explain Start -->
+            <div class="method_explain">
+
+              <p class="sm">Ideate is the third phase of the Design Thinking process; it focuses on generating and
+                exploring a wide range of potential solutions to the users' needs and problems identified during the
+                Define phase.
+              </p>
+
+            </div>
+            <!--End method_explain -->
+
+
+            <p>In the Ideate phase, problem definitions were transformed into actionable solutions, resulting in four
+              core strategic outcomes:</p>
+
+            <ul class="general-list">
+              <li>Hypothesis Statement</li>
+              <li>Need-Solution Framing</li>
+              <li>Information Architecture</li>
+              <li>User-Flow</li>
+            </ul>
+
+            <!--Hypothesis Statement -->
+            <div id="C5-1" class="inner-divider">
+
+              <h3 class="no-numbering">Hypothesis Statement</h3>
+
+              <!--method_explain-->
+              <div class="method_explain">
+                <p class="sm">A hypothesis statement is a method that informs educated, testable assumptions. It translates user insights or needs into actionable design solutions.</p>
+              </div>
+              <!--method_explain -->
+
+              <p>The following hypotheses were developed to address the key pain points uncovered during the research
+                phase. These "If-Then" statements predict how specific design decisions may impact the user
+                and their
+                experience.</p>
+
+
+              <!--figure_casestudy -->
+              <figure class="figure_casestudy --nopadding --noborder">
+                <figcaption>Analla's If-Then Statement (Ordering Friction)</figcaption>
+                <img src="/Assets/Portfolio/Cafeteria/00-06- Hypothesis Statement Analla.svg" alt="If/Then Statement for Analla: If she can pre-order coffee and 
+                  schedule pickup, then she can maximize her break to relax and recharge 
+                  before resuming her routine. Photo of Analla, Manager, is included.">
+              </figure>
+              <!--figure_casestudy -->
+
+              <!--figure_casestudy -->
+              <figure class="figure_casestudy --nopadding --noborder">
+                <figcaption>Ned's If-Then Statement (Booking and Payment Barriers)</figcaption>
+                <img src="/Assets/Portfolio/Cafeteria/00-06- Hypothesis Statement Ned.svg" alt="If/Then Statement for Ned: If he can secure group reservations and simplify 
+                  bill splitting, then he can focus on connecting with friends without
+                  friction. Photo of Ned, Retiree, is included.">
+              </figure>
+
+            </div>
+            <!--inner-divider -->
+
+
+            <!--Need-Solution Framing-->
+            <div id="C5-2" class="inner-divider">
+              <h3 class="no-numbering">Need-Solution Framing</h3>
+
+              <!--method_explain Start-->
+              <div class="method_explain">
+                <p class="sm">Need-Solution Framing is the process that bridges user needs and solutions, clearly stating problems alongside refined and prioritized ideas that will guide the project toward its desired outcome.</p>
+              </div>
+              <!--End method_explain -->
+
+              <p>Design process led to refined solutions addressing user needs, seeking to enhance their experience.</p>
+
+              <!-- Alex-->
+              <!--figure_casestudy -->
+              <figure class="figure_casestudy --new-padding --noborder ">
+
+                <figcaption>Ordering Friction</figcaption>
+                <!--basic-box -->
+                <p class="sm">Analla | Manager | 38 yo</p>
+                <div class="basic-box">
+                  <img class="obj-position" src="/Assets/Portfolio/BHAS/Analla-pic.svg" alt="Analla's photo, she has short, dark hair and is looking away from the camera. 
+                    The background appears to be a beach scene with the ocean and palm trees. 
+                    She is wearing a patterned top.">
+
+                  <!--needs-solution-->
+                  <div class="needs-solution">
+                    <!--comments-->
+                    <div class="comments --user-needs">
+                      <p><strong>User-needs:</strong></p>
+                      <p class="sm">Analla needs a fast and frictionless way to order her espresso that fits within
+                        her tight schedule.</p>
+                    </div>
+                    <!--comments-->
+
+                    <div class="comments --solution">
+                      <p><strong>Potential solution:</strong></p>
+                      <p class="sm">
+                        Implement <strong>pre-order functionality</strong> with <strong> time of pickup</strong>. This
+                        streamlines the pickup process and provides order transparency, effectively eliminating ordering
+                        friction for time-sensitive users.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!--needs-solution-->
+                <!--basic-box -->
+
+              </figure>
+              <!-- figure_casestudy-->
+
+              <!-- Margaret -->
+              <!--figure_casestudy -->
+              <figure class="figure_casestudy --new-padding --noborder ">
+
+                <figcaption> Booking and Payment Barriers </figcaption>
+                <p class="sm">Ned | Retiree | 60 yo</p>
+                <!--basic-box -->
+                <div class="basic-box">
+                  <img src="/Assets/Portfolio/Cafeteria/Ned-pic.svg" alt="Ned's photo, he is in his 60s. He has thinning, 
+                    light-coloured hair and is wearing glasses and a brown jacket over a 
+                    green shirt. He is looking directly at the camera with a neutral expression. 
+                    The background is blurred but suggests an urban outdoor setting with buildings, 
+                    a street, and a car.">
+
+
+                  <!--needs-solution-->
+                  <div class="needs-solution">
+                    <!--comments-->
+                    <div class="comments --user-needs">
+                      <p><strong>User-needs:</strong></p>
+                      <p class="sm">Ned needs to ensure a comfortable, guaranteed space (tables and seats) for his
+                        group and a simplified bill-splitting process. </p>
+                    </div>
+                    <!--comments-->
+
+                    <!--comments -->
+                    <div class="comments --solution">
+                      <p><strong>Potential solution:</strong> </p>
+                      <p class="sm">
+                        Develop a <strong>seamless reservation system</strong> with integrated <strong>group payment and
+                          bill-splitting tools</strong>. This removes the barriers of securing a table and simplifies
+                        the checkout process for social groups.
+                      </p>
+                    </div>
+                    <!--comments -->
+                  </div>
+                  <!--needs-solution-->
+                </div>
+                <!--basic-box -->
+              </figure>
+              <!-- figure_casestudy-->
+
+
+
+
+            </div>
+            <!--inner-divider -->
+
+
+            <!--Information Architecture -->
+            <div id="C5-3" class="inner-divider">
+
+              <h3 class="no-numbering">Information Architecture</h3>
+
+              <!--method_explain Start-->
+              <div class="method_explain">
+                <p class="sm">Information Architecture is a structural map of a digital product, illustrating how
+                  content is
+                  organized, labelled, and navigated to ensure clarity and usability for users.</p>
+              </div>
+              <!--End method_explain -->
+              <p>This Information Architecture showcases the app's intuitive navigation and the core sections of the
+                Cafeteria App (Home, Bag, Reorder, Favourites, and Account).
+              </p>
+
+              <!--figure_casestudy-->
+              <figure class="figure_casestudy --noborder --nopadding">
+
+                <figcaption>Cafeteria App Information Architecture </figcaption>
+
+
+                <img src="/Assets/Portfolio/Cafeteria/00-07- Information Architecture.svg" alt="
+                A sitemap diagram for a 'Cafeteria App' showing a hierarchical structure of the 
+                application's navigation. The top-level 'Cafeteria App' node branches into five main 
+                categories: Home, Bag, Reorder, Favourites, and Account.
+                The Home branch: includes sub-sections for Menu and Book a Table and the Account 
+                branch includes sub-sections for Details, Address, History Activities. 
+                The design features black rectangular labels with white text connected by simple grey lines on 
+                a light off-white background.">
+
+              </figure>
+              <!--figure_casestudy-->
+
+
+            </div>
+            <!--inner-divider -->
+
+            <!--User-Flow-->
+            <div id="C5-4" class="inner-divider">
+
+              <h3 class="no-numbering">User-Flow</h3>
+
+              <!--method_explain Start-->
+              <div class="method_explain">
+                <p class="sm"> User Flow is a visual representation of the pathways a user takes to complete tasks
+                  within a
+                  digital product, illustrating each step and decision point.</p>
+              </div>
+              <!--End method_explain -->
+
+
+              <p>This user-flow illustrates the seamless navigation, allowing users to order, reorder, book a
+                table, check favourites, manage their bag, and access their account, all with just one touch.</p>
+
+              <img src="/Assets/Portfolio/Cafeteria/07 - Cafeteria App acess diagram2.svg" alt="A 'Cafeteria App Access Process Diagram' featuring a flowchart and a 
+                four-step process description. The diagram maps the user journey from the 
+                'Welcome Screen' through authentication (Sign-In/Sign-Up) or direct access, 
+                leading to a 'Select Action' hub. From there, users can navigate to features 
+                like Menu, Book a Table, Bag, Reorder, Favourites, and Account before finalizing 
+                their session and leaving the app.">
+            </div>
+            <!--inner-divider -->
+
+
+          </section>
+          <!--section-->
+
+          <!--section article-section-->
+          <!--Prototype-->
+          <section class="article-section">
+            <h2 id="C6">Prototype</h2>
+
+
+            <!-- Method_explain Start -->
+            <div class="method_explain">
+
+              <p class="sm">Prototype is the fourth phase of the Design Thinking process; it transforms ideas that
+                emerged during the Ideate phase into a tangible, cost-saving, and low-risk model of a product used to
+                validate its design and concept.
+              </p>
+
+            </div>
+            <!--End method_explain -->
+
+
+            <p>The Prototype phase demonstrates a systematic approach to design, translating concepts into tangible,
+              testable representations. This phase produced five key outcome:</p>
+
+
+            <ul class="general-list">
+              <li>Design Phase</li>
+              <li>Hi-Fi Prototypes</li>
+            </ul>
+
+
+            <!--inner-divider -->
+            <!--Design Phase-->
+            <div id="C6-1" class="inner-divider">
+              <h3 class="no-numbering">Design Phase</h3>
+              <p>The development process began with preliminary paper sketches, which were iterated into digital
+                wireframes. Finally, these were enriched with high-resolution imagery, branding, and interactive
+                elements
+                to create high-fidelity mockups that accurately represent the final design.</p>
+              <img src="/Assets/Portfolio/Cafeteria/08 - Mock-ups & Hi-Fidelity Usability.svg" alt="A side-by-side progression of the 'Cafeteria' mobile app menu screen across 
+                three design stages: Sketches, Wireframes, and mockups.">
+            </div>
+            <!--inner-divider -->
+
+            <!--inner-divider -->
+            <!--Hi-fidelity prototype-->
+            <div id="C6-2" class=" inner-divider">
+
+              <h3 class="no-numbering">Hi-fidelity prototype
+              </h3>
+
+                            <!--End method_explain -->
+              <div class="method_explain">
+                <p class="sm">Hi-fidelity prototypes visually and functionally mimic the final product, illustrating
+                  realistic
+                  interactions, visual design, and user flows to facilitate thorough testing.</p>
+              </div>
+              <!--End method_explain -->
+              <p>A high-fidelity prototype was developed to merge visual design with an interactive model. This served
+                to illustrate the intended look and feel, while also being utilised for further usability testing and
+                refinement.
+              </p>
+
+              <!--container_casestudy -->
+              <div class="container_casestudy --noborder">
+                <img src="/Assets/Portfolio/Cafeteria/08-00 - Hi-Fidelity 01.svg" alt="A sequence of seven high-fidelity mobile mock-ups for the 'Cafeteria' app, showcasing a clean black-and-white theme with high-quality coffee imagery. The screens include:
+                A minimalist Splash Screen and Sign-In/Sign-Up page.
+                A Menu displaying various coffee types with prices.
+                An customization selectors order screen for a Cappuccino with 
+                customization options (milk type and quantity).
+                A Booking Interface featuring a calendar, time selectors, and a floor plan for 
+                selecting a table.
+                A final Confirmation screen with a 'Thank you!' message, 
+                order details, and an address in Melbourne.">
+              </div>
+              <!--container_casestudy -->
+            </div>
+            <!--inner-divider -->
+
+            <!--inner-divider -->
+            <div class=" inner-divider">
+              <h4 class="no-numbering">Hi-fidelity prototype features
+              </h4>
+              <p>This hi-fidelity prototype video walkthrough of the Cafeteria App hi-fidelity prototype:</p>
+              <!--container_casestudy -->
+              <div class="container_casestudy --noborder">
+                <video controls="" src="/Assets/Portfolio/Cafeteria/08-01 -Hi-fi prototype.mp4"
+                  alt="This hi-fidelity prototype video walkthrough of the Cafeteria App hi-fidelity prototype. The display showcases the user flow from the splash screen and sign-in to the menu navigation and account management screens, featuring a cohesive brand identity and interactive layout.">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <!--container_casestudy -->
+              <ul class="general-list">
+
+                <li>Starting from the splash screen, the Cafeteria App immerses users in the ambiance of the café,
+                  reinforcing the brand identity. It replicates the experience of walking into the shop, assuring users
+                  they are in the right place. </li>
+                <li>The sign-in screen evokes the feeling of standing at the entrance, giving users the option to enter
+                  or explore the menu. </li>
+                <li>Once inside, users can explore the menu at their own pace to choose, add items to their favourites,
+                  and place their order. </li>
+                <li>Alternatively, they can seamlessly navigate across the app and even personalise their account
+                  settings. </li>
+              </ul>
+            </div>
+            <!--inner-divider -->
+
+          </section>
+          <!--section-->
+
+          <!--section article-section-->
+          <!--Test-->
+          <section id="C7" class="article-section">
+            <h2>Test</h2>
+
+            <!-- Method_explain Start -->
+            <div class="method_explain">
+              <p class="sm">Test is the fifth phase of the Design Thinking process; it actively evaluates the prototype’s concept, user flow, design, and functionality through real user interaction and feedback, identifying usability issues and driving design iterations.
+              </p>
+
+            </div>
+            <!--End method_explain -->
+
+
+            <p>In this phase, designs were assessed to identify usability issues and directly inform further refinement.
+              The key outcomes of this testing phase include:</p>
+
+            <ul class="general-list">
+              <li>Usability Study</li>
+              <li>Refinement</li>
+              <li>Accessibility</li>
+              <li>Final Prototype</li>
+            </ul>
+
+
+            <!--inner-divider -->
+            <div id="C7-1" class="inner-divider">
+
+              <h3 class="no-numbering">Usability study</h3>
+    
+
+              <p>In this phase, two rounds of usability studies were conducted to evaluate the prototype with users,
+                identifying pain points and friction to inform design
+                refinements for an intuitive and friction-free app experience.</p>
+
+              <ul class="general-list">
+
+
+                <li><b>Low-fidelity:</b> Findings from this initial study guided the transition of the designs from
+                  wireframes to mock-ups. The test results from the low-fidelity prototype showed that the navigation
+                  was intuitive, and users
+                  found the information they needed. </li>
+
+                <li><b>Hi-fidelity: </b> Subsequent usability testing with a high-fidelity prototype revealed that the
+                  table booking process was overly complex. Additionally, the dark visual aesthetic evoked a negative
+                  emotional response from users, indicating a clear need for refinement.</li>
+
+              </ul>
+            </div>
+
+
+
+            <!--Prototype | Refinement-->
+            <!--inner-divider -->
+            <div class="inner-divider">
+
+              <h3 id="C7-2" class="no-numbering"> Refinement </h3>
+
+              <!--method_explain Start-->
+              <div class="method_explain">
+                <p class="sm">Refinement is the stage in the Design Thinking process where identified usability issues found on the prototypes during the Test phase are resolved based on user feedback to create continuous improvements.</p>
+              </div>
+              <!--End method_explain -->
+
+
+              <p>The results of usability tests revealed that users found the table booking process overly complex and
+                visually dark, evoking a negative emotional response. To address this, the process was simplified and a
+                more pleasant colour palette was selected.</p>
+              <img src="/Assets/Portfolio/Cafeteria/09 - iterations.png" alt="
+                A side-by-side comparison of two versions of the 'Book a Table' screen for the 
+                Cafeteria app, labeled with a red 'X' (incorrect) and a green checkmark (correct) 
+                to show UX improvements.
+                Left Version (Before): Features a dense layout with a full monthly 
+                calendar, multiple numerical input fields for guests and times, and a monochromatic
+                 restaurant floor plan.
+                Right Version (After): Shows a streamlined, high-contrast design using teal accent
+                headers. It replaces the complex calendar with simple date and time dropdowns and 
+                introduces a color-coded restaurant layout where available tables are highlighted in 
+                teal for better visibility and ease of use.">
+            </div>
+            <!--inner-divider -->
+            <!--Accessibility -->
+            <div id="C7-3" class="inner-divider">
+
+              <h3 class="no-numbering">Accessibility</h3>
+
+              <div class="method_explain">
+                <p class="sm">Accessibility in digital products focuses on ensuring usability for individuals with
+                  diverse
+                  abilities, visually representing features that accommodate various needs and promote
+                  inclusivity.
+                </p>
+              </div>
+              <!--End method_explain -->
+
+              <h4 class="no-numbering">Accessibility | Layout</h4>
+
+              <p>The app's layout was carefully crafted to <b>ensure clear readability</b>, employing a <u>light and
+                  airy background</u>, and incorporating visually <u>appealing images</u> to capture attention.</p>
+              <!--container_casestudy -->
+              <div class="container_casestudy-70 --noborder">
+                <img src="/Assets/Portfolio/Cafeteria/10 - Acessibility.svg" alt="A high-fidelity mobile mock-up of the 'Cafeteria' app menu screen, demonstrating 
+                  UX accessibility and layout principles. A callout points to the light and airy background, 
+                  highlighting clean white space for readability. Another callout identifies 
+                  appealing images, showing a grid of professional coffee photography 
+                  (Espresso, Latte, Macchiato, Affogato) with clear pricing. The design features a 
+                  minimalist black-and-white theme and a bottom navigation bar">
+              </div>
+              <!--container_casestudy -->
+
+              <h4 class="no-numbering">Accessibility | Typography</h4>
+
+              <p>Clear and solid <b>typography</b> based on Poppins sans-serif fonts <b>makes the information scannable
+                  and legible</b> on the screen. </p>
+              <!--container_casestudy -->
+              <div class="container_casestudy-70 --noborder">
+                <img src="/Assets/Portfolio/Cafeteria/11 - Typography.svg" alt="This Account screen mock-up highlights accessibility through Poppins 
+                  sans-serif typography. Callouts identify different font weights used 
+                  for headings and details, ensuring the user information remains scannable, 
+                  legible, and well-organized.">
+              </div>
+              <!--container_casestudy -->
+              <h4 class="no-numbering">Accessibility | Colour Contrast</h4>
+
+              <p><b>Colour contrast</b> used in this design <b>improves legibility, enhances accessibility, establishes
+                  visual hierarchy, contributes to aesthetics</b>, and aids in branding and recognition.</p>
+
+              <!--container_casestudy -->
+              <div class="container_casestudy-70 --noborder">
+                <img src="/Assets/Portfolio/Cafeteria/12 - Colour Contrast.svg" alt="An 'Accessibility | Colour Contrast' showcase 
+                  featuring a contrast checker tool alongside a 'Bag' checkout screen. 
+                  The contrast checker demonstrates an 11.04:1 ratio, passing WCAG AA 
+                  and AAA standards for legibility. The mobile mock-up applies these high-contrast 
+                  principles using bold black text on a white background, ensuring a clear visual 
+                  hierarchy for order options, item details, and the final checkout button.">
+              </div>
+              <!--container_casestudy -->
+            </div>
+            <!--inner-divider -->
+
+            <!--inner-divider -->
+            <div id="C7-4" class=" inner-divider">
+
+              <h3 class="no-numbering">Final Hi-fidelity prototype
+              </h3>
+              <p>A hi-fidelity prototype, the latest version, incorporates all the design refinements and improvements
+                made based on user feedback and testing, showcases a cohesive and user-friendly experience for the
+                Cafeteria App.</p>
+              </p>
+
+              <!--container_casestudy -->
+              <div class="container_casestudy --noborder">
+                <img src="/Assets/Portfolio/Cafeteria/17-00 - Final Result.svg" alt="A sequence of seven high-fidelity mobile mock-ups for the 'Cafeteria' app, 
+                  showcasing a refined user journey. The screens progress from a minimalist
+                   splash and sign-in page to a visual menu, a detailed cappuccino customization 
+                   screen with teal highlights, a streamlined 'Book A Table' interface with 
+                   a color-coded floor plan, and a final order confirmation screen featuring a 
+                   Melbourne address.">
+              </div>
+              <!--container_casestudy -->
+            </div>
+            <!--inner-divider -->
+
+          </section>
+          <!--section-->
+
+          <!--Takeaways-->
+          <section id="C8" class="article-section">
+            <h2>Takeaways</h2>
+
+
+            <!--inner-divider -->
+            <div id="C8-1" class=" inner-divider">
+
+
+              <h3 class="no-numbering">Impact</h3>
+
+              <p>The Cafeteria App delivered a significant impact by blending the shop’s charm with a streamlined digital
+                experience. By consolidating pre-orders, bookings, and group payments, the design eliminated common
+                frustrations while maximizing efficiency for all users.</p>
+            </div>
+            <!--inner-divider -->
+            <!--inner-divider -->
+            <div class=" inner-divider">
+
+              <blockquote>
+                <strong class="s4"> Analla's Quote</strong>
+                <p>"I love how intuitive the navigation is. Whether I’m booking a table for a weekend catch-up or just
+                  re-ordering my favourite latte while on the go, the experience is seamless and stress-free. It’s
+                  clearly crafted with people like me in mind."
+                </p>
+              </blockquote>
+            </div>
+            <!--inner-divider -->
+            <!--inner-divider -->
+            <div id="C8-2" class=" inner-divider">
+
+              <h3 class="no-numbering">What was learned</h3>
+              <p>The importance of inclusive design took centre stage throughout this project. For instance, when
+                designing the "Book a Table" feature, accessibility was prioritised by adding arrow-based inputs for the
+                number of guests and time selection.</p>
+              <p>This made the app easier to use for those with motor disabilities, such as Parkinson’s, or for users in
+                high-mobility situations, like booking a table while walking or commuting on a train.</p>
+            </div>
+            <!--inner-divider -->
+
+            <!--Acknowledgments-->
+            <!--inner-divider -->
+            <div class=" inner-divider">
+              <h3 id="C8-3" class="no-numbering">Acknowledgments</h3>
+              <!-- thanks-banner -->
+              <div class="thanks-banner --caf">
+                <!-- ContactMe_description -->
+                <div class="banner-description">
+                  <div class="banner-text">
+                    <h3 class="s4 --no-numbering ">Thank you for your time!</h3>
+                    <p class="sm"> If you have any feedback or are interested in working together, please feel free to
+                      reach out via email.</p>
+                  </div>
+                  <!-- contact_dark_cta-->
+                  <div class="contactMemail">
+                    <a class="primary" href="mailto:kellysantos.ux@gmail.com"><i class="fa fa-envelope"></i>
+                      kellysantos.ux@gmail.com</a>
+                  </div>
+                  <!-- contact_dark_cta-->
+                </div>
+                <!-- ContactMe_description -->
+
+              </div>
+              <!-- thanks-banner -->
+
+
+
+            </div>
+            <!--inner-divider -->
+
+          </section>
+          <!--section-->
+          <span class="--innerdiv"></span>
+
+        </div>
+        <!--casestudy-->
+
+
+      </div>
+      <!--tc&casestudy-->
+
+    </article>
+    <!--article-->
+
+  </main>
+  <!--main-->
+  <!-- bottomNav -->
+  <div class="bottomNav">
+    <!-- nav -->
+    <nav>
+      <!-- ul -->
+      <ul>
+        <li><a href="/index.html"><i class="material-icons">home</i>Home</a></li>
+        <li><a href="/portfolio.html"><i class="material-icons">import_contacts</i>Portfolio</a></li>
+        <li><a href="/about.html"><i class="material-icons">assignment_ind</i>About</a></li>
+        <li><a href="/contact.html"><i class="material-icons">email</i>Contact</a></li>
+        <li><a href="/resume.html"> <i class="material-icons"> library_books </i> Resume</a></li>
+      </ul>
+      <!-- ul -->
+
+
+    </nav>
+    <!-- nav -->
+
+    <!-- hr -->
+    <hr>
+    <!-- hr -->
+
+  </div>
+  <!-- bottomNav -->
+
+  <footer class="footerLight">
+
+    <!-- brandContact -->
+    <div class="brandContact">
+
+      <!-- logo -->
+      <a class="a logo" href="/index.html">
+        <img src="/Assets/logo/01-logoDark-footer.svg" alt="Kelly Santos Logo.">
+      </a>
+      <!-- logo-->
+
+      <!-- contact_dark_cta-->
+      <div class="contactMemail">
+        <a class="primary" href="mailto:kellysantos.ux@gmail.com"><i class="fa fa-envelope"></i>
+          kellysantos.ux@gmail.com</a>
+      </div>
+      <!-- contact_dark_cta-->
+    </div>
+    <!-- brandContact -->
+
+    <!-- footerNav -->
+    <div class="footerNav">
+
+      <!-- nav -->
+      <nav>
+
+        <!-- ul -->
+        <ul>
+           <li><a href="/index.html"><i class="material-icons">home</i>Home</a></li>
+          <li><a href="/portfolio.html"><i class="material-icons">import_contacts</i>Portfolio</a></li>
+          <li><a href="/about.html"><i class="material-icons">assignment_ind</i>About</a></li>
+          <li><a href="/contact.html"><i class="material-icons">email</i>Contact</a></li>
+          <li><a href="/resume.html"> <i class="material-icons"> library_books </i> Resume</a></li>
+
+        </ul>
+        <!-- ul -->
+
+      </nav>
+      <!-- nav -->
+
+    </div>
+    <!-- footerNav -->
+
+    <!-- Copyright Contact-->
+    <small class="sm --b">copyright © 2024 Kelly Santos. All rights reserved. </small>
+    <!-- Copyright Contact-->
+
+  </footer>
+  <script src="/Js/toc.js"></script>
+  <script src="/Js/toc menu.js"></script>
+  <script src="/Js/back-navigation-general.js"></script>
+  <script src="/Js/search.js"></script>
+</body>
+
+</html>

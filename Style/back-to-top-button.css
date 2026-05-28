@@ -1,0 +1,55 @@
+.BackToTop {
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+  z-index: 3000;
+  /* Hidden by default */
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+  transform: translateY(10px);
+  position: fixed;
+  right: 20px;          /* Distance from the right edge */
+  top: 50%;             /* Move the top edge to the middle of the screen */
+  transform: translateY(-50%); /* Shift it back up by half its own height to perfectly center it */
+  z-index: 9999;        /* Keeps it on top of other content */
+  
+  /* Optional: Smooth transition if you are toggling visibility later */
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Class added by JS when user scrolls down */
+.BackToTop.is-visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.BackToTop_button {
+  background-color: var (--action-item-primary-light);
+  border: 1px solid var(--border-action-secondary-dark);
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s;
+}
+
+.BackToTop_button:hover {
+ opacity: 0.8;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}

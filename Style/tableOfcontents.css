@@ -1,0 +1,448 @@
+.table-of-contents__container {
+  display: flex;
+  width: 20%;
+  height: fit-content;
+  max-height: 472.82px;
+
+
+  align-items: flex-start;
+  justify-content: right;
+  background-color: transparent;
+  position: sticky;
+  top: var(--spacing-base);
+  overflow: hidden;
+  flex-direction: column;
+    border: 0.5px solid var(--border-component-secondary-dark);
+    border-radius: var(--border-radius-xs); 
+
+}
+
+.table-of-contents__toogle {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  align-items: center;
+  justify-content: space-between;
+  cursor: default;
+  gap: auto;
+  padding: var(--padding-xl)  var(--padding-xxl);
+  background-color: var(--bg-component-primary-light);
+}
+
+.table-of-contents__span2toc {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-sm);
+}
+
+
+.table-of-contents__span2toc p {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  justify-content: center;
+  align-items: center;
+  text-wrap: nowrap;
+  font-weight: var(--font-weight-medium);
+}
+
+.table-of-contents__toogle-close {
+  display: none;
+}
+
+.table-of-contents__toogle-open {
+  display: none;
+}
+
+div.table-of-contents__wrap {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  flex-direction: row;
+  align-items: flex-start;
+  overflow-y: auto;
+        background-color: var(--bg-component-primary-light);
+padding-bottom:2.82%;
+
+}
+
+/* Support anchor-based toggle elements (some pages use an <a> link instead of a span) */
+a.table-of-contents__toogle__link {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  padding:var(--padding-xl) ;
+  text-decoration: none;
+  color: inherit;
+  justify-content: center;
+  color: var(--text-anchor-dark);
+  font-weight: var(--font-weight-base);
+  white-space: nowrap;
+  border-radius: 0 0 var(--border-radius-sm) var(--border-radius-sm);
+  border: 1px solid var( --border-component-secondary-dark);
+  background-color: var(--bg-component-primary-light);
+  padding-bottom: var(--spacing-base);
+}
+
+
+ul.table-of-contents__list {
+  display: flex;
+  width: 100%;
+  max-height:390.83px;
+    min-height:fit-content;
+  flex-direction: column;
+  overflow-y: auto;
+  padding-inline-start: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+
+}
+
+li.table-of-contents__item {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0;
+  margin-top: var(--spacing-xxs);
+  border-top: 1px solid var( --border-component-secondary-dark);
+
+}
+
+a.table-of-contents__link {
+  display: flex;
+  width: 100%;
+  min-width: 162px;
+  height: fit-content;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--text-anchor-dark);
+  text-align: center;
+  text-decoration: none;
+
+  font-weight: var(--font-weight-base);
+  white-space: nowrap;
+  overflow: hidden;
+  cursor: pointer;
+  margin-top: var(--spacing-xxs) ;
+  padding: 0 var(--padding-xl);
+  border: 1.6px solid transparent;
+}
+
+
+a.table-of-contents__link:hover {
+  border: 1.6px solid var(--border-action-primary-dark-hover);
+  background-color: var( --action-item-hover);
+
+
+}
+
+.--toc-active {
+  color: var(--text-anchor-dark);
+
+}
+
+/* Style applied to a parent/main TOC link when a child submenu item is active */
+a.table-of-contents__link.--toc-parent-active {
+  /* Use a differentiated visual state for parent link */
+  background-color: var( --action-tertiary-bg-active);
+    background-color: var( --border-action-item-light);
+margin-top: var(--spacing-xxs) ;
+
+
+}
+
+.--has__toc-submenu {
+  width: fit-content;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 0;
+}
+
+span.table-of-contents__span {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  align-items: center;
+  justify-content: left;
+  gap: var(--spacing-sm);
+  font-weight: var(--font-weight-medium);
+  padding: 10px 0;
+
+}
+
+a.table-of-contents__link.--toc-active .table-of-contents__span {
+  color: var(--text-anchor-dark);
+}
+ 
+
+span.table-of-contents__span-dropdown {
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-sm);
+  padding: var(--padding-base) ;
+  cursor: pointer;
+  border-radius: var(--border-radius-xs);
+  border: 1px solid transparent;
+
+}
+
+span.table-of-contents__span-dropdown:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+
+
+span.table-of-contents__span-dropdown i {
+  transition: transform 0.3s ease;
+}
+
+
+span.table-of-contents__span .--toc i {
+  display: none;
+
+}
+
+
+.table-of-contents__span i {
+
+  display: block;
+  font-size: var(--font-size-base);}
+ 
+
+.--toc {
+  font-weight: var(--font-weight-medium);
+  padding: var(--spacing-xxs) var(--spacing-base);
+  padding-bottom: 8px;
+
+  color: var(--text-anchor-dark);
+  border: 1px solid transparent;
+  margin-bottom: -6px;
+}
+
+span.table-of-contents__span.--toc {
+  padding: var(--spacing-base) 0;
+  font-weight: var(--font-weight-medium);
+}
+
+
+span.table-of-contents__span-dropdown i {
+  transition: transform 0.3s ease;
+  /* From source 44 */
+  transform: rotate(0deg);
+  /* Explicitly set initial rotation */
+}
+
+/* Show the submenu when the OPEN_CLASS is present */
+.toc-submenu.--toc-submenu-open {
+  display: flex;
+  max-height: 1000px;
+  transition: max-height 0.3s ease-in-out;
+}
+
+/* Optional: Style the dropdown icon (span-dropdown) */
+.table-of-contents__span-dropdown {
+  cursor: pointer;
+  /* Add styling for the collapsed state, e.g., a right-pointing arrow */
+}
+
+.table-of-contents__span-dropdown.--toc-submenu-open {
+  /* Add styling for the expanded state, e.g., rotate the arrow icon */
+  transform: rotate(180deg);
+}
+
+ul.toc-submenu {
+  display: none;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-xxs);
+  padding-inline-start: 0;
+
+}
+
+li.toc-submenu__item {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: space-between;
+  border-top: 0.5px solid var( --border-component-secondary-dark);
+    padding-top: var(--spacing-xxs);
+}
+
+a.toc-submenu__link {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: left;
+  text-decoration: none;
+  text-wrap: nowrap;
+  color: var(--text-anchor-dark);
+  overflow: hidden;
+  font-weight: var(--font-weight-base);
+border: 1.6px solid transparent;
+  padding: 7px 0;
+  padding-left: 8.5%;
+  cursor: pointer;
+  transition: var(--transition-duration);
+}
+
+
+
+
+
+a.toc-submenu__link:hover {
+  color: var(--text-anchor-dark);
+  border: 1.6px solid var(--border-action-primary-dark-hover);
+  background-color: var(--action-item-hover);
+
+}
+
+.--has__toc-submenu a.toc-submenu__link.--toc-active {
+  color: var(--text-anchor-dark);
+  background-color: var(--action-item-hover);
+  border-left: 1.6px solid var(--border-action-primary-dark-hover);
+
+
+
+}
+
+a.toc-submenu__link.--toc-active {
+  color: var(--text-anchor-dark);
+  background-color:var(--action-tertiary-bg-active);
+  border-left: 1.6px solid var(--border-action-primary-dark);
+
+
+}
+a.table-of-contents__link.--toc-active .table-of-contents__span {
+  color: var(--text-anchor-dark);
+}
+
+
+
+.--has__toc-submenu:hover a.table-of-contents__link {
+  border-color: var(--border-action-primary-dark-hover);
+ 
+}
+
+
+li.table-of-contents__item:hover a.table-of-contents__link:hover {
+  border-color: var(--border-action-primary-dark-hover);
+
+}
+
+.--has__toc-submenu a.table-of-contents__link li.toc-submenu__item .--toc-active {
+  border-color: var(--border-action-primary-dark);
+}
+
+
+
+/* ----------------------------------------------------------------------
+   Mobile Table of Contents Styles (max-width: 1024px)
+---------------------------------------------------------------------- */
+@media only screen and (max-width: 1024px) {
+
+    /* 1. Base Container (The fixed button/title) */
+    .table-of-contents__container {
+      max-width: 198.7px;
+      width: 100%; 
+        float: none;
+        z-index: 60;
+       margin-top: 1.62%;
+    margin-right: 1.62%;
+        margin-left: -300px;
+            float: left;        
+        /* Remove desktop-only visual borders/shadows if they conflict */
+        border: none;
+        border-radius: 0; 
+
+    }
+        /* 1. APPLY WIDER WIDTH AND BORDERS TO THE MAIN CONTAINER WHEN OPEN */
+    .table-of-contents__container.toc-open {
+      /* Apply the requested dimensions and visual style to the container itself */
+
+      width: 218.44px; /*239.78px Added to ensure it respects the requested width */
+
+      border: 1px solid var(--border-component-secondary-dark);
+      border-radius: var(--border-radius-sm);
+    }
+    
+    .table-of-contents__span2toc p {
+  justify-content: left;
+
+}
+    /* Ensure the main toggle span (with the title) is styled as the button */
+    .table-of-contents__toogle {    
+        border: 1px solid var(--border-component-secondary-dark);
+        border-radius: var(--border-radius-sm);
+    }
+    /* NEW RULE: Remove border/radius from the toggle span when the menu is open. */
+    .table-of-contents__container.toc-open .table-of-contents__toogle {
+        border: none;
+        border-radius: 0; /* Use '0' instead of 'none' for border-radius */
+    }
+
+    /* 2. The Content Wrapper (The sliding menu) */
+    div.table-of-contents__wrap {      
+              border-top: none;          
+        /* Initial State (CLOSED): Move it off-screen to the left */
+        margin-left: -300px;        
+        /* Initial State (CLOSED): Move it off-screen to the left */    
+        transition: transform 0.3s ease-in-out; /* Add transition for animation */
+              z-index: 63;
+      }
+
+    /* 2. SLIDE THE CONTENT WRAPPER INTO VIEW */
+    .table-of-contents__container.toc-open div.table-of-contents__wrap {
+      margin-left: 0;
+}
+
+
+    /* State A: Closed Menu (Default) - Show OPEN icon, Hide CLOSE icon */
+    .table-of-contents__toogle-open {
+        display: flex; /* VISIBLE: Show the 'open' icon (e.g., keyboard_arrow_down) */
+    }
+
+
+    .table-of-contents__toogle-close {
+        display: none; /* INVISIBLE: Hide the 'close' icon (e.g., close) */
+    }
+
+/* State B: Open Menu (using the new 'is-open' class on the toggle element) */
+.table-of-contents__toogle.is-open .table-of-contents__toogle-open,
+.table-of-contents__toogle__link.is-open .table-of-contents__toogle-open {
+    display: none; /* INVISIBLE: Hide the OPEN icon */
+}
+
+.table-of-contents__toogle.is-open .table-of-contents__toogle-close,
+.table-of-contents__toogle__link.is-open .table-of-contents__toogle-close {
+    display: flex; /* VISIBLE: Show the CLOSE icon */
+}
+}
+
+@media only screen and (max-width:428px) {
+      /* 1. Base Container (The fixed button/title) */
+    .table-of-contents__container {
+    display: none;
+}
+}
+@media print {
+.table-of-contents__container {
+    display: none !important;
+  }
+}

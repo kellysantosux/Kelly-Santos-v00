@@ -1,0 +1,62 @@
+  .backButton {
+    display: flex;
+    width: 100%;
+    height:42.49px;
+    align-items: center;
+    justify-content: left    ;
+         background-color: transparent;
+         padding: 0 var(--padding-base);
+         border-bottom: 1px solid var(--border-action-primary-gray);
+
+}
+
+
+          .backButton a {
+    display: flex;
+    width:fit-content;
+    height: auto;
+    flex-direction: row;
+    text-decoration: none;
+    align-items: center;
+        padding: var(--spacing-xs) var(--spacing-sm);
+font-weight: var(--font-weight-medium);
+    padding-right:  var(--spacing-base);
+        cursor: pointer;       
+
+
+
+
+    justify-content: left;
+
+    border-radius: var(--spacing-xs);
+        border: 1.6px solid transparent;
+    transition: var(--transition-duration);
+}
+
+
+      
+.backButton a:hover {
+     border-color:  var(--border-action-primary-dark);
+         background-color: var(--action-tertiary-bg-light);
+}
+
+    .backButton i {
+justify-content: left;
+display: block;
+font-size: var(--font-size-base);
+align-items: center;
+}
+@media only screen and (max-width: 428px) {
+
+  .backButton{
+display: none;
+  }
+  }
+  @media print {
+.backButton-container{
+    display: none !important;
+  }
+}  
+
+
+    

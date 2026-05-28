@@ -1,0 +1,140 @@
+.contactMe-banner {
+  position: relative;
+  color: var(--white);
+  border-radius: var(--border-radius-xs);
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  padding: var(--padding-xl);
+  gap: var(--spacing-base);
+  margin-bottom: var(--margin-lg);
+  border: 1.6px solid var(--border-section-secondary-light);
+  background-color: var(--bg-section-secondary-light);
+}
+
+.contactMe-banner__copy::before {
+  content: "";
+  position: absolute;
+  width: 450px;
+  height: 490px;
+  right: -181px;
+  border-radius: 62%;
+  background: transparent;
+  pointer-events: none;
+}
+
+.contactMe-banner__copy {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  flex-direction: column;
+  gap: var(--spacing-base);
+
+}
+
+
+
+
+
+.contactMe-banner__copy h2 {
+  text-underline-offset: 4px;
+  font-weight: var(--font-weight-bold);
+  text-decoration-thickness: 2.62px;
+
+}
+
+.contactMe-banner__copy p,
+.contactMe-banner__copy .--s6 {
+  display: flex;
+  width: 92%;
+  height: fit-content;
+  flex-direction: column;
+
+
+}
+
+.contactMemail-banner {
+  display: flex;
+  width: fit-content;
+  height: auto;
+  align-items: center;
+  gap: var(--spacing-sm);
+  flex-direction: column;
+
+}
+
+
+
+.contactMe__media {
+  width: 408px;
+  height: 205px;
+  justify-self: end;
+  align-self: end;
+  z-index: 1;
+  background: url('/Assets/ux-banner.svg') right / contain no-repeat;
+}
+
+.--banner-description {
+  width: fit-content;
+
+  padding: var(--padding-xl);
+  margin: 0;
+
+}
+
+.--text-banner {
+  color: var(--text-main-light);
+
+}
+
+
+.contactMemail-banner a.primary-banner {
+  text-decoration: none;
+  display: flex;
+  width: 100%;
+  gap: var(--spacing-sm);
+  padding: 14px 20px;
+  color: var(--text-anchor-light);
+  font-weight: var(--font-weight-medium);
+  background-color: transparent;
+      border-radius: var(--border-radius-lg);
+  border: 1.6px solid var(--border-action-primary-light);
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  text-wrap: nowrap;
+  background-color: var( --action-primary-bg-dark);
+}
+
+.contactMemail-banner a.primary-banner:hover {
+  outline: 1.6px solid var(  --border-action-primary-dark-hover);
+  background-color:  var( --action-primary-bg-dark);
+
+  opacity: 0.8;
+
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+
+  .contactMe__media {
+    width: 162px;
+  }
+}
+
+@media print {
+  .contactMemail-banner {
+    -webkit-print-color-adjust: exact !important;
+    /* For Chrome, Safari, Edge */
+    print-color-adjust: exact !important;
+    /* Standard property */
+  }
+
+  .contactMemail-banner a.primary-banner {
+    font-size: var(--font-size-sm);
+
+  }
+}

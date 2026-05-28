@@ -1,0 +1,102 @@
+.contactMemail {  
+  display: flex;
+  width: fit-content;
+  height: auto;
+  align-items: center;
+  gap: var(--spacing-sm);
+  flex-direction: column;
+  
+}
+
+.contactMemail a.primary {
+  text-decoration: none;
+  display: flex;
+  width: 100%;
+  padding: 14px 20px;
+  color: var(--text-anchor-light);
+  font-weight: var(--font-weight-medium);
+  background-color: transparent;
+border: 1.6px solid var(--border-action-primary-dark);
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  text-wrap: nowrap;
+background-color: var(--action-primary-bg-dark);
+  border-radius: var(--border-radius-lg);
+  gap: var(--spacing-sm);
+}
+
+
+
+
+.contactMemail a.primary:hover {
+  outline: 1.6px solid var(--outline-action-primary-dark-hover);
+  background-color: var(--action-primary-bg-dark);
+border: 1.6px solid var(--border-action-primary-dark-hover);
+  color: var(--text-anchor-light);
+   opacity: 0.8;
+}
+
+.contactMemail a.secondary {
+  text-decoration: none;
+  display: flex;
+  width: 100%;
+  padding: 14px 20px;
+  color: var(--text-anchor-dark);
+  font-weight: var(--font-weight-medium);
+  background-color: transparent;
+  border: 1.6px solid var(--border-action-primary-dark-hover);
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  text-wrap: nowrap;
+  background-color: transparent;
+  border-radius: var(--border-radius-sm);
+    gap: var(--spacing-sm);
+}
+
+.contactMemail a.secondary:hover {
+  opacity: 0.8;
+  outline: 1.6px solid var(--outline-action-primary-dark-hover);
+  border: 1.6px solid var(--border-action-secondary-light-hover);
+  color: var(--text-anchor-light);
+}
+
+.contactMemail a.tertiary{
+  text-decoration: none;
+  display: flex;
+  width: 100%;
+  padding: 14px 20px;
+  color: var(--text-anchor-light);
+  background-color: transparent;
+  border: 1.6px solid var(--border-action-primary-light);
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  text-wrap: nowrap;
+  background-color: transparent;
+  border-radius: var(--border-radius-lg);
+    gap: var(--spacing-xs);
+}
+
+.contactMemail a.tertiary:hover {
+  border: 1.6px solid var(--border-action-primary-dark-hover);
+
+     background-color: var(--border-action-secondary-light);  
+     color:  var(--text-anchor-light);
+
+}
+
+
+@media print {
+    .contactMemail{
+        -webkit-print-color-adjust: exact !important; /* For Chrome, Safari, Edge */
+        print-color-adjust: exact !important;         /* Standard property */
+    }
+
+    .contactMemail a.primary {
+      font-size: var(--font-size-sm);
+
+    }
+}
+

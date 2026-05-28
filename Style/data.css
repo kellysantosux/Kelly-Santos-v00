@@ -1,0 +1,87 @@
+
+/* --- Project Details (Definition List) --- */
+.project-metadata {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Creates two columns for dt and dd */
+    gap: 15px 10px;
+    padding: 15px;
+    border: 1px solid var(--border-component-secondary-light);
+    border-radius: var(--border-radius-xs);
+    background-color: var(--bg-component-secondary-light); /* Light background for the metadata box */
+}
+
+.project-metadata dt {
+  font-weight: var(--font-weight-medium);
+    color: var(--text-main-primary-dark);
+}
+
+.project-metadata dd {
+    margin-left: 0; /* Remove default dd indentation */
+}
+
+/* --- UX Designer Info within Project Details --- */
+.designer-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.designer-info p {
+    margin: 0; /* Remove default paragraph margin */
+    font-weight: bold;
+}
+
+
+
+
+/* --- Responsibilities List --- */
+ul.general-list {
+    
+    list-style-type:none;
+    margin-block-start:0;
+    margin-block-end:0;
+    padding-inline-start: 0;
+         display:flex;
+         width: 100%;
+         height:fit-content ;
+         flex-direction: column;
+    padding: 0 var(paddin-base);
+}
+
+.general-list li:before {
+    content:  "• "; /* Custom bee bullet point! */
+    position: absolute;
+    left: 0;
+    color: var(--text-main-primary-dark);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-bold);
+}
+
+.general-list li {
+    padding: 4px 4px 4px 16px; /* Spacing and room for custom bullet */
+       position: relative;
+
+}
+
+
+/* --- Media Query for smaller screens --- */
+@media (max-width: 600px) {
+
+.project-metadata dd {
+    align-content:flex-end; /* Remove default dd indentation */
+}
+
+    .designer-info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media print {
+ .project-metadata {
+        -webkit-print-color-adjust: exact !important; /* For Chrome, Safari, Edge */
+        print-color-adjust: exact !important;         /* Standard property */
+          break-inside: avoid;
+    }
+
+}

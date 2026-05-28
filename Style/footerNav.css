@@ -1,0 +1,130 @@
+
+.footerNav > nav {
+  display: block;
+  width: 100%;
+  height: auto;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.footerNav > nav > ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: var(--spacing-xs);
+  gap: var(--spacing-xs);
+
+  border-radius: var(--border-radius-xs);
+    margin-right: 64px;
+
+}
+
+.footerNav > nav > ul > li {
+  display: flex;
+  margin: 0;
+  width: fit-content;
+  height: fit-content;
+  justify-content: center;
+  align-items: center;
+  background-color:  transparent;
+  border-radius: var(--border-radius-xs);
+
+}
+
+/* Corrected a tag selector */
+.footerNav > nav > ul > li > a {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-anchor-dark);
+  text-align: center;
+  text-decoration: none;
+ 
+  font-weight: var(--font-weight-base);
+  padding: var(--spacing-sm);
+  border-radius: var(--border-radius-xs);
+  border: 1.6px solid transparent;
+  gap: var(--spacing-xs);  ;
+  white-space: nowrap; /* Corrected text-wrap to white-space */
+
+}
+
+.footerNav > nav > ul > li > a > i {
+  display: block;
+  width: fit-content;
+  height: fit-content;
+  color: var( --icon-dark);
+  text-align: center;
+  text-decoration: none;
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-base);
+}
+
+/* Corrected hover state selector */
+.footerNav > nav > ul > li > a:hover {
+  border: 1.6px solid var(--border-action-primary-dark-hover);
+}
+
+/* Corrected active class selector (the class is on the a tag itself) 
+.footerNav > nav > ul > li > a.active {
+  background-color: transparent;
+  color: transparent;
+}
+
+.footerNav > nav > ul > li > a.active > i {
+  color: transparent;
+}
+
+ */
+/* Corrected menu class selector (the class is on the a tag) */
+.footerNav > nav > ul > li > a.menu {
+  display: none;
+  align-items: center;
+
+}
+
+@media only screen and (max-width: 600px) {
+
+  footer>.footerNav {
+    max-width: 1253.11px;
+    width: 96.76%;
+    padding-inline: var(--padding-base);
+  }
+
+
+  .footerNav>nav>ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .footerNav > nav > ul > li {
+  width: 100%;
+}
+
+
+/* Corrected a tag selector */
+.footerNav > nav > ul > li > a {
+    justify-content: left;
+
+
+}
+
+}
+
+@media only screen and (max-width: 428px) {
+
+  footer>.footerNav {
+   display: none;
+  }
+}

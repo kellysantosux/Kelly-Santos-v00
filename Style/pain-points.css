@@ -1,0 +1,74 @@
+
+.pain-pointsCards {
+    text-decoration: none;
+    display: flex;
+    width: fit-content;
+    height: auto;
+    flex-direction:column-reverse;
+    align-items: flex-start;
+    justify-content: left;
+    text-align: left;
+    background-color: var(--bg-component-primary-light);
+    color: var(--text-main-primary-dark);
+    border-radius: var(--border-radius-xs);
+     overflow: hidden;
+    box-shadow: var(--box-shadow);
+     padding: var(--spacing-base);
+    gap: var(--spacing-base); 
+}
+
+.pain-points-img {
+    display: block;
+    width: 62%;
+    height: auto;
+    border-radius: var(--border-radius-xs);
+    box-shadow: var(--box-shadow);
+    overflow: hidden;
+
+}
+.pain-points-img img{
+width: 100%;
+object-fit: cover;
+    border: 4px solid var(--border-component-primary-light);
+}
+
+
+.--background-orange {
+
+    background-color: #FA5715;}
+    .--background-teal {
+    background-color: #0C5F61;}
+    .--background-green {
+    background-color: #148083;}
+    .--background-pink {
+    background-color: #C32148;}
+
+
+
+ .description {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    justify-content: left;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+    text-align: left;
+    background-color: var(--bg-component-primary-light);
+        padding: var(--spacing-base);
+    border-radius: var(--border-radius-xs);    
+    color: var(--text-main-primary-dark);
+}
+
+
+
+
+
+@media only screen and (max-width: 380px) {
+
+    .pain-pointsCards {
+
+        padding: 0;
+
+    }
+}

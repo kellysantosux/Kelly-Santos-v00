@@ -1,0 +1,32 @@
+@media print {
+.containerHeader, .--containerHeader_study-case, .container_breadcrumb, div.table-of-contents__container,.bottomNav, footer{
+    display: none;
+
+}
+main .container_breadcrumb{
+    display: none;
+
+}
+
+.--body__portfolio {
+    background-color: transparent;
+}
+
+body article {
+    background-color: transparent;
+}
+
+
+body footer{
+    display: none;
+
+}
+article .backButton{
+        display: none;
+
+}
+
+main {
+        margin-top: 0;
+}
+}

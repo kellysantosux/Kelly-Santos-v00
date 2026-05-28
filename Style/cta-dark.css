@@ -1,0 +1,101 @@
+.container_link-button {
+  display: flex;
+  width:100%;
+  height: fit-content;
+  align-items: center;
+  gap: var(--spacing-base);
+  justify-content: left;
+  margin: var(--margin-base) 0;
+
+}
+
+.container_link-button a.primary {
+  text-decoration: none;
+  display: flex;
+  width: fit-content;
+  padding: 8px 16px;
+  color: var(--text-anchor-light);
+  font-weight: var(--font-weight-medium);
+   border: 1.6px solid var(--border-action-primary-dark);
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  text-wrap: nowrap;
+  background-color: var(--action-primary-bg-dark);
+  border-radius: var(--border-radius-xs);
+  outline-offset:transparent;  
+}
+
+
+
+
+.container_link-button a.primary:hover {
+opacity: 0.8;
+  outline-offset:1.6px solid var(--outline-offset-action-primary-dark-hover);
+  background-color: var(--action-primary-bg-dark);
+
+  
+}
+
+.container_link-button a.secondary {
+  text-decoration: none;
+  display: flex;
+  width: fit-content;
+  padding: 8px 16px;
+  color: var(--text-anchor-dark);
+  font-weight: var(--font-weight-medium);
+  background-color: transparent;
+  border: 1.6px solid var(--border-action-primary-dark);
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  text-wrap: nowrap;
+  background-color: transparent;
+  border-radius: var(--border-radius-xs);
+}
+
+.container_link-button a.secondary:hover {
+
+  font-weight: var(--font-weight-medium   );
+  background-color: var(--action-item-hover);
+
+
+ 
+}
+
+.container_close {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  justify-content: right;
+  align-items: center;
+}
+
+.close {
+  width: auto;
+  margin: 8px 8px;
+  border: 1px solid var(--border-action-primary-light);
+  background-color: var(--action-item-primary-light);
+  padding: 8px 16px;
+  color: var(--text-main-dark);
+  font-weight: var(--font-weight-base);
+}
+
+
+.close:hover {
+    background-color: var(--action-item-hover);
+  outline: 1px solid var(--outline-action-secondary-dark-hover);
+  color: var(--text-main-light);
+  font-weight: var(--font-weight-medium);
+
+}
+
+  @media only screen and (max-width: 428px) {
+
+    .container_link-button {
+      gap: var(--spacing-sm);
+    }
+    .container_link-button a.primary, .container_link-button a.secondary {
+   width: 50%;
+    }
+  }

@@ -1,0 +1,478 @@
+/* Only hide the header search bar when on the search results body */
+.body_searchresults .header_container .search-wrapper {
+    display: none;
+}
+.results {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 1dvh;
+  justify-items: center;
+  align-items: center;
+  padding: var(--padding-lg) var(--padding-base);
+  border: 1px solid var(--border-section-secondary-light);
+  background-color: var(--bg-section-primary-light);
+  gap: var(--spacing-base);
+  border-radius: var(--border-radius-xs);
+    text-align: left;
+
+    margin: 0 auto;
+}
+
+.search-results-no-results{
+  display: flex;
+  width: 100%;
+  height: 220px;
+  justify-content: left;
+  align-items: start;
+ 
+
+
+}
+.search-results-characters{
+  display: flex;
+  width: 100%;
+  height: 220px;
+  justify-content: left;
+  align-items: start;}
+
+.search-results-characters>p{
+
+color: var(--medium-light-shade-red);}
+.result-item h3 a:hover {
+    text-decoration: underline;
+}
+
+.--hide{
+  display: none;
+}
+
+.search-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 608px;
+  height: fit-content;
+  justify-items: center;
+  align-items: center;
+  position: relative;
+}
+
+
+.search-container {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  align-items: center;
+  /* Removed justify-items: center; as it's not applicable to flex */
+  border-radius: var(--border-radius-lg);
+  /* cite: 2, 34 */
+  border: 1px solid var(--border-component-primary-dark);
+  position: relative;
+  /* cite: 2, 35 */
+  background-color: (--action-primary-bg-dark);
+  appearance: textfield;
+
+}
+
+#search-input {
+  padding: 10px 40px 10px 16px;
+  /* cite: 3, 36 */
+  max-width: 608px;
+  /* cite: 4, 36 */
+  min-width: 220px;
+  /* cite: 4, 36 */
+  width: 100%;
+  /* cite: 4, 36 */
+  height: fit-content;
+  /* cite: 4, 37 */
+  border-radius: var(--spacing-lg);
+  /* cite: 5, 37 */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  border-style: none;
+  border: 2px solid var(--border-component-primary-dark);
+  appearance: auto;
+  /* ARIA: Ensure this element has role="combobox" and aria-controls set via JS */
+}
+
+#search-input:focus {
+
+  background-color: var( --action-tertiary-bg-light);
+  /* IMPROVED: Prominent, accessible focus indicator (WCAG 2.1) */
+  max-width: 608px;
+  /* cite: 17, 48 */
+}
+
+.search-button {
+  display: flex;
+  /* cite: 9, 41 */
+  width: fit-content;
+  /* cite: 9, 41 */
+  height: 100%;
+  /* IMPROVED: Fill the container height */
+  /* height: 39.33px; was fixed and removed */
+  position: absolute;
+  /* cite: 9, 42 */
+  top: 0;
+  /* cite: 9, 42 */
+  right: 0px;
+  /* cite: 9, 42 */
+  padding: 10px;
+  /* cite: 10, 43 */
+  background-color: var(--action-primary-bg-dark);
+  /* cite: 11, 43 */
+ color: var(--text-main-light);
+  /* cite: 11, 43 */
+  border: none;
+  cursor: pointer;
+  /* Use a radius that matches the container's radius on the right side */
+  border-radius: var(--border-radius-lg);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+
+/* IMPROVED: Add a subtle lift on hover for better feedback */
+.search-button:hover, i:hover {
+opacity: 0.8;
+
+}
+
+
+.search-container .search-button i {
+  font-size: var(--font-size-h6);
+}
+
+/* --- Dropdown Styling --- */
+
+
+.recent-searches-dropdown {
+  display: flex;
+  /* cite: 15, 47 */
+  position: absolute;
+  /* cite: 15, 47 */
+  top: 100%;
+  /* cite: 15, 48 */
+  right: 0;
+  /* cite: 16, 48 */
+  width: 297.06px;
+  /* cite: 17, 48 */
+  /* IMPROVED: Use negative margin to visually overlap the search bar's border perfectly */
+  margin-top: -1px;
+  padding-top: 20px;
+  /* cite: 18, 51 */
+  list-style: none;
+  /* cite: 19, 51 */
+  padding-left: 0;
+  /* cite: 20, 52 */
+  background-color:var(--action-primary-bg-x-light);
+  border-radius: 0 0 var(--border-radius-xs) var(--border-radius-xs);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  /* cite: 21, 53 */
+  z-index: 9999;
+  /* cite: 22, 54 */
+  /* ARIA: Ensure this element has role="listbox" via JS */
+}
+
+
+
+.recent-searches-dropdown::before {
+  /* Style for the "Recent Searches" heading */
+  display: flex;
+  /* cite: 15, 47 */
+  position: absolute;
+  /* cite: 15, 47 */
+  top: 100%;
+  /* cite: 15, 48 */
+  right: 0;
+  /* cite: 16, 48 */
+  width: 297.06px;
+  /* cite: 17, 48 */
+  /* IMPROVED: Use negative margin to visually overlap the search bar's border perfectly */
+  margin-top: -1px;
+  padding-top: 20px;
+  /* cite: 18, 51 */
+  list-style: none;
+  /* cite: 19, 51 */
+  padding-left: 0;
+  /* cite: 20, 52 */
+  background-color:var(--action-primary-bg-x-light);
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  /* cite: 21, 53 */
+  z-index: 9999;
+  /* cite: 22, 54 */
+  /* ARIA: Ensure this element has role="listbox" via JS */
+}
+
+.recent-searches-dropdown li {
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.5;
+}
+
+.ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+}
+
+ul.search-results {
+  display: flex;
+  max-width: 608px;
+  /* cite: 17, 48 */
+  width: 100%;
+ min-height: 260px;
+  /* cite: 17, 48 */
+  flex-direction: column;
+
+  padding:  var(--padding-lg) ;
+
+  /* Ensure the dropdown doesn't exceed the container width */
+  gap: var(--spacing-sm);
+  border-radius: var(--border-radius-xs);
+  background-color: var(--bg-component-tertiary-light);
+
+  /* cite: 21, 53 */
+  overflow: hidden;
+
+  border: 1px solid var( --border-component-secondary-dark);
+}
+
+.search-results li {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+}
+.search-results li p  {
+  color: var(--text-highlighted-red);
+    font-weight: var(--font-weight-medium);
+}
+
+.search-results a p {
+  font-weight: var(--font-weight-medium);
+  color: var(--text-anchor-dark);
+}
+
+.search-results-card {
+
+  display: flex;
+  width: 100%;
+  background-color: var(--action-primary-bg-gray);
+  padding: var(--padding-base);
+  flex-direction: column;
+  border-radius: var(--border-radius-xs);
+  border: 1px solid var(--border-component-secondary-dark);
+
+}
+
+.search-results-card:hover {
+
+  cursor: pointer;
+
+  border: 1px solid var(--border-component-primary-dark);
+  box-shadow: var(--box-shadow-hover);
+}
+
+.leading_arrow {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+
+
+}
+
+.leading_arrow i {
+  display: flex;
+  width: fit-content;
+
+
+}
+
+#extract-text {
+  display: flex;
+  width: 100%;
+  width: fit-content;
+  text-wrap: nowrap;
+  padding-inline: 4px;
+
+  color: var(--medium-dark-shade-gray);
+}
+
+.location {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  padding: 0 4px;
+  gap: 4px;
+  background-color: var( --bg-component-tertiary-light);
+  border-radius: var(--border-radius-xxs);
+  margin-top: 12px;
+
+
+}
+
+.location p,
+p.separator {
+  text-wrap: nowrap;
+  width: fit-content;
+  font-weight: var(--font-weight-medium);
+  color: var(--dark-shade-gray);
+
+}
+
+.recent-searches-dropdown .search-results .result-snippet {
+  color: var(--dark-shade-gray);
+  font-size: 0.9rem;
+}
+
+span.highlight-term {
+  display: flex;
+  width: fit-content;
+  padding-inline: 4px;
+  color: var(--medium-dark-shade-cyan-blue);
+  font-weight: var(--font-weight-bold);
+}
+
+
+
+/* CSS to highlight the matched search term in the snippet */
+.recent-searches-dropdown .search-results .result-snippet .highlight-term {
+  background-color: var(--brown-500);
+  /* Choose a visible highlight color */
+  color: var(--text-main-dark);
+  /* Ensure text remains readable */
+  font-weight: bold;
+  padding: 1px 3px;
+  border-radius: 3px;
+}
+
+/* Ensure the selected item remains clearly visible during keyboard navigation */
+.recent-searches-dropdown li.selected {
+  background-color: var(--very-light-shade-gray);
+
+    background-color:red;
+  /* Light grey highlight */
+}
+
+.recent-searches-dropdown li.selected,
+.recent-searches-dropdown li:hover {
+  background-color: var(--bg-component-tertiary-brown);
+}
+
+.recent-searches-dropdown .recent-header {
+  font-weight: 600;
+  padding: 8px 12px;
+  color: var(--text-main-dark);
+}
+
+.recent-searches-dropdown li:hover {
+  background-color: var(--action-primary-bg-gray);
+  /* Light gray background on hover */
+}
+
+/* Style for the highlighted item (the first one) */
+.recent-searches-dropdown .highlight {
+  background-color: var(--bg-component-tertiary-brown);
+  font-weight: bold;
+  /* Optional: to make it stand out more */
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .body_searchresults he .menu2__container {
+        display: flex;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 9999;
+        overflow: hidden;
+        background-color: var(--action-tertiary-bg-light);
+        border: 1px solid transparent;
+        border-radius: var(--border-radius-xxs);
+   
+    }
+}
+@media only screen and (max-width: 1280px) {
+
+  .search-container {
+    margin-left: auto;
+  }
+
+
+
+}
+
+@media only screen and (max-width: 600px) {
+
+  .search-wrapper {
+
+    width: 100%;
+
+
+  }
+
+
+
+
+}
+@media only screen and (max-width: 428px) {
+
+  .search-container {
+    width: 96.76%;
+    margin: auto;
+    border: 1.6px solid var(--very-light-shade-blue-magenta);
+    /* cite: 2, 34 */
+
+  }
+
+  #search-input {
+    width: 100%;
+    min-width: 0;
+    padding-top: 8px;
+    /* Reduce horizontal padding on small screens */
+
+    padding-bottom: 8px;
+    /* Reduce horizontal padding on small screens */
+  }
+
+  #search-input:focus {
+    width: 426px;
+    width: 100%;
+
+    background-color: var(--bg-component-secondary-dark);
+    /* IMPROVED: Prominent, accessible focus indicator (WCAG 2.1) */
+
+  }
+
+  /* Make sure the search button remains inside the container on small screens */
+  .search-button {
+    position: absolute;
+    right: 0px;
+    outline: 0;
+  }
+
+
+  .recent-searches-dropdown {
+    top: 100%;
+    /* cite: 15, 48 */
+    right: auto;
+    left: 18.08px;
+    /* Align to the left edge of the container on small screens */
+    padding-inline: 18.08px;
+    /* cite: 18, 51 */
+    width: 371.11px;
+    /* Ensure the dropdown doesn't exceed the container width */
+    margin-top: var(--margin-base);
+    border-radius: var(--border-radius-xs);
+
+
+  }
+}

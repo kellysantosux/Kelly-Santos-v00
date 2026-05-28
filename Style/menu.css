@@ -1,0 +1,176 @@
+.rightContainer {
+  display: flex;
+  width: 100%;
+  justify-content: right;
+  align-items: center;
+  gap: var(--spacing-lg);
+  /* Make the rightContainer a positioning context for absolutely positioned children */
+  position: relative;
+}
+
+
+
+ i .material-icons{
+    font-size: var(--font-size-sm);
+}
+
+.--w-fit {
+  width: fit-content;
+}
+
+ .rightContainer > nav {
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.--no-margin {
+ margin-bottom: 0;}
+
+
+ .rightContainer-w-fit > nav {
+  display: flex;
+  width: 100%;
+  height:fit-content;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+.rightContainer > nav > ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--spacing-xs);
+  border-radius: var(--border-radius-xs);
+
+}
+
+.rightContainer > nav > ul > li {
+  display: flex;
+  margin: 0;
+  width: fit-content;
+  height: fit-content;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--border-radius-xs);
+
+}
+
+/* Corrected a tag selector */
+.rightContainer > nav > ul > li > a {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-anchor-dark);
+  text-align: center;
+  text-decoration: none;
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-base);
+  padding: var(--spacing-sm);
+  border-radius: var(--border-radius-xs);
+  border: 1.6px solid transparent;
+  gap: var(--spacing-sm);
+  white-space: nowrap; /* Corrected text-wrap to white-space */
+
+}
+
+/* Corrected a tag selector */
+.rightContainer > nav > ul.containerMainmenu  > li.containerMainmenuItem > a .menu{
+  display: none;
+
+}
+
+.rightContainer > nav > ul > li > a > i {
+  display: block;
+  width: fit-content;
+  height: fit-content;
+  color: var(--icon-dark);
+  text-align: center;
+  text-decoration: none;
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-base);
+}
+
+/* Corrected hover state selector */
+.rightContainer > nav > ul > li > a:hover {
+  color: var(--text-anchor-dark);
+  border: 1.6px solid var(--border-action-primary-dark);
+
+}
+
+/* Corrected active class selector (the class is on the a tag itself) */
+.rightContainer > nav > ul > li > a.active {
+  background-color: var(--action-primary-bg-active);
+  color: var(--text-anchor-light);
+}
+
+.rightContainer > nav > ul > li > a.active > i {
+  color: var(--icon-light);
+   font-size: var(--font-size-sm);
+}
+
+.rightContainer > nav > ul > li > a.active > i .material-icons {
+ 
+   font-size: var(--font-size-sm);
+}
+
+@media only screen and (max-width: 1280px) {
+ .rightContainer {    
+    width: fit-content;
+    justify-content: right;
+    flex-direction: column;
+    gap: var(--spacing-base);
+ 
+
+
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+.rightContainer {
+    min-height: 40.67px;
+    height: 100%;
+            width: 100%;
+    flex-direction: row-reverse;
+    align-items: center;
+
+  }
+
+.rightContainer > nav {
+display: none;
+}
+
+
+.rightContainer > nav > ul > li > a {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 428px) {
+
+  .rightContainer > nav {
+    display: none;
+  }
+}
+
+@media print {
+.rightContainer {
+    display: none !important;
+  }
+}

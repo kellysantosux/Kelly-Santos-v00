@@ -1,0 +1,100 @@
+ main {
+    display: flex;
+    width: 96.76%;
+    height: auto;  
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0; /* Important to remove default browser margins */
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+       gap: var(--spacing-base);
+   padding-bottom: 44px;
+ 
+     z-index: 1; /* Give the sticky element a z-index */
+     position: relative; /* Crucial: Must be positioned to use z-index effectively */
+  margin-top:var(--margin-base) ;
+    }
+
+     .pageTitle{
+    display: flex;  
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    gap: var(--spacing-xs) ;
+    padding-left: var(--spacing-base);
+   
+    }
+
+    .pageTitle > a {
+    display: flex;
+    width: fit-content;
+    height: auto;
+    flex-direction: row;
+    text-decoration: none;
+    font-size: var(--font-size-h4);
+    font-weight: var(--font-weight-bold);
+    padding: var(--spacing-sm) var(--spacing-base) ;
+    padding-left: var(--spacing-base);
+    align-items: center;
+    gap: var(--spacing-xs) ; 
+    border: 3px solid transparent;
+    border-radius: var(--border-radius-lg);
+  
+}
+
+.pageTitle> i{
+display: flex;
+    width:fit-content;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    color: var(--icon-dark);
+    margin: 0;
+    padding: 0;
+}
+
+
+.pageTitle> a > .material-icons{
+    font-weight: 900;
+     font-size:var(--font-size-h4);  /* Preferred icon size */
+    margin-top: var(--spacing-xs)   ; 
+    margin: 0;
+    display: flex;
+    width:fit-content;
+}
+
+    @media only screen and (max-width: 1024px) {
+
+    .pageTitle > a {
+font-size: var(--font-size-h5);
+  }
+    }
+
+    
+    @media only screen and (max-width: 428px) {
+      main{
+           padding-bottom: 98px;
+               gap: var(--spacing-sm);
+            margin-top: 119px;
+      }
+
+    .pageTitle > a {
+font-size: var(--font-size-h6);
+  }
+    }
+
+    @media only screen and (max-width: 380px) {
+
+     main .pageTitle {
+    padding-left:0;
+  }
+}
+@media print {
+main {
+margin-top:var(--margin-xxs);
+  }
+}

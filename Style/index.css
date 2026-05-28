@@ -1,0 +1,14 @@
+.index_content{
+    display: flex;
+    max-width: 1253.11px;
+    width: 100%;
+    height: fit-content;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+    border-radius: var(--spacing-xs);
+    /* padding: 0 1.62%; */
+    /* background-color: var(--main-background-color); */
+    counter-reset: pagination;
+    background-color: var(--main-background-color);
+}

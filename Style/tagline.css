@@ -1,0 +1,234 @@
+
+.tagline {
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  text-align: left;
+  color: var(--very-dark-shade-blue);
+    padding: var(--padding-xl);
+  border-radius: var(--border-radius-xs);
+  box-shadow: 0 1px 4px 0px rgba(5, 8, 34, 0.2);
+       
+background-color: var(--bg-banners-secondary-light);
+  background-image: 
+    radial-gradient(at 0% 0%, rgba(45, 136, 255, 0.7), transparent 50%), 
+    radial-gradient(at 50% 0%, rgba(180, 220, 220, 0.7), transparent 50%), 
+    radial-gradient(at 100% 0%, rgba(245, 104, 32, 0.7), transparent 50%), 
+    radial-gradient(at 0% 50%, rgba(210, 187, 0, 0.6), transparent 92%), 
+    radial-gradient(at 50% 50%, rgba(248, 164, 163, 0.7), transparent 50%), 
+    radial-gradient(at 100% 50%, rgba(254, 207, 239, 0.7), transparent 50%), 
+    radial-gradient(at 0% 100%, rgba(255, 251, 213, 0.7), transparent 50%), 
+    radial-gradient(at 100% 100%, rgba(255, 45, 52, 0.6), transparent 92%);
+/*
+
+  background-size: 200% 200%;
+  animation: moveMesh 6s linear infinite alternate;
+    background-blend-mode: normal, normal, normal, normal, normal;
+    will-change: transform, opacity;
+    contain: paint;*/
+
+}
+
+
+/*@keyframes moveMesh {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 38%;
+  }
+  100% {
+    background-position: 38% 100%;
+  }
+*/
+
+
+.taglineGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  width: 100%;
+  height: fit-content;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+ gap: var(--spacing-lg);
+   background-color: var(--bg-banners-primary-light);
+       border-radius: var(--border-radius-xs);
+
+   background-color: transparent;
+
+
+}
+
+.taglineDestak {
+  text-decoration: underline var(--underline-red);
+  text-underline-offset: 4px;
+  font-weight: var(--font-weight-medium);
+  text-decoration-thickness: 2.62px;
+
+}
+
+
+
+.taglineGrid>.description {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content:center;
+  text-align: left;
+  padding: var(--padding-xxl);
+  border-radius: var(--border-radius-xs);
+  border: 2px solid transparent;
+  color: var(--very-dark-shade-blue);
+    background-color: var(--bg-cards-primary-light);
+
+}
+
+
+
+.taglineGrid>.description>p{
+      padding: var(--padding-xxl) 0;
+
+      color: var( --text-main-dark);
+}
+
+
+.taglineGrid>.heroImage {
+  display: flex;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-xxl);
+      background-color: var(--bg-cards-primary-light);
+border-radius: var(--border-radius-xs);
+
+
+}
+
+.taglineGrid .heroImage img {
+  width: 100%;
+  object-fit: cover;
+
+}
+
+.heroImage2 {
+  display: none;
+}
+
+@media only screen and (max-width: 728px) {
+
+  .taglineGrid>.heroImage {
+    display: none;
+  }
+
+ .taglineGrid>.heroImage2 {
+  display: flex;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-xxl);
+      background-color: var(--bg-cards-primary-light);
+border-radius: var(--border-radius-xs);
+}
+
+
+  .taglineGrid>.description {
+
+    width: 100%;
+    height: fit-content;
+  }
+
+  .logo {
+    height: 83%;
+    object-fit: cover;
+
+  }
+
+ .taglineGrid .heroImage2  img {
+    width:100%;
+    height: auto;
+    object-fit: cover;
+
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+
+
+  .taglineGrid>.description {
+    height: 100%;
+  }
+
+
+}
+
+
+@media only screen and (max-width: 505px) {
+
+  .taglineGrid>.heroImage {
+    display: flex;
+  }
+
+ .taglineGrid>.heroImage2 {
+  display: none;
+
+}
+
+.taglineGrid {
+
+    gap: var(--spacing-base);
+
+}
+
+
+
+}
+
+
+
+@media only screen and (max-width: 428px) {
+  
+.taglineGrid {
+
+    gap: var(--spacing-base);
+
+}
+
+.tagline {
+  margin-top:var(--margin-xl);
+         box-shadow: none;
+}
+  .taglineGrid>.heroImage {
+    display: none;
+  }
+
+ .taglineGrid>.heroImage2 {
+  display: flex;
+
+}
+
+  .body_homepage .portfolio_section {
+    display: none;
+
+  }
+
+  .body_homepage .aboutMe_section {
+    display: none;
+
+  }
+
+  .body_homepage .contactMe_section {
+    display: none;
+
+  }
+
+}

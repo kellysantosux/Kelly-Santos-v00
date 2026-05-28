@@ -1,0 +1,30 @@
+
+ ::-webkit-scrollbar-track {
+     background-color: var( --bg-component-primary-light);
+ }
+
+ ::-webkit-scrollbar-thumb {
+     background-color: var(--surface-component-dark);
+     border-radius: 100vw;
+     border: 2px solid var( --border-component-primary-light);
+ }
+
+ li.table-of-contents__wrap, ul.table-of-contents__list::-webkit-scrollbar-thumb {
+    background-color: transparent;
+
+ }
+
+
+
+@media only screen and (max-width: 900px) {
+
+     li.table-of-contents__wrap:hover, ul.table-of-contents__list:hover::-webkit-scrollbar {
+     width: 0.720rem;
+ }
+
+ li.table-of-contents__wrap:hover, ul.table-of-contents__list:hover::-webkit-scrollbar-thumb {
+    background-color: var(--surface-component-dark);
+       border: 2px solid var( --border-component-primary-light);
+ }
+ 
+}

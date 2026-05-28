@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+/**
+ * ==========================================================================
+ * DESIGN SYSTEM TOKENS
+ * Project: Kelly Santos Portfolio
+ * ==========================================================================
+ */
+
+:root {
+/* --- Primitives (Base Palette) --- */
+
+/* Neutrals & Grays */
+--gray-50: #FAFAFA;     /*ultra-light-neutral-gray, very-light-shade-blue-magenta, very-light-shade-gray */
+--gray-100: #FBF8F9;    /*very-light-shade-red */
+--gray-200: #E4E5EB;    /*light-shade-blue-magenta */
+--gray-300: #D2D6D1;    /*light-shade-green-cyan */
+--gray-500: #636469;    /*medium-dark-shade-gray */
+--gray-800: #2F303D;    /*dark-shade-gray */
+--gray-900: #0E0F19;    /*dark-desaturate-blue-gray */
+--white: #FFFFFF;
+
+/* Blues */
+--blue-15: #ebebef;    
+--blue-25: #f4f4f6;     /*very-light-shade-blue-magenta-darken */
+--blue-50: #e6e8f4;     /*light-shade-blue */
+--blue-100: #efeff6;    /*very-light-shade-blue */
+
+--blue-200: hsl(218, 29%, 95%);    /*very-light-shade-cyan-blue */
+--blue-300: #C5C7D3;    /*light-shade-cyan-blue */
+--blue-400: #DADCEB;    /*very-light-shade-orange */
+--blue-500: #4D57B2;    /*medium-dark-shade-cyan-blue */
+--blue-600: #196CA9;    /*shade-cyan-blue */
+--blue-900: #282B43;    /*deep-near-black-shade-navy-blue, very-dark-shade-blue */
+
+/* Browns / Warms */
+--brown-50: #F0EAE5;    /*very-light-shade-brown */
+--brown-200: #E5E2E1;   /*very-light-shade-red-orange */
+--brown-500: #FFB24D;   /*medium-light-shade-brown */
+
+/* Greens */
+--green-50: #E8F2EC;    /*very-light-shade-green-cyan */
+--green-100: #F6F7F3;   /*light-shade-yellow-green */
+
+/* Reds */
+--red-500: #FB5061;     /*medium-light-shade-red */
+
+
+  /* ------------------------------------------------------------------------
+     2. UNIFIED SEMANTIC VARIABLES
+     ------------------------------------------------------------------------ */
+
+  /* Layout & Page Canvas Backdrops */
+
+  /* Body background */
+  --bg-body-dark: var(--blue-900);            
+  --bg-body-light: var(--gray-50);            
+  --bg-body-mobile: var(--blue-50);    
+
+  /* Main background */
+  --bg-main-dark: var(--blue-900);            
+  --bg-main-light: var(--gray-50);            
+  --bg-main-mobile: var(--blue-50);    
+
+  /* Section background */
+  --bg-section-primary-dark: var(--blue-900);            
+  --bg-section-primary-light: var(--gray-50);            
+  --bg-section-secondary-light: var(--blue-200); 
+
+    /* Article background */
+  --bg-article-primary-dark: var(--blue-900);            
+  --bg-article-primary-light: var(--gray-50);            
+  --bg-article-secondary-light: var(--blue-200); 
+  
+  /* div background */
+  --bg-div-primary-dark: var(--blue-900);            
+  --bg-div-primary-light: var(--gray-50);            
+
+  /* Banner background */
+  --bg-banners-primary-dark: var(--blue-900);            
+  --bg-banners-primary-light: var(--gray-50); 
+  --bg-banners-secondary-dark: var(--blue-900);            
+  --bg-banners-secondary-light: var(--blue-200);   
+  --bg-banners-primary-x-light: var(--white);   
+  --bg-banners-tertiary-light: var(--gray-200); 
+
+  /* cards background */
+  --bg-cards-primary-dark: var(--blue-900);            
+  --bg-cards-primary-light: var(--gray-50); 
+    --bg-cards-primary-x-light: var(--white); 
+  --bg-cards-secondary-dark: var(--blue-900);            
+  --bg-cards-secondary-light: var(--blue-200);   
+ 
+  /* navigation */
+  --bg-header: var(--gray-50); 
+  --bg-bottom-navigation-light: var(--gray-50); 
+  --bg-footer-light: var(--gray-50);   
+  --bg-footer-medium: var(--blue-300);    
+  --bg-footer-dark: var(--gray-900); 
+
+  /*breadcrumbs */             
+  --bg-navigation-primary-light: var(--gray-200);              
+  --bg-navigation-secondary-light: var(--blue-200);  
+
+  /* icons */
+  --icon-dark: var(--blue-900);            
+  --icon-light: var(--gray-50);           
+  --icon-gray: var(--gray-500);           
+
+  /* component*/
+  --surface-component-light: var(--gray-50);           
+  --surface-component-dark: var(--blue-900);          
+  --component-dark: var(--blue-900);          
+  --bg-component-primary-light: var(--gray-50); 
+  --bg-component-primary-green: var(--gray-300); 
+  --component-dark-secondary: var(--blue-600); 
+  --bg-component-secondary-green: var(--gray-100); 
+  --bg-component-secondary-light: var(--blue-25); 
+   --bg-component-secondary-dark: var(--blue-300); 
+  --bg-component-tertiary-light: var(--blue-200); 
+  --bg-component-primary-brown: var(--brown-50); 
+  --bg-component-secondary-brown: var(--brown-500); 
+    --bg-component-tertiary-brown: var(--brown-200); 
+  --bg-component-quinary-light: var(--gray-100); 
+  
+  /* Typography Hierarchy */
+
+  /* Major editorial page headings and case study titles */
+    --text-title-primary-dark: var(--gray-900); 
+    --text-title-secondary-dark: var(--blue-900);             
+    --text-title-light: var(--gray-50);    
+
+    /* Core body paragraphs, list details, table content */
+    --text-main-dark: var(--blue-900);            
+    --text-main-light: var(--gray-50);            
+    --text-main-gray: var(--gray-500);     
+    --text-main-primary-dark: var(--gray-900);     
+    --text-main-secondary-dark: var(--blue-900); 
+    --text-highlighted-blue: var(--blue-600);/* text highlighted */
+    --text-highlighted-red: var(--red-500);/* text highlighted */
+
+    /* anchor */
+    --text-anchor-dark: var(--blue-900);           
+    --text-anchor-light: var(--gray-50);            
+    --text-anchor-gray: var(--gray-500);           
+    --anchor-highlighted-blue: var(--blue-600);/* text highlighted */
+
+  /* text ? */  
+  --text-muted: var(--gray-500);           /* Captions, metadata timelines, dates, breadcrumbs, copyrights */
+  --text-link: var(--blue-600);            /* Active inline text hyperlinks or action arrows */
+  --text-inverse: var(--white);            /* Content resting over dark headers or dark action buttons */
+
+
+  /* Action Elements & Navigation Controls */
+
+  /* Backgrounds Action Elements & Navigation Controls */
+  --action-primary-bg-dark: var(--blue-900);    /* Solid button background (Contact CTA, Search submit button) */
+  --action-primary-bg-gray: var(--gray-50);    /* Solid button background (Contact CTA, Search submit button) */
+  --action-primary-bg-active: var(--blue-900);    /* Solid button background (Contact CTA, Search submit button) */
+  --action-tertiary-bg-active: var(--blue-300);    /* Solid button background (Contact CTA, Search submit button) */
+  --action-primary-bg-x-light: var(--white);    /* Solid button background (Contact CTA, Search submit button) */
+  --action-tertiary-bg-light: var(--blue-200);    /* Solid button background (Contact CTA, Search submit button) */
+
+  /* States Action Elements & Navigation Controls */
+  --action-search-fill: var(--white);      /* Inside background fill for search pill text fields */
+  --action-item-hover: var(--blue-200);    
+  
+  /* Soft background lists */
+  --action-item-primary-dark: var(--blue-900);     
+  --action-item-primary-light: var(--gray-50);     
+  --action-item-primary-gray: var(--gray-500);     
+  --action-item-secondary-light: var(--blue-200); 
+  --action-item-quaternary-light: var(--blue-50);        
+
+  /* Borders, Lines & Grid Framing */
+  
+  /* Borders body */
+  --border-body-dark: var(--blue-900);            /* Body background */
+  --border-body-light: var(--gray-50);            /* Body background */
+  --border-body-mobile: var(-blue-50);            /* Body background small devices */
+  
+  /* Borders navigation */
+  --border-header: var(--gray-50);              
+  --border-header-mobile: var(--blue-50);            
+  --border-bottom-navigation-light: var(--gray-50);              
+      
+
+  /* Section Borders, Lines & Grid Framing */
+  --border-section-primary-light: var(--gray-50);  
+  --border-section-secondary-light: var(--blue-200);    
+    --border-section-secondary-dark: var(--blue-400);        
+  --border-section-secondary-light-hover: var(--blue-200);  
+  
+
+  /* Banner Borders */
+  --border-banner-primary-light: var(--gray-50);  
+  --border-banner-secondary-light: var(--blue-200);   
+  --border-banner-secondary-dark: var(--blue-400);        
+  --border-banner-secondary-light-hover: var(--blue-200);  
+  --border-banner-tertiary-light: var(--blue-200);  
+
+  /* div Border*/
+  --border-div-primary-dark: var(--blue-900);   
+  --border-div-primary-light: var(--gray-50);    
+  --border-div-item-light: var(--blue-300);  
+--border-div-primary-brown: var(--brown-200);    
+
+  /* Card's Border, Lines & Grid Framing */
+  --border-card-secondary-light: var(--blue-200);  
+
+  --border-light: var(--gray-100);         /* Ultra-faint separating layout lines */
+  --border-card: var(--gray-200);          /* Structural container cards, sticky sidebars, panel limits */
+  --border-grid: var(--blue-100);          /* Inner layout dividers inside tables and research matrices */
+  --border-input: var(--gray-900);         /* High-visibility bounding outline around active text inputs */
+  --border-focus: var(--blue-500);         /* Vibrant accessibility outline for focused interactive elements */
+  
+  /* Component's Border*/
+  --border-component-item-light: var(--blue-300); 
+
+  --border-component-primary-dark: var(--blue-900);   
+  --border-component-primary-light: var(--gray-50); 
+  --border-component-primary-green: var(--gray-300); 
+  --border-component-primary-brown: var(--brown-50); 
+  --border-component-primary-red: var(--red-500); 
+
+  --border-component-secondary-light: var(--blue-25); 
+  --border-component-secondary-dark: var(--blue-400); 
+  --border-component-secondary-green: var(--gray-100); 
+  --border-component-dark-secondary: var(--blue-600); 
+  --border-component-secondary-brown: var(--brown-500); 
+
+  --border-component-tertiary-brown: var(--brown-200); 
+  --border-component-tertiary-light: var(--blue-200); 
+  --border-component-quaternary-light: var(--blue-300); 
+  --border-component-quinary-light: var(--gray-100); 
+
+  /* Borders Action Elements & Navigation Controls */
+  --border-action-primary-dark: var(--blue-900);   
+  --border-action-primary-light: var(--gray-50); 
+   --border-action-primary-gray: var(--gray-200); 
+   --border-action-primary-gray-hover: var(--gray-200); 
+   --border-action-item-light: var(--blue-300);  
+   --border-action-secondary-light: var(--blue-200);
+   --border-action-secondary-dark: var(--blue-400);   
+  --border-action-primary-light-hover: var(--gray-50);     
+  --border-action-secondary-light-hover: var(--blue-200);   
+  --border-action-primary-dark-hover: var(--blue-900);   
+  --border-action-tertiary-red-hover: var(--red-500);   
+  --border-action-quaternary-light: var(--blue-50);  
+  
+ /* outlines*/
+  --outline-action-primary-dark: var(--blue-900);    /* Outline (Contact CTA, Search submit button) */
+  --outline-action-primary-dark-hover: var(--blue-900);    /* Outline (Contact CTA, Search submit button) */
+  --outline-action-secondary-dark: var(--blue-600);    /* Outline (Contact CTA, Search submit button) */
+  --outline-action-secondary-dark-hover: var(--blue-600);    /* Outline (Contact CTA, Search submit button) */
+
+    /* Component's outlines*/
+  --outline-component-primary-dark: var(--blue-900);   
+  --outline-component-primary-light: var(--gray-50);    
+  --outline-component-item-light: var(--blue-300);  
+  --outline-component-secondary-dark-hover: var(--blue-400);   
+ /* outlines-Offset*/
+  --outline-offset-action-primary-dark: var(--blue-900);    /* Outline (Contact CTA, Search submit button) */
+  --outline-offset-action-primary-dark-hover: var(--blue-900);    /* Outline (Contact CTA, Search submit button) */
+
+   /* underline*/
+  --underline-red: var(--red-500);    /* Outline (Contact CTA, Search submit button) */
+
+  /* Accents, Infographics & System Status */
+  --accent-brand: var(--blue-500);         /* Primary brand color for process phase indicators or tags */
+  --accent-warm: var(--brown-500);          /* Secondary emphasis markers, sticky notes, or highlights */
+  --accent-graphic: var(--red-500);        /* Structural graphic accents for vectors or key pain points */
+  --status-error: var(--red-500);          /* Invalid form validation input rings or warning boxes */
+  --status-success: var(--green-50);       /* Form confirmation message panel backdrops */
+  
+
+  /* Typography */
+  --primary-font: "Montserrat", sans-serif;
+  --font-size-d0: 5.15976rem;
+  --font-size-d1: 4.2998rem;
+  --font-size-d2: 2.6832rem;
+  /*  --font-size-d2: 3.5832rem;*/
+  --font-size-h1: 2.986rem;
+  --font-size-h2: 2.488rem;
+  --font-size-h3: 2.074rem;
+  --font-size-h4: 1.728rem;
+  --font-size-h5: 1.44rem;
+  --font-size-h6: 1.2rem;
+  --font-size-base: 1rem;
+  --font-size-sm: 0.833rem;
+  --font-size-xs: 0.694rem;
+  --font-size-xxs: 0.579rem;
+
+  /* root change */
+
+  /* Headings (Tighter Scale: ~1.104) */
+  --size-d2: 2.4304rem;
+  --size-h1: 1.51188rem;
+  /* Fixed maximum value */
+  --size-h2: 1.365rem;
+  --size-h3: 1.237rem;
+  --size-h4: 1.121rem;
+  --size-h5: 1.015rem;
+  --size-h6: 0.920rem;
+
+  /* Body and Utility Sizes (Wider Scale: ~1.129) */
+  --size-base: 0.833rem;
+  /* Fixed base value */
+  --size-sm: 0.739rem;
+  --size-xs: 0.654rem;
+  --size-xxs: 0.579rem;
+  /* Fixed minimum value */
+
+  /* print */
+
+  --print-font-size-h1: 2.5rem;
+  /* 27.5pt - Main Title */
+  --print-font-size-h2: 2.0rem;
+  /* 22pt   - Section Head */
+  --print-font-size-h3: 1.6rem;
+  /* 17.5pt - Subsection */
+  --print-font-size-h4: 1.3rem;
+  /* 14.5pt - Minor Head */
+  --print-font-size-h5: 1.1rem;
+  /* 12pt   - Strong Label */
+  --print-font-size-h6: 1.0rem;
+  /* 11pt   - Bold Detail */
+  --print-font-size-base: 1.0rem;
+  /* 11pt   - Body Text */
+  --print-font-size-sm: 0.85rem;
+  /* 9.5pt  - Captions/Tables */
+  --print-font-size-xs: 0.75rem;
+  /* 8pt    - Fine Print */
+  --print-font-size-xxs: 0.65rem;
+  /* 7pt    - Minimum Legible */
+
+  --font-weight-light: 400;
+  --font-weight-base: 500;
+  --font-weight-medium: 600;
+  --font-weight-bold: 700;
+  --font-weight-black: 900;
+
+
+  --spacing-base: 1rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 2.5rem;
+  --spacing-xxl: 3.5rem;
+  --spacing-sm: 0.5rem;
+  --spacing-xs: 0.250rem;
+  --spacing-xxs: 0.125rem;
+
+  /* Padding % */
+    --padding-xxl: 6.88%;
+  --padding-xl: 4.25%;
+  --padding-lg: 2.62%;
+  --padding-medium: 3.24%;
+  --padding-base: 1.62%;
+  --padding-s: 1%;
+  --padding-sm: 0.81%;
+  --padding-xs: 0.62%;
+  --padding-xxs: 0.38%;
+
+  /* Margin % */
+  --margin-xxl: 6.88%;
+  --margin-xl:4.25%;   
+  --margin-lg: 2.62%;
+  --margin-medium: 3.24%;
+  --margin-base: 1.62%;
+  --margin-sm: 1%;
+  --margin-xs: 0.81%;
+  --margin-xxs: 0.62%;
+  --margin-xxxs: 0.38%;
+
+  /* --border radius */
+  --border-radius-base: 1rem;
+  --border-radius-lg: 2rem;
+  --border-radius-sm: 0.5rem;
+  --border-radius-xs: 0.250rem;
+  --border-radius-xxs: 0.125rem;
+
+  --transition-duration: 0.3s;
+
+  --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --box-shadow-hover: 0 6px 12px rgba(0, 0, 0, 0.2);
+  --box-shadow-inset: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
+  --box-shadow-g: 0 0 1px rgba(0, 0, 0, .08), 0 4px 12px rgba(0, 0, 0, .2);
+  --box-shadow-cs: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  --box-shadow-toc: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+

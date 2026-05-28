@@ -1,0 +1,171 @@
+.thanks-banner {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+   gap: var(--spacing-sm);
+         padding:11.14% ;
+  align-items: center;
+  justify-content: center;
+    border-radius: var(--border-radius-xs);
+    border: 1px solid var(--bg-component-primary-light);
+    box-shadow: var(--box-shadow-cs);
+background-color: var(--bg-cards-primary-dark);
+
+  background-repeat: no-repeat;
+  background-position: center; /* Keeps the envelope on the right */
+  background-size:cover; /* Ensures the image scales properly without distortion */
+}
+
+.--caf{
+      background-image: url('/Assets/Portfolio/Cafeteria/19-Thanks.svg');
+
+}
+
+.--bhas{
+      background-image: url('/Assets/Portfolio/BHAS/Thank-you.svg');
+
+}
+.--bpw{
+      background-image: url('/Assets/Portfolio/BPW/78 - Thanks.svg');
+
+}
+.banner-description{
+    display: flex;
+  width: fit-content;
+  height: fit-content;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+    background-color: var(--bg-component-primary-light);
+            padding:var(--padding-xxl);
+      gap: var(--spacing-base);
+         border-radius: var(--border-radius-xs);
+
+
+}
+.banner-text{
+    display: flex;
+    min-width: 246px;
+      max-width:  360px;
+  width: 100%;
+  height: fit-content;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+      gap: var(--spacing-base);
+         gap:var(--spacing-base);
+
+
+}
+.banner-text p{
+    display: flex;
+    min-width: 100%;
+  height: fit-content;
+  align-items: center ;
+    justify-content: center;
+  padding-left: var(--padding-xl);
+
+
+
+}
+
+
+
+
+
+.--banner-description{
+    width: fit-content;
+ 
+      padding:var(--padding-xl);
+      margin: 0;
+
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:428px) {
+
+  .thanks-banner {
+    margin-bottom: 0;
+    gap: var(--spacing-sm);
+    border: 0px;
+    padding: 0;
+align-items: center;
+    border-radius: var(--border-radius-xs);
+    width: 100%;
+  }
+
+  .banner-description {
+
+    padding: var(--spacing-base);
+    padding-top: 0;
+    gap: var(--spacing-sm);
+            border: 1px solid var( --border-component-primary-light);
+
+  }
+  .--bhas, .--caf,.--bpw{
+        /* box-shadow: var(--box-shadow-cs); */
+    /* background-color: var(--bg-cards-primary-dark); */
+        background-image: none;
+              box-shadow: none;
+
+
+
+  }
+
+  .thanks-banner {
+      background-color: var(--bg-component-primary-light);
+
+
+  }
+
+  .banner-description{
+     padding: var(--padding-xxl);
+  }
+}
+
+@media print {
+  .thanks-banner {
+    /* Forces the background image to show */
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    
+    /* Prevents the banner from splitting across two pages */
+    break-inside: avoid;
+    page-break-inside: avoid;
+
+    /* Use fixed padding for print instead of percentages for stability */
+    padding: 50px !important; 
+    height: auto !important;
+    display: block; /* Changing to block often fixes flex-break issues in print */
+    text-align: center;
+  }
+
+  .banner-description {
+    /* Keep the internal box together */
+    break-inside: avoid;
+    margin: 0 auto;
+    background-color: var(--bg-cards-primary-x-light) !important;
+  
+  }
+
+  /* Ensure the background image is actually visible */
+  .--caf {
+    background-image: url('/Assets/Portfolio/Cafeteria/19-Thanks.svg') !important;
+  }
+
+  .--bhas{
+      background-image: url('/Assets/Portfolio/BHAS/Thank-you.svg') !important;
+
+}
+.--bpw{
+      background-image: url('/Assets/Portfolio/BPW/78 - Thanks.svg') !important;
+
+}
+}

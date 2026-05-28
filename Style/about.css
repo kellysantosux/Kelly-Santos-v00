@@ -1,0 +1,168 @@
+.containerAboutMe {
+  display: flex;
+  max-width: 1211.19px;
+  width: 100%;
+  height: fit-content;
+  flex-direction: column;
+  align-items: start;
+  gap: var(--spacing-sm);
+  border-radius: var(--border-radius-xs);
+  border: 1.6px solid var(--border-section-secondary-light);
+  background-color: var(--bg-section-secondary-light);
+  padding: var(--padding-xl);
+  margin-bottom: var(--margin-lg);
+}
+
+.--padding-top-0 {
+  padding-top: 0;
+}
+
+.aboutMe {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  width: 100%;
+  height: fit-content;
+  align-items: start;
+  justify-content: center;
+  gap: var(--spacing-base);
+  flex-direction: row;
+  text-align: left;
+
+}
+
+.aboutMe>.description {
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  flex-wrap: wrap;
+  text-align: left;
+  border: 2px solid transparent;
+  border-radius: var(--border-radius-xs);
+  gap: var(--spacing-base);
+  padding: 11%;
+background: var(--bg-cards-primary-light);
+}
+
+
+
+
+
+.aboutMe>.description>h2 {
+  display: flex;
+  width: 100%;
+
+}
+
+.aboutMe>.description>h4 {
+  display: flex;
+  width: 100%;
+  font-weight: var(--font-weight-black);
+
+}
+
+.aboutMe>.aboutMeimage2 {
+  display: none;
+}
+
+.aboutMe>.aboutMeimage {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: start;
+  justify-content: center;
+
+
+
+
+}
+
+.aboutMe .aboutMeimage img {
+  width: 100%;
+  height: 100%;
+  border-radius: var(--border-radius-xs);
+  object-fit: cover;
+
+}
+
+
+
+@media only screen and (max-width: 728px) {
+
+
+  .aboutMe {
+    display: flex;
+    width: 100%;
+
+    flex-direction: column;
+  }
+
+
+
+  .aboutMe>.aboutMeimage {
+    display: none;
+  }
+
+  .aboutMe>.aboutMeimage2 {
+    display: flex;
+    width: 50%;
+    height: fit-content;
+    align-items: start;
+    justify-content: center;
+
+
+
+  }
+
+  .aboutMe .aboutMeimage2 img {
+    width: 100%;
+
+    object-fit: cover;
+    border-radius: var(--border-radius-xs);
+
+  }
+}
+
+
+
+
+
+
+@media only screen and (max-width:428px) {
+
+  .containerAboutMe {
+    width: 100%;
+    margin-bottom: 0;
+    gap: var(--spacing-sm);
+    border: 0px;
+
+    border-radius: var(--border-radius-xs);
+    padding: var(--padding-xl);
+  }
+
+
+  .aboutMe>.description {
+
+    padding: var(--padding-xl);
+
+    gap: var(--spacing-sm);
+
+
+  }
+
+  .aboutMe {
+
+    padding: 0;
+
+
+  }
+
+  .aboutMe>.aboutMeimage2 {
+    width: 100%;
+  }
+
+
+}
