@@ -107,10 +107,7 @@ background: var(--bg-cards-primary-light);
 
   .aboutMe>.description {
 
-    padding:0;
-
-
-
+    padding: var(--padding-xl);
 
   }
 
