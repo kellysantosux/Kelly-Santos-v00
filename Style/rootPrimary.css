@@ -10,7 +10,7 @@
  * Project: Kelly Santos Portfolio
  * ==========================================================================
  */
-
+                 
 :root {
 /* --- Primitives (Base Palette) --- */
 
@@ -91,7 +91,7 @@
   /* cards background */
   --bg-cards-primary-dark: var(--blue-900);            
   --bg-cards-primary-light: var(--gray-50); 
-    --bg-cards-primary-x-light: var(--white); 
+  --bg-cards-primary-x-light: var(--white); 
   --bg-cards-secondary-dark: var(--blue-900);            
   --bg-cards-secondary-light: var(--blue-200);   
  
@@ -99,7 +99,7 @@
   --bg-header: var(--gray-50); 
   --bg-bottom-navigation-light: var(--gray-50); 
   --bg-footer-light: var(--gray-50);   
-  --bg-footer-medium: var(--blue-300);    
+  --bg-footer-medium: var(--blue-200);    
   --bg-footer-dark: var(--gray-900); 
 
   /*breadcrumbs */             
@@ -120,11 +120,11 @@
   --component-dark-secondary: var(--blue-600); 
   --bg-component-secondary-green: var(--gray-100); 
   --bg-component-secondary-light: var(--blue-25); 
-   --bg-component-secondary-dark: var(--blue-300); 
+  --bg-component-secondary-dark: var(--blue-300); 
   --bg-component-tertiary-light: var(--blue-200); 
   --bg-component-primary-brown: var(--brown-50); 
   --bg-component-secondary-brown: var(--brown-500); 
-    --bg-component-tertiary-brown: var(--brown-200); 
+  --bg-component-tertiary-brown: var(--brown-200); 
   --bg-component-quinary-light: var(--gray-100); 
   
   /* Typography Hierarchy */
@@ -192,7 +192,7 @@
   /* Section Borders, Lines & Grid Framing */
   --border-section-primary-light: var(--gray-50);  
   --border-section-secondary-light: var(--blue-200);    
-    --border-section-secondary-dark: var(--blue-400);        
+  --border-section-secondary-dark: var(--blue-400);        
   --border-section-secondary-light-hover: var(--blue-200);  
   
 
