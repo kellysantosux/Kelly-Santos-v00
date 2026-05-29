@@ -151,7 +151,7 @@ outline-color: var( --outline-component-secondary-dark-hover);
 
 
 
-@media only screen and (max-width: 428px) {
+@media only screen and (max-width: 768px) {
 
     .portfolioCards {
         margin-bottom: 0;
