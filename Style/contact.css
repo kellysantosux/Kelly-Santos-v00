@@ -122,7 +122,8 @@ align-items: center;
 
   }
 .container_description {
-      padding: var(--padding-lg);
+      padding: var(--padding-xxl) var(--padding-lg);
+      order: 2;
 }
 
   .ContactMe {
