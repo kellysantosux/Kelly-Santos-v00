@@ -90,48 +90,8 @@ background: var(--bg-cards-primary-light);
 
 
 
-@media only screen and (max-width: 728px) {
 
-
-  .aboutMe {
-    display: flex;
-    width: 100%;
-
-    flex-direction: column;
-  }
-
-
-
-  .aboutMe>.aboutMeimage {
-    display: none;
-  }
-
-  .aboutMe>.aboutMeimage2 {
-    display: flex;
-    width: 50%;
-    height: fit-content;
-    align-items: start;
-    justify-content: center;
-
-
-
-  }
-
-  .aboutMe .aboutMeimage2 img {
-    width: 100%;
-
-    object-fit: cover;
-    border-radius: var(--border-radius-xs);
-
-  }
-}
-
-
-
-
-
-
-@media only screen and (max-width:575px) {
+@media only screen and (max-width:728px) {
 
   .containerAboutMe {
     width: 100%;

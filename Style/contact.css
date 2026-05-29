@@ -99,70 +99,8 @@ padding: 18.07%;
 
 }
 
-@media only screen and (max-width: 728px) {
-  .ContactMe {
-  display: flex;
-        width: 100%;
 
-        flex-direction: column;
-    }
-  .ContactMe>.ContactMeimage {
-    display: none;
-  }
-
-  .ContactMe>.ContactMeimage2 {
-display: flex;
-        width: 50%;
-        height: fit-content;
-        align-items: start;
-        justify-content: center;
-
-  
-  }
-
-  .ContactMe .ContactMeimage2 img {
-        width: 100%;
-        object-fit: cover;
-        border-radius: var(--border-radius-xs);
-            background-color: var(--very-light-shade-blue-magenta);
-        
-
-  }
-
-
-}
-
-
-@media only screen and (max-width: 600px) {
-
-      .ContactMe {
-            display: flex;
-        width:96.76%;  
-        flex-direction: column;
-    padding: 0;
-
-
-  }
-
-    .container_description {
-    padding: var(--spacing-xxl);
-  }
-
-}
-
-@media only screen and (min-width: 505px) {
-
-
-
-
-
-
-  .contactMe__media {
-        width: 162px;
-}
-}
-
-@media only screen and (max-width:575px) {
+@media only screen and (max-width:768px) {
 
   .containerContactMe {
     margin-bottom: 0;

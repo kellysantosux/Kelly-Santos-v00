@@ -239,64 +239,7 @@ figure.chart-container {
 
 
 
-@media (max-width: 600px) {
-
-    /* Ensure the bar is still centered in the wider bar-item */
-    .bar {
-        width: 72%;
-    }
-
-
-    /* Ensure the analysis section stacks nicely on mobile */
-    .chart_analysis {
-        flex-direction: column;
-        padding: 15px;
-    }
-}
-
-@media (max-width: 582px) {
-
-    /* Container for the labels below the X-axis */
-    .x-axis-labels-area {
-
-        flex-direction: column;
-        gap: var(--spacing-sm);
-        align-items: center;
-        justify-content: left;
-        text-align: left;
-        margin-top: var(--margin-xl);
-    }
-
-    .bar-item {
-        width: 100%;
-    }
-
-    .label {
-        width: 100%;
-        align-items: flex-start;
-        text-align: left;
-        margin-left: var(--margin-xxl);
-        flex-direction: row;
-        justify-content: left;
-    }
-
-
-    .chart-bars-area {
-        height: 180px;
-        padding-bottom: var(  --padding-base);
-    }
-
-    /* Display the legend color block */
-    .legend-color {
-        display: block;
-    }
-
-    .chart_analysis {
-        margin-top: var(  --padding-xl);
-    }
-
-}
-@media (max-width: 575px) {
+@media (max-width: 768px) {
 .chart-title {
     width: 100%;
     padding-inline: 0;

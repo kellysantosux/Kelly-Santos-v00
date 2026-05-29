@@ -837,63 +837,8 @@ ul.action-list {
 
 }
 
-@media only screen and (max-width: 792px) {
-    .container_portfolio_cover {
-        display: none;
-    }
 
-}
-
-@media only screen and (max-width: 900px) {
-    .portfolio__hero__tagline hr {
-        display: none;
-    }
-
-}
-
-
-@media only screen and (max-width: 600px) {
-    article {
-        gap: var(--spacing-xxs);
-    }
-
-
-    article {
-        background-color: var(--bg-article-primary-light);
-    }
-
-
-
-
-
-    .casestudy {
-
-        width: 100%;
-
-        border-radius: 0;
-
-        box-shadow: none;
-
-        border: 1px solid transparent;
-               order: 2;
-
-    }
-
-
-
-    /* Make the toc wrap content within the flow */
-    .table-of-contents__wrap {
-        margin-left: 0;
-        transform: none;
-    }
-
-    section.article-section {
-        margin-top: 0px;
-    }
-
-}
-
-@media only screen and (max-width: 575px) {
+@media only screen and (max-width: 768px) {
 
     .casestudy{
         padding-top:0 ;

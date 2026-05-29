@@ -390,7 +390,7 @@ strong{
 }
 
 
-@media only screen and (max-width: 728px) {
+@media only screen and (max-width: 768px) {
 
     body,
     .body_homepage,
@@ -429,7 +429,7 @@ margin-top: 0;
 @media print {
     h1 {
         font-size: var(--print-font-size-h1);   
-        color:red 
+  
     }
 
     h2 {

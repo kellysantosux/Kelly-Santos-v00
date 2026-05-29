@@ -78,49 +78,7 @@
 
 }
 
-@media only screen and (max-width: 792px) {
-
-    .containerDescription {
-
-        width: 100%;
-    }
-
-    .containerDescription img {
-        display: flex;
-        width: 70%;
-        object-fit: 100%;
-        height: auto;
-        border-radius: var(--spacing-sm);
-        align-items: center;
-        margin: auto;
-
-
-    }
-}
-
-@media only screen and (max-width: 582px) {
-
-    .hero-container {
-        flex-direction: column;
-        gap: 0;
-        align-items: center;
-    }
-
-    .containerDescription {
-        width: 100%;
-        padding: var(--spacing-sm);
-        align-items: start;
-
-
-    }
-
-    .contactMedecoration {
-
-        width: 100%;
-        margin-top: var(--spacing-base);
-    }
-}
-@media only screen and (max-width: 575px) {
+@media only screen and (max-width: 768px) {
 
 .hero-container {
    
@@ -194,9 +152,9 @@
     }
 
 
-}
 
-@media print {
+
+
 
     /* 1. Force the main container to span the entire page width */
     .hero-container {
