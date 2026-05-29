@@ -67,7 +67,7 @@ ul.general-list {
 
 
 /* --- Media Query for smaller screens --- */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
 
 .project-metadata dd {
     align-content:flex-end; /* Remove default dd indentation */

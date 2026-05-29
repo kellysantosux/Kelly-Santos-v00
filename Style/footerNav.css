@@ -94,35 +94,8 @@
 
 }
 
-@media only screen and (max-width: 600px) {
 
-  footer>.footerNav {
-    max-width: 1253.11px;
-    width: 96.76%;
-    padding-inline: var(--padding-base);
-  }
-
-
-  .footerNav>nav>ul {
-    width: 100%;
-    flex-direction: column;
-  }
-
-  .footerNav > nav > ul > li {
-  width: 100%;
-}
-
-
-/* Corrected a tag selector */
-.footerNav > nav > ul > li > a {
-    justify-content: left;
-
-
-}
-
-}
-
-@media only screen and (max-width: 575px) {
+@media only screen and (max-width: 768px) {
 
   footer>.footerNav {
    display: none;

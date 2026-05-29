@@ -43,52 +43,8 @@ letter-spacing: -0.127px;
 line-height: 1;
 }
 
-@media only screen and (max-width: 728px) {
 
-.name_container  h2{
-    font-size: 2.240rem;
-}
-
-.profession_container {
-    margin-top:-7.001px;
-}
-.profession_container  p {
-    font-size: 1.035rem;
-
-}
-}
-
-@media only screen and (max-width: 600px) {
-
-.name_container  h2{
-    font-size: 1.680rem;
-}
-
-.profession_container {
-    margin-top:-5.252px;
-}
-.profession_container  p {
-    font-size: 0.776rem;
-
-}
-}
-
-@media only screen and (max-width: 505px) {
-
-.name_container  h2{
-    font-size: 2.016rem;
-}
-
-.profession_container {
-    margin-top:-5.834px;
-}
-.profession_container  p {
-    font-size: 0.8625rem;
-
-}
-}
-
-@media only screen and (max-width: 575px) {
+@media only screen and (max-width: 768px) {
 
 .name_container  h2{
     font-size: 2.016rem;

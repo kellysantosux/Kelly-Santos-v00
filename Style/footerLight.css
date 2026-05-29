@@ -40,17 +40,7 @@ footer>small {
   }
     }
 
-@media only screen and (max-width: 600px) {
-    footer>.brandContact {
-        display: block;
-        flex-direction: column;
-        gap: var(--spacing-base);
-        justify-content: left;
-    }
-}
-
-
-@media only screen and (max-width: 575px) {
+@media only screen and (max-width: 768px) {
 
 
     footer {
