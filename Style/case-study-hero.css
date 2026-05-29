@@ -89,6 +89,10 @@
     background-color: transparent;
     box-shadow: none;
 
+            flex-direction: column;
+        gap: 0;
+        align-items: center;
+
 
 }
 
@@ -105,12 +109,21 @@
 
     .containerDescription  {
            padding: var(--padding-base);
+
+                   width: 100%;
+          align-items: start;
     
 }
     .containerDescription img {
         width: 100%;
         border-radius: 0;
 }
+
+    .contactMedecoration {
+
+        width: 100%;
+        margin-top: var(--spacing-base);
+    }
 }
 
 @media print {
