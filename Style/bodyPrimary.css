@@ -22,7 +22,8 @@ h4,
 h5,
 figcaption {
     scroll-margin-top: var(--spacing-base);
-    line-height: 1.333;
+    /* line-height: 1.333; */
+    line-height: 1.619;
     /* Adjust this value based on your fixed header height */
 }
 
