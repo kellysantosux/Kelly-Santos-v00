@@ -162,6 +162,8 @@ outline-color: var( --outline-component-secondary-dark-hover);
 
     .portfolio {
         border: none;
+        padding:0;
+        background: transparent;
 
 
     }
