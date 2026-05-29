@@ -100,15 +100,16 @@ background: var(--bg-cards-primary-light);
     border: 0px;
 
     border-radius: var(--border-radius-xs);
-    padding: var(--padding-xl);
+    padding: 0;
+    background-color: transparent;
   }
 
 
   .aboutMe>.description {
 
-    padding: var(--padding-xl);
+    padding:0;
 
-    gap: var(--spacing-sm);
+
 
 
   }
