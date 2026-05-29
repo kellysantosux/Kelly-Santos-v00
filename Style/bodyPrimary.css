@@ -431,86 +431,8 @@ strong{
         font-size: var(--size-h3);
     }
 
-    h4 {
-        font-size: var(--size-h4);
-    }
 
-    h5 {
-        font-size: var(--size-h5);
-    }
-
-    figcaption {
-        font-size: var(--size-h5);
-    }
-
-    h6 {
-        font-size: var(--size-base);
-    }
-   /*
-     p,
-    .--base , .base, dt, dd, li,span,table,.--sm, .sm, a.toc-submenu__link, a.menu2__link, .--xs, a {
-        font-size: var(--size-xs);
-        
-    }
-    */
-
-    
-    .--s1 {
-        font-size: var(--size-h1);
-    }
-
-    .--s3 {
-        font-size: var(--size-h5);
-    }
-
-    .--s4, .s4{
-        font-size: var(--size-h4);
-    }
-
-    .--s5, .s5 {
-        font-size: var(--size-h5);
-    }
-
-
-    .--s6, .s6 {
-        font-size: var(--size-h6);
-    }
-
-    /*
-        p,
-    .--base , .base,
-    dt,
-    dd,
-    li,
-    span {
-        font-size: var(--font-size-xs);
-    }
-        */
-
-    table {
-        font-size: var(--size-xs);
-    }
-
-    /*
-    .--sm, .sm,
-    a.toc-submenu__link,
-    a.menu2__link {
-        font-size: var(--size-xs);
-    }
-
-    .--xs {
-        font-size: var(--size-xs);
-    }
-
-    a {
-        font-size: var(--size-xs);
-    }
-        */
-
-
-}
-
-@media only screen and (max-width: 575px) {
+@media only screen and (max-width: 728px) {
 
     body,
     .body_homepage,
@@ -548,7 +470,8 @@ margin-top: 0;
 
 @media print {
     h1 {
-        font-size: var(--print-font-size-h1);    
+        font-size: var(--print-font-size-h1);   
+        color:red 
     }
 
     h2 {
