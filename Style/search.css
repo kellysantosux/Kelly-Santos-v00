@@ -34,7 +34,7 @@
   /* cite: 4, 36 */
   width: 100%;
   /* cite: 4, 36 */
-  height: 35.33px;
+  height: 72px;
   /* cite: 4, 37 */
   border-radius: var(--border-radius-lg);
   /* cite: 5, 37 */
@@ -56,9 +56,9 @@
 .search-button {
   display: flex;
   /* cite: 9, 41 */
-  width: 35.33px;
+  width: 72px;
   /* cite: 9, 41 */
-  height: 35.33px;
+  height: 72px;
   /* IMPROVED: Fill the container height */
   /* height: 39.33px; was fixed and removed */
   position: absolute;
