@@ -145,7 +145,10 @@
 
     }
 
+.active i {
+  color: var(--icon-light);
 
+}
 
 
 
