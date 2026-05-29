@@ -120,7 +120,7 @@
         margin-top: var(--spacing-base);
     }
 }
-@media only screen and (max-width: 428px) {
+@media only screen and (max-width: 575px) {
 
 .hero-container {
    

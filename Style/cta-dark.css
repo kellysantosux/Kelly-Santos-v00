@@ -90,7 +90,7 @@ opacity: 0.8;
 
 }
 
-  @media only screen and (max-width: 428px) {
+  @media only screen and (max-width: 575px) {
 
     .container_link-button {
       gap: var(--spacing-sm);

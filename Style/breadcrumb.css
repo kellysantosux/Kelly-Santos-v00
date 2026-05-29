@@ -64,7 +64,7 @@
 
 }
 
-@media (max-width: 428px) {
+@media (max-width: 575px) {
 .container_breadcrumb_blue, .container_breadcrumb {
 display: none;
 }

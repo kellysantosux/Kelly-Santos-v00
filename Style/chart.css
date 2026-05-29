@@ -296,7 +296,7 @@ figure.chart-container {
     }
 
 }
-@media (max-width: 428px) {
+@media (max-width: 575px) {
 .chart-title {
     width: 100%;
     padding-inline: 0;

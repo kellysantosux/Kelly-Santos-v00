@@ -46,7 +46,7 @@ display: block;
 font-size: var(--font-size-base);
 align-items: center;
 }
-@media only screen and (max-width: 428px) {
+@media only screen and (max-width: 575px) {
 
   .backButton{
 display: none;
