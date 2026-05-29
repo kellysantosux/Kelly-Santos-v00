@@ -46,9 +46,15 @@ header>.logo {
 
 .logo img {
   height: 100%;
-  height: 52px;  
+  height: 68px;  
   object-fit: cover;
 }
+  a.logo {
+    width: 100%;
+ height: 68px;  
+    object-fit: cover;
+  }
+
 
 header>.logo_light {
   display: none;
@@ -71,7 +77,7 @@ header>.logo_light {
 
   a.logo {
     width: 100%;
- height: 52px;  
+ height: 68px;  
     object-fit: cover;
   }
 
@@ -105,6 +111,16 @@ header>.logo_light {
     padding: var(--padding-medium);
     gap: var(--spacing-base);
         border-radius: 0;
+  }
+  .logo img {
+
+  height: 52px;  
+  
+}
+  a.logo {
+ 
+ height: 52px;  
+  
   }
 
   /*
