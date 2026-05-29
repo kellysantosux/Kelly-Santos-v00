@@ -67,7 +67,7 @@ tbody{
     
 }
 
-@media only screen and (max-width:428px) {
+@media only screen and (max-width:768px) {
 
 .tables tbody tr td:first-child {
 

@@ -150,17 +150,6 @@ outline-color: var( --outline-component-secondary-dark-hover);
 }
 
 
-@media only screen and (max-width: 728px) {
-    .portfolio img {
-        width: 100%;
-        object-fit: cover;
-        align-items: flex-start;
-        max-height: 230.69px;
-
-    }
-}
-
-
 
 @media only screen and (max-width: 428px) {
 

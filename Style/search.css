@@ -297,7 +297,7 @@ span.highlight-term {
 
 }
 
-@media only screen and (max-width: 428px) {
+@media only screen and (max-width: 768px) {
 
   .search-container {
     width: 100%;

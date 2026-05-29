@@ -172,33 +172,8 @@ margin: var(--padding-xs);
     }
 }
 
-    @media only screen and (max-width: 600px) {
 
-
-        .resume{
-
-        width: 100%;
-
-        border-radius: 0;
-
-        box-shadow: none;
-
-        border: 1px solid transparent;
-  order: 2;
-    }
-
-        section.resume-section {
-        margin-top: 0px;
-    }
-
-            section.resume-section:first-child {
-    margin-top: 0;
-}   
-    }
-
-
-
-    @media only screen and (max-width: 428px) {
+    @media only screen and (max-width: 768px) {
 
 
         .Resume{

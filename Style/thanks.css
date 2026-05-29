@@ -89,7 +89,7 @@ background-color: var(--bg-cards-primary-dark);
 
 
 
-@media only screen and (max-width:428px) {
+@media only screen and (max-width:768px) {
 
   .thanks-banner {
     margin-bottom: 0;

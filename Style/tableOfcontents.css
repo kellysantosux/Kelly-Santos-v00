@@ -435,7 +435,7 @@ li.table-of-contents__item:hover a.table-of-contents__link:hover {
 }
 }
 
-@media only screen and (max-width:428px) {
+@media only screen and (max-width:768px) {
       /* 1. Base Container (The fixed button/title) */
     .table-of-contents__container {
     display: none;

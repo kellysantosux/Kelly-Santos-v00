@@ -44,7 +44,7 @@
      }
 */
 
-   @media only screen and (max-width: 428px) {
+   @media only screen and (max-width: 768px) {
      .main_container {
        background-color: transparent;
        box-shadow: none;

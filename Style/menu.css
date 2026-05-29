@@ -162,7 +162,7 @@ display: none;
   }
 }
 
-@media only screen and (max-width: 428px) {
+@media only screen and (max-width: 768px) {
 
   .rightContainer > nav {
     display: none;

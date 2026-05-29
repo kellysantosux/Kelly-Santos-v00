@@ -498,19 +498,7 @@ background-color: var(--action-primary-bg-dark);
 }
 }
 
-@media only screen and (max-width: 600px) {
-
-
-
-  /* 1. APPLY WIDER WIDTH AND BORDERS TO THE MAIN CONTAINER WHEN OPEN */
-  .menu2__container.menu-open {
-
-min-height: 266px;
-
-  }
-}
-
-@media only screen and (max-width: 428px) {
+@media only screen and (max-width: 768px) {
 
 
   /* 1. Base Container (The fixed button/title) */
