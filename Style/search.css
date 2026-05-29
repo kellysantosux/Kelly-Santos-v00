@@ -96,7 +96,7 @@
 }
 
 .search-container .search-button i {
-  font-size: var(--font-size-h6);
+  font-size: var(--font-size-h5);
     color: var( --icon-light);
 }
 
