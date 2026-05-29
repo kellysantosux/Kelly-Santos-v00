@@ -34,7 +34,7 @@ h6 {
 }
 
 .material-icons {
-    font-size: var(--font-size-sm);
+    font-size: var(--font-size-base);
 
 }
 body,
@@ -92,7 +92,7 @@ em {
     text-decoration: underline;
     text-underline-offset: 0.1em;
     text-decoration-thickness: 1px;
-    font-size: var(--font-size-sm);
+    font-size: var(--font-size-base);
     color: var(--text-highlighted-blue);
 }
 
@@ -112,7 +112,7 @@ h1 {
 
 
 .taglineDestak {
-    font-size: var(--font-size-base);
+    font-size: var(--font-size-h6);
     color: var(--text-title-secondary-dark);
     font-family: var(--primary-font);
     font-weight: var(--font-weight-base);
@@ -120,7 +120,7 @@ h1 {
 }
 
 p {
-    font-size: var(--font-size-base);
+    font-size: var(--font-size-h6);
     color: var(--text-main-secondary-dark);
     font-family: var(--primary-font);
     font-weight: var(--font-weight-base);
@@ -182,7 +182,7 @@ p,
 .--base , .base,li,
 
 span {
-    font-size: var(--font-size-base);
+    font-size: var(--font-size-h6);
     color: var(--text-main-secondary-dark);
     font-family: var(--primary-font);
     font-weight: var(--font-weight-base);
@@ -192,7 +192,7 @@ span {
 
 
 table {
-    font-size: var(--font-size-sm);
+    font-size: var(--font-size-base);
     color: var(--text-main-secondary-dark);
     font-family: var(--primary-font);
     font-weight: var(--font-weight-base);
@@ -204,7 +204,7 @@ table {
 a.toc-submenu__link,dt,
 dd,
 a.menu2__link {
-    font-size: var(--font-size-sm);
+    font-size: var(--font-size-base);
     color: var(--text-main-secondary-dark);
     font-family: var(--primary-font);
     font-weight: var(--font-weight-base);
@@ -222,7 +222,7 @@ a.menu2__link {
 }
 
 a {
-    font-size: var(--font-size-base);
+    font-size: var(--font-size-h6);
     color: var(--text-main-secondary-dark);
     font-family: var(--primary-font);
     text-decoration: none;
