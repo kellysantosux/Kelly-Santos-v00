@@ -117,10 +117,31 @@ background: var(--bg-cards-primary-light);
 
 
   }
+  .aboutMe>.aboutMeimage {
+  display: none;
+
+
+
+
+
+}
 
   .aboutMe>.aboutMeimage2 {
-    width: 100%;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: start;
+  justify-content: center;
+
   }
+
+  .aboutMe .aboutMeimage2 img {
+  width: 100%;
+  height: 100%;
+  border-radius: var(--border-radius-xs);
+  object-fit: cover;
+
+}
 
 
 }
