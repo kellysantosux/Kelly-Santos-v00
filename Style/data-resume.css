@@ -78,7 +78,7 @@ ul.general-list {
         align-items: flex-start;
     }
 }
-@media (max-width: 428px) {
+@media (max-width: 575px) {
 ul.general-list {
     padding-left: 0;
 
