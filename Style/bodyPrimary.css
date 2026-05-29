@@ -388,48 +388,6 @@ strong{
 
 
 }
-@media only screen and (max-width: 728px) {
-.d2{   
-    
-     font-size: var(--font-size-h3);
-}
-}
-
-@media only screen and (max-width: 600px) {
-        .d0{
-    font-size: var(--font-size-d2);
-    margin-top: 6.88%;
-}
-
-
-.d2{   
-    
-     font-size: var(--font-size-h3);
-}
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    figcaption, .--s1,.--s3,.--s4,.--s5, .s5 {
-        line-height: 1.333;
-    }
-
-    h6,.--s6, .s6 {
-        line-height: 1.4;
-    }
-
-    h1 {
-        font-size: var(--size-h1);
-    }
-    h2 {
-        font-size: var(--size-h2);
-    }
-
-    h3 {
-        font-size: var(--size-h3);
-    }
 
 
 @media only screen and (max-width: 728px) {
