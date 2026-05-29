@@ -201,12 +201,10 @@ border-radius: var(--border-radius-xs);
 
 }
 
-  .taglineGrid>.heroImage {
-    display: none;
-  }
+
 
     .taglineGrid>.heroImage2 {
-        display: flex;
+        display: none;
         width: 100%;
         height: auto;
         align-items: center;
@@ -220,6 +218,10 @@ border-radius: var(--border-radius-xs);
     width:100%;
     height: auto;
     object-fit: cover;
+  }
+
+    .taglineGrid>.heroImage {
+    display: flex;
   }
 
 .tagline {
