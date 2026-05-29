@@ -50,7 +50,8 @@ color: var(--medium-light-shade-red);}
 .search-wrapper {
   display: flex;
   flex-direction: column;
-  width: 608px;
+  max-width: 608px;
+  width: 100%;
   height: fit-content;
   justify-items: center;
   align-items: center;
