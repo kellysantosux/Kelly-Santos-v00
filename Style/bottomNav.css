@@ -79,7 +79,7 @@
       color: var(--text-anchor-dark);
       text-align: center;
       text-decoration: none;
-      font-size: var(--size-xs);
+      font-size: var(--size-sm);
       font-weight: var(--font-weight-medium);
       border-radius: var(--border-radius-xs);
       border: 1.6px solid transparent;
@@ -101,7 +101,7 @@
       color: var(--icon-dark);
       text-align: center;
       text-decoration: none;
-      font-size: 32px;
+      font-size: var(--font-size-h5);
       font-weight: var(--font-weight-base);
     }
 
@@ -162,5 +162,8 @@
    max-width: 320px;
       width: 100%;
     }
+
+        .bottomNav nav ul li a {
+      font-size: var(--size-xs);}
 
 }
