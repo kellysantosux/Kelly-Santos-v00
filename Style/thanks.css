@@ -112,7 +112,7 @@ align-items: center;
   .--bhas, .--caf,.--bpw{
         /* box-shadow: var(--box-shadow-cs); */
     /* background-color: var(--bg-cards-primary-dark); */
-        background-image: none;
+        /* background-image: none; */
               box-shadow: none;
 
 
