@@ -220,11 +220,10 @@ border-radius: var(--border-radius-xs);
     width:100%;
     height: auto;
     object-fit: cover;
-
   }
 
 .tagline {
-  margin-top:var(--margin-xl);
+  margin-top:67px;
          box-shadow: none;
 }
 
