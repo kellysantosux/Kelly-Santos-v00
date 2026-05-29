@@ -17,16 +17,16 @@ background-color: var(--bg-cards-primary-dark);
 }
 
 .--caf{
-      background-image: url('/Assets/Portfolio/Cafeteria/19-Thanks.svg');
+      background-image: url('Assets/Portfolio/Cafeteria/19-Thanks.svg');
 
 }
 
 .--bhas{
-      background-image: url('/Assets/Portfolio/BHAS/Thank-you.svg');
+      background-image: url('Assets/Portfolio/BHAS/Thank-you.svg');
 
 }
 .--bpw{
-      background-image: url('/Assets/Portfolio/BPW/78 - Thanks.svg');
+      background-image: url('Assets/Portfolio/BPW/78 - Thanks.svg');
 
 }
 .banner-description{
@@ -157,15 +157,15 @@ align-items: center;
 
   /* Ensure the background image is actually visible */
   .--caf {
-    background-image: url('/Assets/Portfolio/Cafeteria/19-Thanks.svg') !important;
+    background-image: url('Assets/Portfolio/Cafeteria/19-Thanks.svg') !important;
   }
 
   .--bhas{
-      background-image: url('/Assets/Portfolio/BHAS/Thank-you.svg') !important;
+      background-image: url('Assets/Portfolio/BHAS/Thank-you.svg') !important;
 
 }
 .--bpw{
-      background-image: url('/Assets/Portfolio/BPW/78 - Thanks.svg') !important;
+      background-image: url('Assets/Portfolio/BPW/78 - Thanks.svg') !important;
 
 }
 }

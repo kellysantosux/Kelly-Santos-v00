@@ -72,7 +72,7 @@
   justify-self: end;
   align-self: end;
   z-index: 1;
-  background: url('/Assets/ux-banner.svg') right / contain no-repeat;
+  background: url('Assets/ux-banner.svg') right / contain no-repeat;
 }
 
 .--banner-description {
