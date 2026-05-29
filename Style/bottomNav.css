@@ -29,6 +29,7 @@
        background-color: var(--action-primary-bg-x-light);
         border: 1px solid var(--border-bottom-navigation-light);
               border-radius: var(--border-radius-xs)  ;
+              margin-bottom:var(--margin-base);
  
 
 
