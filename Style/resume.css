@@ -45,14 +45,10 @@ display: flex;
     border-radius: var(--border-radius-xs);
     padding: 5.87% var(--padding-lg);
     counter-reset: section 0;
-    box-shadow: var(--box-shadow-cs);
-    position: sticky;
+       position: sticky;
     top: var(--spacing-base);
     border: 0.5px solid  var(--border-component-secondary-dark);
-
-
      box-shadow: 0 1px 4px 0px rgba(5, 8, 34, 0.1);
-
             margin-bottom: var(--margin-base);
 
 }
@@ -194,13 +190,17 @@ margin: var(--padding-xs);
 
     padding: 0;
 background-color: transparent;
-   gap: var(--spacing-base);}
+   gap: var(--spacing-base);
+    border:0;
+      box-shadow:none;
+}
 
         .container_resume {
                 width:100%;
                 box-shadow: none;
               
         }
+
 
 
 
