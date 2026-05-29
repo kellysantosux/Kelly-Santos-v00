@@ -56,9 +56,9 @@
 .search-button {
   display: flex;
   /* cite: 9, 41 */
-  width: 72px;
+  width: 48px;
   /* cite: 9, 41 */
-  height: 36px;
+  height: 48px;
   /* IMPROVED: Fill the container height */
   /* height: 39.33px; was fixed and removed */
   position: absolute;

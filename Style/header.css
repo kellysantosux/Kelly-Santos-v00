@@ -46,7 +46,7 @@ header>.logo {
 
 .logo img {
   height: 100%;
-  height: 36px;  
+  height: 48px;  
   object-fit: cover;
 }
 
@@ -71,7 +71,7 @@ header>.logo_light {
 
   a.logo {
     width: 100%;
- height: 36px;  
+ height: 48px;  
     object-fit: cover;
   }
 
