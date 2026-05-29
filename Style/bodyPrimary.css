@@ -301,7 +301,7 @@ strong{
 
 
 
-@media only screen and (max-width: 1024px) {
+/* @media only screen and (max-width: 1024px) {
 
     .d0{
     font-size: var(--font-size-d1);
@@ -370,24 +370,13 @@ strong{
     table {
         font-size: var(--font-size-xxs);
     }
-/*
-    .--sm, .sm,
-    a.toc-submenu__link,
-    a.menu2__link {
-        font-size: var(--font-size-xxs);
-    }
-
-    .--xs {
-        font-size: var(--font-size-xxs);
-    }
-        */
 
     a {
         font-size: var(--font-size-sm);
     }
 
 
-}
+} */
 
 
 @media only screen and (max-width: 768px) {
