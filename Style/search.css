@@ -34,7 +34,7 @@
   /* cite: 4, 36 */
   width: 100%;
   /* cite: 4, 36 */
-  height: 52px;
+  height: 46px;
   /* cite: 4, 37 */
   border-radius: var(--border-radius-lg);
   /* cite: 5, 37 */
@@ -56,9 +56,9 @@
 .search-button {
   display: flex;
   /* cite: 9, 41 */
-  width: 52px;
+  width: 46px;
   /* cite: 9, 41 */
-  height: 52px;
+  height: 46px;
   /* IMPROVED: Fill the container height */
   /* height: 39.33px; was fixed and removed */
   position: absolute;
@@ -67,7 +67,7 @@
   /* cite: 9, 42 */
   right: 0px;
   /* cite: 9, 42 */
-  padding: 8px;
+  padding: 10px;
   /* cite: 10, 43 */
   background-color: var(--action-primary-bg-dark);
   /* cite: 11, 43 */
@@ -196,7 +196,8 @@ ul{
   text-wrap: nowrap;
   padding-inline: 4px;
 
-  color: var(--text-main-gray);  }
+  color: var(--text-main-gray); 
+; }
 
 .location
 {
@@ -218,8 +219,10 @@ padding: 0 4px;
 .location p, p.separator {
   text-wrap: nowrap;
     width: fit-content;
+    height: 46px;
 font-weight: var(--font-weight-medium);
 color: var(--text-main-gray);
+font-size: var(--font-size-h5);
 
 }
 .recent-searches-dropdown .search-results .result-snippet {
