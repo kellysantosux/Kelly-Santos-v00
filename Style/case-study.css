@@ -850,6 +850,13 @@ ul.action-list {
         box-shadow: none;
     }
 
+        .containerDescription img {
+            display: flex;}
+
+    .container_portfolio_cover img {
+   display: none;
+}
+
     .--w70 {
         width: 100%;
     }
