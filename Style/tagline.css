@@ -122,7 +122,81 @@ border-radius: var(--border-radius-xs);
 }
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 728px) {
+
+  .taglineGrid>.heroImage {
+    display: none;
+  }
+
+ .taglineGrid>.heroImage2 {
+  display: flex;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-xxl);
+      background-color: var(--bg-cards-primary-light);
+border-radius: var(--border-radius-xs);
+}
+
+
+  .taglineGrid>.description {
+
+    width: 100%;
+    height: fit-content;
+  }
+
+  .logo {
+    height: 83%;
+    object-fit: cover;
+
+  }
+
+ .taglineGrid .heroImage2  img {
+    width:100%;
+    height: auto;
+    object-fit: cover;
+
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+
+
+  .taglineGrid>.description {
+    height: 100%;
+  }
+
+
+}
+
+
+@media only screen and (max-width: 505px) {
+
+  .taglineGrid>.heroImage {
+    display: flex;
+  }
+
+ .taglineGrid>.heroImage2 {
+  display: none;
+
+}
+
+.taglineGrid {
+
+    gap: var(--spacing-base);
+
+}
+
+
+
+}
+
+
+
+@media only screen and (max-width: 428px) {
   
 .taglineGrid {
 
