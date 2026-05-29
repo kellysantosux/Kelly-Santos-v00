@@ -124,9 +124,6 @@ border-radius: var(--border-radius-xs);
 /* 
 @media only screen and (max-width: 728px) {
 
-  .taglineGrid>.heroImage {
-    display: none;
-  }
 
  .taglineGrid>.heroImage2 {
   display: flex;
@@ -204,6 +201,10 @@ border-radius: var(--border-radius-xs);
 
 }
 
+  .taglineGrid>.heroImage {
+    display: none;
+  }
+
     .taglineGrid>.heroImage2 {
         display: flex;
         width: 100%;
@@ -215,18 +216,23 @@ border-radius: var(--border-radius-xs);
         border-radius: var(--border-radius-xs);
     }
 
+     .taglineGrid .heroImage2  img {
+    width:100%;
+    height: auto;
+    object-fit: cover;
+
+  }
+
 .tagline {
   margin-top:var(--margin-xl);
          box-shadow: none;
 }
-  .taglineGrid>.heroImage {
-    display: none;
+
+  .taglineGrid>.description {
+    height: 100%;
   }
 
- .taglineGrid>.heroImage2 {
-  display: flex;
 
-}
 
   .body_homepage .portfolio_section {
     display: none;
