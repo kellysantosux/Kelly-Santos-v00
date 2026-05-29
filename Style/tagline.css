@@ -121,7 +121,7 @@ border-radius: var(--border-radius-xs);
   display: none;
 }
 
-
+/* 
 @media only screen and (max-width: 728px) {
 
   .taglineGrid>.heroImage {
@@ -192,17 +192,28 @@ border-radius: var(--border-radius-xs);
 
 
 
-}
+} */
 
 
 
-@media only screen and (max-width: 428px) {
+@media only screen and (max-width: 768px) {
   
 .taglineGrid {
 
     gap: var(--spacing-base);
 
 }
+
+    .taglineGrid>.heroImage2 {
+        display: flex;
+        width: 100%;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        padding: var(--padding-xxl);
+        background-color: var(--bg-cards-primary-light);
+        border-radius: var(--border-radius-xs);
+    }
 
 .tagline {
   margin-top:var(--margin-xl);
