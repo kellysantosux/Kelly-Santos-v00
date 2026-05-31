@@ -26,7 +26,7 @@
     width: 93.52%;
     height: fit-content;
     gap: var(--spacing-xxs);
-    padding: var(--padding-base);
+    padding: var(--padding-medium);
     background-color: var(--action-primary-bg-x-light);
     border: 1px solid var(--border-bottom-navigation-light);
     border-radius: var(--border-radius-xs);
@@ -110,7 +110,7 @@
   .bottomNav nav ul li a.active {
     font-weight: var(--font-weight-medium);
     background-color: var(--action-item-quaternary-light);
-    border: 1px solid var(--border-action-quaternary-light);
+    border: 1px solid var(--border-action-primary-dark);
   
   }
 
