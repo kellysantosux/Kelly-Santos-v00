@@ -102,17 +102,22 @@ background: var(--bg-cards-primary-light);
     border-radius: var(--border-radius-xs);
     padding: 0;
     background-color: transparent;
+          gap: var(--spacing-base);
   }
 
+.containerAboutMe> .container_link-button{
+   padding-left: var(--padding-lg);
 
+}
   .aboutMe>.description {
 
-    padding: var(--padding-xl);
+    padding: var(--padding-lg);
 
   }
 
   .aboutMe {
-
+    gap:0;
+  
     padding: 0;
 
 
