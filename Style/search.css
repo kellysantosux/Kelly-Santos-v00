@@ -9,6 +9,8 @@
 }
 
 
+
+
 .search-container {
   display: flex;
   width: fit-content;
@@ -51,6 +53,10 @@
   /* IMPROVED: Prominent, accessible focus indicator (WCAG 2.1) */
   width: 297.06px;
   /* cite: 17, 48 */
+}
+
+input::placeholder {
+    font-size: var(--font-size-base);
 }
 
 .search-button {
@@ -172,9 +178,10 @@ ul{
 .recent-searches-dropdown li {
   padding: 10px 20px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 40px;
   color: var(--text-main-gray);
   line-height: 1.5;
+ 
 }
 
 .ul {

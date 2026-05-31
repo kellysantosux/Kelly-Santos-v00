@@ -112,16 +112,18 @@ header>.logo_light {
     gap: var(--spacing-base);
         border-radius: 0;
   }
-  .logo img {
 
-  height: 68px;  
-  
-}
   a.logo {
  
- height: 58px;  
+ height: 52px;  
   
   }
+
+    .logo img {
+
+  height: 52px;  
+  
+}
 
   /*
   header a.logo {
