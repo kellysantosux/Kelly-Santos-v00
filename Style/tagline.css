@@ -64,6 +64,14 @@ background-color: var(--bg-banners-secondary-light);
 
 }
 
+.name_tagline h1{
+    font-size: 2.986rem;
+letter-spacing: -0.16px;
+font-weight: 800;
+line-height: 1.1;
+
+}
+
 .taglineDestak {
   text-decoration: underline var(--underline-red);
   text-underline-offset: 4px;
@@ -201,6 +209,9 @@ border-radius: var(--border-radius-xs);
 
 }
 
+.name_tagline  h2{
+    font-size: 2.016rem;
+}
 
 
     .taglineGrid>.heroImage2 {
