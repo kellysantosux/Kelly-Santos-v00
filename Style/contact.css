@@ -73,6 +73,7 @@ padding: 18.07%;
 .ContactMe>.description>h4 {
   font-weight: var(--font-weight-black);
 
+
 }
 
 .ContactMe>.ContactMeimage2 {
@@ -85,6 +86,7 @@ padding: 18.07%;
   height: 100%;
   align-items: start;
   justify-content: center;
+       background-color: var(--bg-cards-secondary-light);
 
 
 
@@ -106,24 +108,34 @@ padding: 18.07%;
     margin-bottom: 0;
     gap: var(--spacing-sm);
     border: 0px;
-padding: var(--padding-xl);
+padding: 0;
 align-items: center;
     border-radius: var(--spacing-xs);
     width: 100%;
+    background-color: transparent;
+  }
+
+  .container_description {
+    padding: var(--spacing-base);
+  }
+
+    .container_description h2 {
+      display: flex;
+      width: 100%;
+   
   }
 
   .ContactMe>.description {
 
     padding: var(--spacing-base);
     padding-top: 0;
-    gap: var(--spacing-sm);
-    border: 2px solid var(--very-light-shade-blue-magenta);
-
+    border: none;
+gap: var(--spacing-lg);
 
   }
-.container_description {
-      padding: var(--padding-xxl) var(--padding-lg);
-      order: 2;
+.ContactMe_description  {
+  
+    gap: var(--spacing-lg);
 }
 
   .ContactMe {
@@ -132,15 +144,22 @@ align-items: center;
 
         flex-direction: column;
     padding: 0;
+    gap: 0;
 
 
 
   }
+  .ContactMe>.ContactMeimage {
+  display: none;
+}
  .ContactMe>.ContactMeimage2 {
+  display: flex;
  width: 100%;
  height: fit-content;
   object-fit: cover;
        justify-content: left;
+       border-radius: var(--border-radius-xs);
+       background-color: var(--bg-cards-secondary-light);
 
 }
 

@@ -204,8 +204,8 @@ border-radius: var(--border-radius-xs);
 @media only screen and (max-width: 768px) {
   
 .taglineGrid {
-
-    gap: var(--spacing-lg);
+    gap: var(--spacing-base);
+    margin-bottom: var(--margin-sm);
 
 }
 
