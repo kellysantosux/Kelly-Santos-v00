@@ -109,7 +109,7 @@
   /* icons */
   --icon-dark: var(--blue-900);            
   --icon-light: var(--gray-50);           
-  --icon-gray: var(--gray-500);           
+  --icon-gray: var(--gray-500);     
 
   /* component*/
   --surface-component-light: var(--gray-50);           
