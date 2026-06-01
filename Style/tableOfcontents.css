@@ -1,6 +1,6 @@
 .table-of-contents__container {
   display: flex;
-  width: 20%;
+  width: 22.5%;
   height: fit-content;
   max-height: 472.82px;
 
@@ -357,9 +357,11 @@ li.table-of-contents__item:hover a.table-of-contents__link:hover {
 ---------------------------------------------------------------------- */
 @media only screen and (max-width: 1024px) {
 
+
+
     /* 1. Base Container (The fixed button/title) */
     .table-of-contents__container {
-      max-width: 198.7px;
+      max-width: 271.48px;
       width: 100%; 
         float: none;
         z-index: 60;
@@ -376,7 +378,7 @@ li.table-of-contents__item:hover a.table-of-contents__link:hover {
     .table-of-contents__container.toc-open {
       /* Apply the requested dimensions and visual style to the container itself */
 
-      width: 218.44px; /*239.78px Added to ensure it respects the requested width */
+      width: 100%; /*239.78px Added to ensure it respects the requested width */
 
       border: 1px solid var(--border-component-secondary-dark);
       border-radius: var(--border-radius-sm);

@@ -122,18 +122,16 @@ ul.responsibilities-list {
     height: fit-content;
     flex-direction: row;
     align-items: start;
-    justify-content: space-between;
-    gap: var(--spacing-base);
-    border-radius: var(--border-radius-xs);
+      border-radius: var(--border-radius-xs);
     padding: 0 var(--padding-base) var(--padding-base) var(--padding-base);
     background-color: var(--bg-div-primary-light);
-
+justify-content: space-between;
 
 }
 
 .casestudy {
     display: flex;
-    width: 80%;
+    width: 76.13%;
     height: fit-content;
     flex-direction: column;
     align-items: center;
@@ -820,10 +818,12 @@ ul.action-list {
     border: 1px solid var(--border-component-primary-light);
 }
 
+
 @media only screen and (max-width: 1024px) {
     .tc-casestudy {
         position: relative;
         flex-direction: row-reverse;
+        padding-inline: var(--padding-base);
 
     }
 
