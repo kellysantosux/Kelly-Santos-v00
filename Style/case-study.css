@@ -24,9 +24,10 @@ section.article-section {
     background-color: transparent;
     border: none;
     margin: 0;
-    padding: var(--spacing-base) 0;
+    padding: 0;
     overflow: hidden;
     border-radius: var(--border-radius-xs);
+    /* border: 2px solid red; */
 }
 
 .profile {
@@ -83,8 +84,12 @@ ul.responsibilities-list {
     background-color: transparent;
     border: none;
     margin: 0;
-    padding: var(--spacing-base) 0;
+    /* padding: var(--spacing-base) 0; */
+    padding:0; 
     border-radius: var(--border-radius-xs);
+    /* border: 2px solid blue;
+        margin-bottom: 16px;
+    margin-left: 16px; */
 }
 
 

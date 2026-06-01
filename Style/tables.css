@@ -2,7 +2,7 @@
 .tables {
     width: 100%; /* Make the table responsive and take full width */
     border-collapse: collapse; /* Collapse borders into a single line */
-    margin: 20px 0; /* Add some vertical spacing above and below the table */
+    /* margin: 20px 0; */
     border-color: var( --border-component-secondary-dark);
 
 }
