@@ -68,7 +68,6 @@
     padding: var(--padding-xxl);
     color: var(--text-anchor-gray);
 
-
     text-align: center;
     text-decoration: none;
     text-wrap: nowrap;
@@ -76,7 +75,7 @@
     font-weight: var(--font-weight-medium);
     border: 1.6px solid transparent;
     border-radius: var(--border-radius-xs);
-    	transition: all .5s ease 0s;
+
   }
 
   .bottomNav nav ul li a i {
