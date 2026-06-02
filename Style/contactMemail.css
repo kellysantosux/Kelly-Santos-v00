@@ -11,8 +11,8 @@
 .contactMemail a.primary {
   text-decoration: none;
   display: flex;
-  width: 100%;
-  padding: 14px 20px;
+  width: fit-content;
+ padding: 4.97% 6.95%;
   color: var(--text-anchor-light);
   font-weight: var(--font-weight-medium);
   background-color: transparent;
@@ -41,7 +41,7 @@ border: 1.6px solid var(--border-action-primary-dark-hover);
   text-decoration: none;
   display: flex;
   width: 100%;
-  padding: 14px 20px;
+  padding: 4.97% 6.95%;
   color: var(--text-anchor-dark);
   font-weight: var(--font-weight-medium);
   background-color: transparent;
@@ -66,7 +66,7 @@ border: 1.6px solid var(--border-action-primary-dark-hover);
   text-decoration: none;
   display: flex;
   width: 100%;
-  padding: 14px 20px;
+  padding: 4.97% 6.95%;
   color: var(--text-anchor-light);
   background-color: transparent;
   border: 1.6px solid var(--border-action-primary-light);
@@ -87,6 +87,19 @@ border: 1.6px solid var(--border-action-primary-dark-hover);
 
 }
 
+   @media only screen and (max-width: 380px) {
+
+    .contactMemail {  
+  display: flex;
+  width: 100%;
+
+  
+}
+    .contactMemail a.primary , .contactMemail a.secondary, .contactMemail a.tertiary{ 
+        width: 100%;
+   font-size: var(--font-size-sm);
+    }
+  }
 
 @media print {
     .contactMemail{

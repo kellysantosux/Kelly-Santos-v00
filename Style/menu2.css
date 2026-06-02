@@ -360,7 +360,7 @@ background-color: var(--action-primary-bg-dark);
 /* ----------------------------------------------------------------------
    Mobile Table of Contents Styles (max-width: 1024px)
 ---------------------------------------------------------------------- */
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1048px) {
 
 
   /* 1. Base Container (The fixed button/title) */

@@ -136,7 +136,7 @@ margin: var(--padding-xs);
 
 
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1048px) {
 
         .tc-resume {
         position: relative;

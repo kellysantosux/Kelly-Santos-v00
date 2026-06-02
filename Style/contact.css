@@ -128,6 +128,7 @@ align-items: center;
 
   .ContactMe>.description {
 
+
     padding-top: 0;
     border: none;
 gap: var(--spacing-lg);
@@ -171,3 +172,9 @@ gap: var(--spacing-lg);
   object-fit: cover;
 
 }}
+
+   @media only screen and (max-width: 380px) {
+
+  .container_description {
+    padding: var(--padding-s);
+  }}

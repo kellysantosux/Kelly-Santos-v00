@@ -240,7 +240,7 @@ a.submenu__link:hover {
 
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1048px) {
 
   li.menu__toggle__wrap {
     position: relative;

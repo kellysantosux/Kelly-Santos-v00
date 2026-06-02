@@ -385,9 +385,14 @@ span.highlight-term {
   font-weight: bold;
   /* Optional: to make it stand out more */
 }
+@media only screen and (max-width: 1280px) {
+
+  .search-container {
+    margin-left: auto;
+  }
 
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1048px) {
     .body_searchresults he .menu2__container {
         display: flex;
         position: absolute;
@@ -401,11 +406,6 @@ span.highlight-term {
    
     }
 }
-@media only screen and (max-width: 1280px) {
-
-  .search-container {
-    margin-left: auto;
-  }
 
 
 

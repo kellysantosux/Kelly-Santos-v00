@@ -67,7 +67,7 @@ display: flex;
     width:fit-content;
 }
 
-    @media only screen and (max-width: 1024px) {
+    @media only screen and (max-width: 1048px) {
 
     .pageTitle > a {
 font-size: var(--font-size-h5);
@@ -79,7 +79,7 @@ font-size: var(--font-size-h5);
       main{
            padding-bottom: 98px;
                gap: var(--spacing-sm);
-            margin-top: 169px;
+            margin-top: 178px;
       }
 
     .pageTitle > a {
@@ -89,6 +89,11 @@ font-size: var(--font-size-h6);
 
     @media only screen and (max-width: 380px) {
 
+      main{
+                margin-top: 149px;
+        width: 100%;
+                padding-inline: var(--padding-xl);
+      }
      main .pageTitle {
     padding-left:0;
   }

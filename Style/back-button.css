@@ -43,7 +43,7 @@ font-weight: var(--font-weight-medium);
     .backButton i {
 justify-content: left;
 display: block;
-font-size: var(--font-size-base);
+font-size: var(--major-third-base);
 align-items: center;
 }
 @media only screen and (max-width: 768px) {

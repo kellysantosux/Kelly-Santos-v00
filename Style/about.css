@@ -151,3 +151,13 @@ background: var(--bg-cards-primary-light);
 
 
 }
+
+   @media only screen and (max-width: 380px) {
+
+  .aboutMe>.description{  
+    padding: var(--padding-s);
+
+  
+}
+
+  }

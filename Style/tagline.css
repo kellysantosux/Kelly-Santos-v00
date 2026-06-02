@@ -64,19 +64,14 @@ background-color: var(--bg-banners-secondary-light);
 }
 
 .name_tagline h1{
-    font-size: 2.986rem;
-letter-spacing: -0.16px;
 font-weight: 800;
-line-height: 1.1;
-
 }
 
 .taglineDestak {
-  text-decoration: underline var(--underline-red);
-  text-underline-offset: 4px;
-  font-weight: var(--font-weight-medium);
-  text-decoration-thickness: 2.62px;
-
+      font-size: var(--font-size-h5);
+    color: var(--text-title-secondary-dark);
+    font-family: var(--primary-font);
+    margin: 0;
 }
 
 
@@ -215,6 +210,7 @@ border-radius: var(--border-radius-xs);
 .--main-tagline{
   width: 100%;
           padding-inline: 0;
+          margin-top: 164.20px;
 }
 
 .name_tagline  h1{
@@ -271,4 +267,17 @@ font-weight: var(--font-weight-black) ;
 
   }
 
+}
+
+@media only screen and (max-width: 380px) {
+.--main-tagline{
+          margin-top: 141.64px;
+}
+}
+
+
+@media only screen and (max-width: 320px) {
+.--main-tagline{
+          margin-top: 137.76px;
+}
 }

@@ -12,8 +12,9 @@
  */
                  
 :root {
-/* --- Primitives (Base Palette) --- */
 
+/* 1. COLORS */
+/* --- Primitives (Base Palette) --- */
 /* Neutrals & Grays */
 --gray-50: #FAFAFA;     /*ultra-light-neutral-gray, very-light-shade-blue-magenta, very-light-shade-gray */
 --gray-100: #FBF8F9;    /*very-light-shade-red */
@@ -49,11 +50,7 @@
 /* Reds */
 --red-500: #FB5061;     /*medium-light-shade-red */
 
-
-  /* ------------------------------------------------------------------------
-     2. UNIFIED SEMANTIC VARIABLES
-     ------------------------------------------------------------------------ */
-
+/* 2. SEMANTIC TOKENS */
   /* Layout & Page Canvas Backdrops */
 
   /* Body background */
@@ -126,7 +123,7 @@
   --bg-component-secondary-brown: var(--brown-500); 
   --bg-component-tertiary-brown: var(--brown-200); 
   --bg-component-quinary-light: var(--gray-100); 
-  
+
   /* Typography Hierarchy */
 
   /* Major editorial page headings and case study titles */
@@ -279,45 +276,120 @@
   --status-error: var(--red-500);          /* Invalid form validation input rings or warning boxes */
   --status-success: var(--green-50);       /* Form confirmation message panel backdrops */
   
-
+  /* 3. TYPOGRAPHY SCALES */
   /* Typography */
   --primary-font: "Montserrat", sans-serif;
-  --font-size-d0: 5.15976rem;
-  --font-size-d1: 4.2998rem;
-  /* --font-size-d2: 2.6832rem; */
- --font-size-d2: 3.5832rem;
-  --font-size-h1: 2.986rem;
-  --font-size-h2: 2.488rem;
-  --font-size-h3: 2.074rem;
-  --font-size-h4: 1.728rem;
-  --font-size-h5: 1.44rem;
-  --font-size-h6: 1.2rem;
-  --font-size-base: 1rem;
-  --font-size-sm: 0.833rem;
-  --font-size-xs: 0.694rem;
-  --font-size-xxs: 0.579rem;
 
-  /* root change */
+  /* Scale: 1.067 minor second) */
+  --minor-second-d0: 1.913rem;
+  --minor-second-d1: 1.793rem; 
+  --minor-second-d2: 1.680rem;
+  --minor-second-d3: 1.575rem;
+  --minor-second-h1: 1.476rem;
+  --minor-second-h2: 1.383rem;
+  --minor-second-h3: 1.296rem;
+  --minor-second-h4: 1.215rem;
+  --minor-second-h5: 1.138rem;
+  --minor-second-h6: 1.067rem;
+  --minor-second-base: 1.000rem;
+  --minor-second-sm: 0.937rem;
+  --minor-second-xs: 0.878rem;
+  --minor-second-xxs: 0.823rem; 
 
-  /* Headings (Tighter Scale: ~1.104) */
-  --size-d2: 2.4304rem;
-  --size-h1: 1.51188rem;
-  /* Fixed maximum value */
-  --size-h2: 1.365rem;
-  --size-h3: 1.237rem;
-  --size-h4: 1.121rem;
-  --size-h5: 1.015rem;
-  --size-h6: 0.920rem;
+    /* Scale: 1.125 major second) */
+  --major-second-d0:  3.247rem;
+  --major-second-d1: 2.887rem; 
+  --major-second-d2: 2.566rem;
+  --major-second-d3: 2.281rem;
+  --major-second-h1: 2.027rem;
+  --major-second-h2: 1.802rem;
+  --major-second-h3: 1.602rem;
+  --major-second-h4: 1.424rem;
+  --major-second-h5: 1.125rem;
+  --major-second-h6: 1.067rem;
+  --major-second-base: 1.000rem;
+  --major-second-sm: 0.889rem;
+  --major-second-xs: 0.790rem;
+  --major-second-xxs: 0.702rem; 
 
-  /* Body and Utility Sizes (Wider Scale: ~1.129) */
-  --size-base: 0.833rem;
-  /* Fixed base value */
-  --size-sm: 0.739rem;
-  --size-xs: 0.654rem;
-  --size-xxs: 0.579rem;
-  /* Fixed minimum value */
+    /* Scale: 1.2  minor third) */
+  --minor-third-d0: 6.192rem;
+  --minor-third-d1: 5.160rem;
+  --minor-third-d2: 4.300rem;
+  --minor-third-d3: 3.583rem;
+  --minor-third-h1: 2.986rem;
+  --minor-third-h2: 2.488rem;
+  --minor-third-h3: 2.074rem;
+  --minor-third-h4: 1.728rem;
+  --minor-third-h5: 1.440rem;
+  --minor-third-h6: 1.200rem;
+  --minor-third-base: 1.000rem;
+  --minor-third-sm: 0.833rem;
+  --minor-third-xs: 0.694rem;
+  --minor-third-xxs: 0.579rem;
 
-  /* print */
+  /* Scale: 1.25 major third) */
+  --major-third-d00: 7.740rem;
+  --major-third-d0: 6.450rem;
+  --major-third-d1: 5.375rem; 
+  --major-third-d2: 4.479rem;
+  --major-third-d3: 3.732rem;
+  --major-third-h1: 3.110rem;
+  --major-third-h2: 2.592rem;
+  --major-third-h3: 2.160rem;
+  --major-third-h4: 1.800rem;
+  --major-third-h5: 1.500em;
+  --major-third-h6: 1.250rem;
+  --major-third-base: 1.000rem;
+  --major-third-sm: 0.800rem;
+  --major-third-xs: 0.640rem;
+  --major-third-xxs: 0.512rem; 
+
+  /* Desktop-Scale: 1.25 major third) */
+    --font-size-d0: var(--major-third-d0);
+  --font-size-d1: var(--major-third-d1);
+  --font-size-d2: var(--major-third-d2);
+  --font-size-d3: var(--major-third-d3);
+  --font-size-h1: var(--major-third-h1);
+  --font-size-h2: var(--major-third-h2);
+  --font-size-h3: var(--major-third-h3);
+  --font-size-h4: var(--major-third-h4);
+  --font-size-h5: var(--major-third-h5);
+  --font-size-h6: var(--major-third-h6);
+  --font-size-base: var(--major-third-base);
+  --font-size-sm: var(--major-third-sm);
+  --font-size-xs: var(--major-third-xs);
+  --font-size-xxs: var(--major-third-xxs); 
+
+
+    /* Scale: 1.2 minor third) */
+    --minor-third-d00: 7.430rem;
+--minor-third-d0: 6.192rem;
+  --minor-third-d1: 5.160rem;
+  --minor-third-d2: 4.300rem;
+  --minor-third-d3: 3.583rem; 
+  --minor-third-h1: 2.986rem;
+  --minor-third-h2: 2.488rem; 
+  --minor-third-h3: 2.074rem; 
+  --minor-third-h4: 1.728rem; 
+  --minor-third-h5: 1.440rem; 
+  --minor-third-h6: 1.200rem; 
+  --minor-third-base: 1.000rem;
+  --minor-third-sm: 0.833rem;
+  --minor-third-xs: 0.694rem;
+  --minor-third-xxs: 0.579rem;
+
+
+
+
+
+
+
+
+
+
+
+    /* Print Typography */
 
   --print-font-size-h1: 2.5rem;
   /* 27.5pt - Main Title */
@@ -339,7 +411,7 @@
   /* 8pt    - Fine Print */
   --print-font-size-xxs: 0.65rem;
   /* 7pt    - Minimum Legible */
-
+/* 4. LAYOUT & EFFECTS */
   --font-weight-light: 400;
   --font-weight-base: 500;
   --font-weight-medium: 600;
@@ -392,5 +464,78 @@
   --box-shadow-g: 0 0 1px rgba(0, 0, 0, .08), 0 4px 12px rgba(0, 0, 0, .2);
   --box-shadow-cs: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
   --box-shadow-toc: 0 4px 6px rgba(0, 0, 0, 0.05);
+
+
+
+
+
+
+
+
+
+
+}
+
+@media only screen and (max-width: 1048px) {
+ 
+  :root {
+  /* RESPONSIVE OVERRIDES */
+  --font-size-d0: var(--minor-third-d0);
+  --font-size-d1: var(--minor-third-d1);
+  --font-size-d2: var(--minor-third-d2);
+  --font-size-d3: var(--minor-third-d3);
+  --font-size-h1: var(--minor-third-h1);
+  --font-size-h2: var(--minor-third-h2);
+  --font-size-h3: var(--minor-third-h3);
+  --font-size-h4: var(--minor-third-h4);
+  --font-size-h5: var(--minor-third-h5);
+  --font-size-h6: var(--minor-third-h6);
+  --font-size-base: var(--minor-third-base);
+  --font-size-sm: var(--minor-third-sm);
+  --font-size-xs: var(--minor-third-xs);
+  --font-size-xxs: var(--minor-third-xxs); 
+}
+}
+
+@media only screen and (max-width: 768px) {
+ 
+  :root {
+  /* RESPONSIVE OVERRIDES */
+  --font-size-d0: var(--minor-third-d00);
+  --font-size-d1: var(--minor-third-d0);
+  --font-size-d2: var(--minor-third-d1);
+  --font-size-d3: var(--minor-third-d2);
+  --font-size-h1: var(--minor-third-d3);
+  --font-size-h2: var(--minor-third-h1);
+  --font-size-h3: var(--minor-third-h2);
+  --font-size-h4: var(--minor-third-h3);
+  --font-size-h5: var(--minor-third-h4);
+  --font-size-h6: var(--minor-third-h5);
+  --font-size-base: var(--minor-third-h6);
+  --font-size-sm: var(--minor-third-base);
+  --font-size-xs: var(--minor-third-sm);
+  --font-size-xxs: var(--minor-third-xs); 
+}
+}
+
+@media only screen and (max-width: 380px) {
+ 
+  :root {
+  /* RESPONSIVE OVERRIDES */
+  --font-size-d0: var(--major-second-d0);
+  --font-size-d1: var(--major-second-d1);
+  --font-size-d2: var(--major-second-d2);
+  --font-size-d3: var(--major-second-d3);
+  --font-size-h1: var(--major-second-h1);
+  --font-size-h2: var(--major-second-h2);
+  --font-size-h3: var(--major-second-h3);
+  --font-size-h4: var(--major-second-h4);
+  --font-size-h5: var(--major-second-h5);
+  --font-size-h6: var(--major-second-h6);
+  --font-size-base: var(--major-second-base);
+  --font-size-sm: var(--major-second-sm);
+  --font-size-xs: var(--major-second-xs);
+  --font-size-xxs: var(--major-second-xxs); 
+}
 }
 

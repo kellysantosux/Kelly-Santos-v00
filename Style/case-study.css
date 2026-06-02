@@ -107,7 +107,7 @@ ul.responsibilities-list {
     align-items: center;
     justify-content: right;
     font-family: var(--primary-font);
-    font-size: var(--font-size-sm);
+    font-size: var(--major-third-sm);
     font-weight: var(--font-weight-bold);
     color: var(--text-main-primary-dark);
     margin-top: -72.33px;
@@ -824,7 +824,7 @@ ul.action-list {
 }
 
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1048px) {
     .tc-casestudy {
         position: relative;
         flex-direction: row-reverse;
@@ -1020,7 +1020,7 @@ ul.action-list {
             content: counter(page) "/" counter(pages);
             /* Match document typography */
             font-family: var(--primary-font);
-            font-size: var(--font-size-xs);
+            font-size: var(--major-third-xs);
             color: var(--text-main-primary-dark);
             font-weight: var(--font-weight-medium);
         }
@@ -1035,7 +1035,7 @@ ul.action-list {
         width: 100%;
         justify-self: right;
         text-align: center;
-        font-size: var(--font-size-xs);
+        font-size: var(--major-third-xs);
         color: var(--text-main-primary-dark);
     }
 }

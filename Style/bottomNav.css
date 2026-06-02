@@ -66,15 +66,13 @@
     gap: var(--spacing-xs);
     padding: var(--padding-xxl);
     color: var(--text-anchor-gray);
-
     text-align: center;
     text-decoration: none;
     text-wrap: nowrap;
-    font-size: var(--size-base);
+    font-size: var(--font-size-sm);
     font-weight: var(--font-weight-medium);
     border: 1.6px solid transparent;
     border-radius: var(--border-radius-xs);
-
   }
 
   .bottomNav nav ul li a i {
@@ -134,13 +132,24 @@
 }
 
 /* Small Mobile Screens */
+@media only screen and (max-width: 380px) {
+
+    .bottomNav nav ul {
+      gap:0}
+      
+
+  }
+
+
+/* Small Mobile Screens */
 @media only screen and (max-width: 320px) {
   .bottomNav {
     width: 100%;
     max-width: 320px;
   }
 
+
   .bottomNav nav ul li a {
-    font-size: var(--size-xs);
+    font-size: var(--font-size-xxs);
   }
 }
