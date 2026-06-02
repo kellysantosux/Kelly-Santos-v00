@@ -140,6 +140,7 @@
     --text-main-gray: var(--gray-500);     
     --text-main-primary-dark: var(--gray-900);     
     --text-main-secondary-dark: var(--blue-900); 
+        --text-main-tertiary-dark: var(--gray-800); 
     --text-highlighted-blue: var(--blue-600);/* text highlighted */
     --text-highlighted-red: var(--red-500);/* text highlighted */
 
@@ -211,6 +212,7 @@
 
   /* Card's Border, Lines & Grid Framing */
   --border-card-secondary-light: var(--blue-200);  
+    --border-card-primary-x-light: var(--white);  
 
   --border-light: var(--gray-100);         /* Ultra-faint separating layout lines */
   --border-card: var(--gray-200);          /* Structural container cards, sticky sidebars, panel limits */

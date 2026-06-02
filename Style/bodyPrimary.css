@@ -207,11 +207,20 @@ table {
     margin: 0;
 }
 
-.--sm, .sm,
+.--sm, .sm{
+    font-size: var(--font-size-sm);
+    color: var(--text-main-secondary-dark);
+    font-family: var(--primary-font);
+    font-weight: var(--font-weight-base);
+    line-height: 1.619;
+    margin: 0;
+}
+
+
 a.toc-submenu__link,dt,
 dd,
 a.menu2__link {
-    font-size: var(--font-size-base);
+    font-size: var(--font-size-sm);
     color: var(--text-main-secondary-dark);
     font-family: var(--primary-font);
     font-weight: var(--font-weight-base);
@@ -363,7 +372,7 @@ strong{
     }
 
     .--s6, .s6 {
-        font-size: var(--font-size-base);
+        font-size: var(--font-size-h5);
     }
 
 
@@ -421,7 +430,13 @@ li,    dt,
 
 
 
-table,.--sm, .sm, a,
+table,.--sm, .sm{
+     
+    font-size: var(--font-size-h6);
+        line-height: 1.619;
+}
+
+a,
 a.toc-submenu__link,dt,
 dd,
 a.menu2__link, p,
@@ -464,20 +479,23 @@ a.menu2__link, p,
     }
 
     figcaption {
-        font-size: var(--font-size-h6);
+        font-size: var(--font-size-h5);
             line-height: 1.619;
     }
 
     h6 {
-        font-size: var(--font-size-h6);
+        font-size: var(--font-size-h5);
             line-height: 1.619;
     }
 
-    .--s1 {
+    .--s1, .s1 {
         font-size: var(--font-size-h1);
     }
 
-    .--s3 {
+    .--s2, .s2 {
+        font-size: var(--font-size-h2);
+    }
+      .--s3, .s3 {
         font-size: var(--font-size-h3);
     }
 
@@ -490,7 +508,7 @@ a.menu2__link, p,
     }
 
     .--s6, .s6 {
-        font-size: var(--font-size-h6);
+        font-size: var(--font-size-h5);
     }
 
 
