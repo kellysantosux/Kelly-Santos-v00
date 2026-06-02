@@ -46,6 +46,7 @@
 
     color: var(--text-anchor-dark);
     border-radius: var(--border-radius-xs);
+    background-color: var(--bg-cards-primary-x-light);
 
     overflow: hidden;
 

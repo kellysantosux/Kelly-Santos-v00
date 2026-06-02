@@ -312,7 +312,7 @@ span.highlight-term {
   .search-container {
     width: 100%;
     margin: auto;
-    border: 1.6px solid var(--light-shade-cyan-blue);
+    border: 0px;
     /* cite: 2, 34 */
 
   }
