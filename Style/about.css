@@ -91,7 +91,7 @@ background: var(--bg-cards-primary-light);
 
 
 
-@media only screen and (max-width:728px) {
+@media only screen and (max-width:768px) {
 
   .containerAboutMe {
     width: 100%;
@@ -116,6 +116,7 @@ background: var(--bg-cards-primary-light);
   }
 
   .aboutMe {
+      grid-template-columns: 1fr;
     gap:0;
   
     padding: 0;
