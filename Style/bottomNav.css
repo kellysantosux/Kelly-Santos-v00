@@ -17,7 +17,7 @@
     /* box-shadow: inset 2px 2px 1px 0 rgba(255, 255, 255, 0.5),
     inset -1px -1px 1px 1px rgba(255, 255, 255, 0.5);
       background: rgba(255, 255, 255, 0.50); */
-           margin-bottom: var(--padding-medium);
+         padding-bottom: var(--padding-medium);
   }
 
 
@@ -32,8 +32,6 @@
     gap: var(--spacing-xxs);
     background-color: var(--action-primary-bg-x-light);
     border: 1.6px solid var(--border-bottom-navigation-light);
-    border-radius: var(--border-radius-xs);
-        box-shadow: 0 1px 4px 0px rgba(5, 8, 34, 0.2);
         padding: var(--padding-s);
   }
 
