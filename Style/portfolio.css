@@ -195,6 +195,7 @@
 
     .portfolioCards {
         margin-bottom: 0;
+          grid-template-columns: 1fr;
 
 
 
