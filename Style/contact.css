@@ -116,7 +116,8 @@ align-items: center;
   }
 
   .container_description {
-    padding: var(--spacing-base);
+
+            padding: var(--padding-lg);
   }
 
     .container_description h2 {
@@ -127,7 +128,6 @@ align-items: center;
 
   .ContactMe>.description {
 
-    padding: var(--spacing-base);
     padding-top: 0;
     border: none;
 gap: var(--spacing-lg);

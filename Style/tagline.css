@@ -206,6 +206,9 @@ border-radius: var(--border-radius-xs);
 .taglineGrid {
     gap: var(--spacing-base);
     margin-bottom: var(--margin-sm);
+    border: 4px solid transparent;
+    align-items: center;
+    justify-content: center;
 
 }
 
@@ -242,7 +245,8 @@ font-weight: var(--font-weight-black) ;
 .tagline {
 
          box-shadow: none;
-          padding:var(--padding-xxl) var(--padding-xl);
+          padding:var(--padding-xxl) var(--padding-medium);
+          border-radius: 0;
 }
 
   .taglineGrid>.description {

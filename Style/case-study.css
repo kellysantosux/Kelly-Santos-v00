@@ -853,6 +853,7 @@ ul.action-list {
         padding-top: 0;
         border: none;
         box-shadow: none;
+        gap: var(--spacing-sm);
     }
 
         .containerDescription img {

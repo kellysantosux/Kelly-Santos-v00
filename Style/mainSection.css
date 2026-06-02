@@ -196,7 +196,7 @@ margin: auto;
         }
     h1{
 
-    padding: var(--padding-lg);
+    padding: var(--padding-lg) 0;
     }
         .search_section {
             padding: var(--padding-sm) var(--padding-base);

@@ -182,8 +182,8 @@ margin: var(--padding-xs);
         padding: 0;
      border: none;
      background-color: transparent;
-     padding:var(--padding-base);
-          border: 1px solid var(--border-section-primary-light);
+     padding:0;
+          border: none;
         
         }
 .resume {

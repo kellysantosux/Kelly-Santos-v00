@@ -348,7 +348,7 @@ strong{
     }
 
     figcaption {
-        font-size: var(--font-size-sm);
+        font-size: var(--font-size-h6);
     }
 
     h6 {
