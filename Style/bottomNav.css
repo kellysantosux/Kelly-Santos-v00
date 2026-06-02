@@ -42,6 +42,7 @@
     width: 100%;
     height: fit-content;
     justify-content: space-between;
+    gap: var(--spacing-sm);
      margin: 0;
     padding: 0;
     list-style-type: none;
