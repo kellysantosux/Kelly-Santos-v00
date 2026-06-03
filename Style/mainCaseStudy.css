@@ -76,11 +76,17 @@ font-size: var(--font-size-h5);
 
     
     @media only screen and (max-width: 768px) {
-      main{
+
+
+     main {
+            width: 100%;
            padding-bottom: 98px;
                gap: var(--spacing-sm);
-            margin-top: 178px;
-      }
+                      margin-top: 172.8px;
+
+
+     }
+
 
     .pageTitle > a {
 font-size: var(--font-size-h6);
@@ -90,7 +96,6 @@ font-size: var(--font-size-h6);
     @media only screen and (max-width: 380px) {
 
       main{
-                margin-top: 149px;
         width: 100%;
                 padding-inline: var(--padding-xl);
       }

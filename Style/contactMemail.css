@@ -1,6 +1,6 @@
 .contactMemail {  
   display: flex;
-  width: fit-content;
+  width: 345px;
   height: auto;
   align-items: center;
   gap: var(--spacing-sm);

@@ -1,99 +1,87 @@
 .containerContactMe {
   display: flex;
-  width: 96.76%;
+  max-width: 1211.19px;
+  width: 100%;
   height: fit-content;
   flex-direction: column;
   align-items: start;
   gap: var(--spacing-sm);
-    border-radius: var(--border-radius-xs);   
-    padding:var(--padding-xl);
-    margin-bottom: var(--margin-lg);
+  border-radius: var(--border-radius-xs);
   border: 1.6px solid var(--border-section-secondary-light);
   background-color: var(--bg-section-secondary-light);
-
+  padding: var(--padding-xl);
+  margin-bottom: var(--margin-lg);
 }
 
 .--padding-top-0 {
-  padding-top: 0%;
+  padding-top: 0;
 }
 
-.ContactMe {
+.contactMe {
   display: grid;
-  max-width: 1211.19px;
+
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  width: 100%;
   height: fit-content;
   align-items: start;
   justify-content: center;
   gap: var(--spacing-base);
   flex-direction: row;
   text-align: left;
+
 }
 
-
-.container_description {
+.contactMe>.description {
   display: flex;
   width: 100%;
-  height: 100%;
+  height: auto;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: left;
+  justify-content: left;
   flex-wrap: wrap;
   text-align: left;
   border: 2px solid transparent;
+  border-radius: var(--border-radius-xs);
+  gap: var(--spacing-base);
+  padding: 11%;
 background: var(--bg-cards-primary-light);
-  border-radius: var(--border-radius-xs);
-  
-padding: 18.07%;
-  gap: var(--spacing-base);
-    margin: auto;
 }
 
 
 
 
 
-.ContactMe_description {
+.contactMe>.description>h2 {
   display: flex;
-  width: fit-content;
-  flex-direction: column;
-  justify-content: center;
-  flex-wrap: wrap;
-  text-align: left;
-  border: 2px solid transparent;
-  color: var( --very-dark-shade-blue);
-  border-radius: var(--border-radius-xs);
-
-  gap: var(--spacing-base);
+  width: 100%;
 
 }
 
-
-
-
-.ContactMe>.description>h4 {
+.contactMe>.description>h4 {
+  display: flex;
+  width: 100%;
   font-weight: var(--font-weight-black);
 
-
 }
 
-.ContactMe>.ContactMeimage2 {
+.contactMe>.contactMeimage2 {
   display: none;
 }
 
-.ContactMe>.ContactMeimage {
+.contactMe>.contactMeimage {
   display: flex;
   width: 100%;
   height: 100%;
   align-items: start;
   justify-content: center;
-       background-color: var(--bg-cards-secondary-light);
+   background-color: var(--bg-div-secondary-light);
 
 
 
 
 }
 
-.ContactMe .ContactMeimage img {
+.contactMe .contactMeimage img {
   width: 100%;
   height: 100%;
   border-radius: var(--border-radius-xs);
@@ -102,79 +90,76 @@ padding: 18.07%;
 }
 
 
+
+
 @media only screen and (max-width:768px) {
 
   .containerContactMe {
+    width: 100%;
     margin-bottom: 0;
     gap: var(--spacing-sm);
     border: 0px;
-padding: 0;
-align-items: center;
-    border-radius: var(--spacing-xs);
-    width: 100%;
-    background-color: transparent;
-  }
 
-  .container_description {
-
-            padding: var(--padding-lg);
-  }
-
-    .container_description h2 {
-      display: flex;
-      width: 100%;
-   
-  }
-
-  .ContactMe>.description {
-
-
-    padding-top: 0;
-    border: none;
-gap: var(--spacing-lg);
-
-  }
-.ContactMe_description  {
-  
-    gap: var(--spacing-lg);
-}
-
-  .ContactMe {
-            display: flex;
-        width:100%;
-
-        flex-direction: column;
+    border-radius: var(--border-radius-xs);
     padding: 0;
-    gap: 0;
+    background-color: transparent;
+          gap: var(--spacing-base);
+  }
 
+.containerContactMe> .container_link-button{
+   padding-left: var(--padding-lg);
+
+}
+  .contactMe>.description {
+
+    padding: var(--padding-lg);
+
+  }
+
+  .contactMe {
+      grid-template-columns: 1fr;
+    gap:0;
+  
+    padding: 0;
 
 
   }
-  .ContactMe>.ContactMeimage {
+  .contactMe>.contactMeimage {
   display: none;
+
+
+
+
+
 }
- .ContactMe>.ContactMeimage2 {
+
+  .contactMe>.contactMeimage2 {
   display: flex;
- width: 100%;
- height: fit-content;
+  width: 100%;
+  height: 100%;
+  align-items: start;
+  justify-content: center;
+     background-color: var(--bg-div-secondary-light);
+
+  }
+
+  .contactMe .contactMeimage2 img {
+  width: 100%;
+  height: 100%;
+  border-radius: var(--border-radius-xs);
   object-fit: cover;
-       justify-content: left;
-       border-radius: var(--border-radius-xs);
-       background-color: var(--bg-cards-secondary-light);
 
 }
 
 
-   
-
- .ContactMe>.ContactMeimage2 img {
- width: 62%;
-  object-fit: cover;
-
-}}
+}
 
    @media only screen and (max-width: 380px) {
 
-  .container_description {
+  .contactMe>.description{  
     padding: var(--padding-s);
-  }}
+
+  
+}
+
+  }

@@ -13,7 +13,7 @@
   text-decoration: none;
   display: flex;
   width: fit-content;
-  padding: 8px 16px;
+  padding: 1.89% 3.78%;
   color: var(--text-anchor-light);
   font-weight: var(--font-weight-medium);
    border: 1.6px solid var(--border-action-primary-dark);
@@ -41,7 +41,7 @@ opacity: 0.8;
   text-decoration: none;
   display: flex;
   width: fit-content;
-  padding: 8px 16px;
+  padding: 1.89% 3.78%;
   color: var(--text-anchor-dark);
   font-weight: var(--font-weight-medium);
   background-color: transparent;
@@ -76,7 +76,7 @@ opacity: 0.8;
   margin: 8px 8px;
   border: 1px solid var(--border-action-primary-light);
   background-color: var(--action-item-primary-light);
-  padding: 8px 16px;
+  padding: 1.89% 3.78%;
   color: var(--text-main-dark);
   font-weight: var(--font-weight-base);
 }
@@ -93,9 +93,9 @@ opacity: 0.8;
   @media only screen and (max-width: 768px) {
 
     .container_link-button {
-      gap: var(--spacing-sm);
+      gap: var(--spacing-base);
     }
     .container_link-button a.primary, .container_link-button a.secondary {
-   width: 50%;
+   width: 33.333%;
     }
   }

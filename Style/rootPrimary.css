@@ -38,6 +38,9 @@
 --blue-600: #196CA9;    /*shade-cyan-blue */
 --blue-900: #282B43;    /*deep-near-black-shade-navy-blue, very-dark-shade-blue */
 
+/* Slates */
+--slate-700: #535468; /* medium dark shade of blue*/
+
 /* Browns / Warms */
 --brown-50: #F0EAE5;    /*very-light-shade-brown */
 --brown-200: #E5E2E1;   /*very-light-shade-red-orange */
@@ -76,7 +79,7 @@
   /* div background */
   --bg-div-primary-dark: var(--blue-900);            
   --bg-div-primary-light: var(--gray-50);            
-
+  --bg-div-secondary-light: var(--blue-200); 
   /* Banner background */
   --bg-banners-primary-dark: var(--blue-900);            
   --bg-banners-primary-light: var(--gray-50); 
@@ -162,7 +165,7 @@
   --action-tertiary-bg-active: var(--blue-300);    /* Solid button background (Contact CTA, Search submit button) */
   --action-primary-bg-x-light: var(--white);    /* Solid button background (Contact CTA, Search submit button) */
   --action-tertiary-bg-light: var(--blue-200);    /* Solid button background (Contact CTA, Search submit button) */
-
+--action-primary-bg-slate: var(--slate-700);    /* Solid button background (Contact CTA, Search submit button) */
   /* States Action Elements & Navigation Controls */
   --action-search-fill: var(--white);      /* Inside background fill for search pill text fields */
   --action-item-hover: var(--blue-200);    
@@ -172,14 +175,14 @@
   --action-item-primary-light: var(--gray-50);     
   --action-item-primary-gray: var(--gray-500);     
   --action-item-secondary-light: var(--blue-200); 
-  --action-item-quaternary-light: var(--blue-50);        
+  --action-item-quaternary-light: var(--blue-50);      
 
   /* Borders, Lines & Grid Framing */
   
   /* Borders body */
   --border-body-dark: var(--blue-900);            /* Body background */
   --border-body-light: var(--gray-50);            /* Body background */
-  --border-body-mobile: var(-blue-50);            /* Body background small devices */
+  --border-body-mobile: var(--blue-50);            /* Body background small devices */
   
   /* Borders navigation */
   --border-header: var(--gray-50);              
@@ -250,6 +253,7 @@
   --border-action-primary-dark-hover: var(--blue-900);   
   --border-action-tertiary-red-hover: var(--red-500);   
   --border-action-quaternary-light: var(--blue-50);  
+  
   
  /* outlines*/
   --outline-action-primary-dark: var(--blue-900);    /* Outline (Contact CTA, Search submit button) */

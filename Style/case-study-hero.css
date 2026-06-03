@@ -103,14 +103,15 @@
    
             background-color: var(--bg-cards-secondary-light);
             border-radius: 0;
+            padding: var(--padding-xl) var(--padding-xxl) var(--padding-xxl) var(--padding-xxl);
+         
 }
         
 
     .containerDescription  {
-           padding: var(--padding-base);
-
                    width: 100%;
           align-items: start;
+             gap:0;
     
 }
     .containerDescription img {
@@ -123,8 +124,13 @@
         width: 100%;
         margin-top: var(--spacing-base);
     }
-}
 
+
+.containerDescription h1 {
+    padding:  var(--padding-xl) ;
+
+}
+    }
 @media print {
     .hero-container {
         width: 100%;
@@ -217,5 +223,8 @@
     .containerDescription h1 {
         width: 100%;
     }
+
+
+
 
 }

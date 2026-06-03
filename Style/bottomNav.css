@@ -17,7 +17,7 @@
     /* box-shadow: inset 2px 2px 1px 0 rgba(255, 255, 255, 0.5),
     inset -1px -1px 1px 1px rgba(255, 255, 255, 0.5);
       background: rgba(255, 255, 255, 0.50); */
-         padding-bottom: var(--padding-medium);
+      background-color: var(--action-primary-bg-x-light);
   }
 
 
@@ -26,13 +26,15 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 658.13px;
+    /* max-width: 658.13px; */
     width: 100%;
     height: fit-content;
     gap: var(--spacing-xxs);
-    background-color: var(--action-primary-bg-x-light);
+
     border: 1.6px solid var(--border-bottom-navigation-light);
-        padding: var(--padding-s);
+    padding-top: var(--padding-s);
+           padding-bottom: var(--padding-xl);
+   padding-inline:var(--padding-xl);
   }
 
   .bottomNav nav ul {
@@ -69,7 +71,7 @@
     text-align: center;
     text-decoration: none;
     text-wrap: nowrap;
-    font-size: var(--font-size-sm);
+    font-size: var(--font-size-xs);
     font-weight: var(--font-weight-medium);
     border: 1.6px solid transparent;
     border-radius: var(--border-radius-xs);
@@ -81,7 +83,7 @@
     height: fit-content;
     color: var( --icon-gray);
     text-align: center;
-    font-size: var(--font-size-h5);
+    font-size: 1.200rem;
     font-weight: var(--font-weight-base);
   }
 

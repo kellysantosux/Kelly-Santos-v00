@@ -45,6 +45,9 @@
   border: 2px solid var(--border-action-primary-dark);
   appearance: auto;
   /* ARIA: Ensure this element has role="combobox" and aria-controls set via JS */
+      padding-top: 11px;
+    padding-bottom: 8px;
+
 }
 
 #search-input:focus {
@@ -57,6 +60,7 @@
 
 input::placeholder {
     font-size: var(--font-size-base);
+    
 }
 
 .search-button {
@@ -71,9 +75,9 @@ input::placeholder {
   /* cite: 9, 42 */
   top: 0;
   /* cite: 9, 42 */
-  right: 0px;
+  right: -0.6px;
   /* cite: 9, 42 */
-  padding: 10px;
+  padding: 11.5px;
   /* cite: 10, 43 */
   background-color: var(--action-primary-bg-dark);
   /* cite: 11, 43 */
@@ -85,16 +89,12 @@ input::placeholder {
   border-radius: var(--border-radius-lg);
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
   outline: 1.6px solid transparent;
+      color: var( --icon-light);
 }
 
 /* IMPROVED: Add a subtle lift on hover for better feedback */
 .search-button:hover {
-
-  opacity: 0.8;
-  outline: 1.6px solid var(--outline-action-primary-dark);
-  background-color: var(--action-primary-bg-dark);
-  border: 1.6px solid var( --border-action-primary-light);
-
+  background-color: var(--action-primary-bg-slate);
 }
 
 .search-button:hover i {
@@ -102,8 +102,8 @@ input::placeholder {
 }
 
 .search-container .search-button i {
-  font-size: var(--font-size-h5);
-    color: var( --icon-light);
+  font-size: 1.5rem;
+
 }
 
 /* --- Dropdown Styling --- */
@@ -320,12 +320,9 @@ span.highlight-term {
   #search-input {
     width: 100%;
     min-width: 0;
-    padding-top: 8px;
     height: 46px;
     /* Reduce horizontal padding on small screens */
 
-    padding-bottom: 8px;
-    /* Reduce horizontal padding on small screens */
   }
 
   #search-input:focus {

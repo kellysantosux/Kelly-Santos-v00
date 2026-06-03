@@ -106,7 +106,8 @@ header>.logo_light {
     align-items: flex-start;
     gap: 0;
     /*padding:3.49%;*/
-    padding: var(--padding-medium);
+    /* padding: var(--padding-medium); */
+    padding:1.684rem var(--padding-xl); 
     gap: var(--spacing-base);
         border-radius: 0;
   }
