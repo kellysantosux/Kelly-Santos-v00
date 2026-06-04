@@ -111,7 +111,8 @@ background: var(--bg-cards-primary-light);
 }
   .aboutMe>.description {
 
-    padding: var(--padding-lg);
+    padding: var(--padding-xl) var(--padding-lg) var(--padding-lg) var(--padding-lg);
+   
 
   }
 

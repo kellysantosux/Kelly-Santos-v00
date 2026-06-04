@@ -12,13 +12,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
-    height: fit-content;
-    /* box-shadow: inset 2px 2px 1px 0 rgba(255, 255, 255, 0.5),
-    inset -1px -1px 1px 1px rgba(255, 255, 255, 0.5);
-      background: rgba(255, 255, 255, 0.50); */
       background-color: var(--action-primary-bg-x-light);
-      box-shadow: 0px -4px 20px rgba(0, 0, 0, 0.1);
+           margin-bottom: var(--margin-xl);
+           justify-content: center;
+               width: fit-content;
+                     box-shadow: 0px -4px 20px rgba(0, 0, 0, 0.1);
+                                border-radius: var(--border-radius-base);
+                                       border: 1.6px solid var(--border-bottom-navigation-light);
+                                           padding: var(--padding-s);
   }
 
 
@@ -27,23 +28,26 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* max-width: 658.13px; */
-    width: 100%;
-    height: fit-content;
-    gap: var(--spacing-xxs);
+    height:fit-content;
+  
 
-    border: 1.6px solid var(--border-bottom-navigation-light);
-    padding-top: var(--padding-s);
-           padding-bottom: var(--padding-xl);
-   padding-inline:var(--padding-xl);
+ 
+
+           flex-direction: row; /* Align items horizontally */
+    width: fit-content;
+
+
+
+   
+
   }
 
   .bottomNav nav ul {
     display: flex;
-    width: 100%;
+ width: fit-content;
+    justify-content: space-around; /* Distribute items evenly */
     height: fit-content;
-    justify-content: space-between;
-    gap: var(--spacing-sm);
+gap:var(--spacing-sm);
      margin: 0;
     padding: 0;
     list-style-type: none;
@@ -53,10 +57,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: fit-content;
+    width:75.32px;      
+    height: auto;
+    padding: var(--padding-xs);
     margin: 0;
-    border-radius: var(--border-radius-xs);
+
   }
 
   .bottomNav nav ul li a {
@@ -64,8 +69,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: fit-content;
+     height: auto;
     gap: var(--spacing-xs);
     padding: var(--padding-xxl);
     color: var(--text-anchor-gray);
@@ -76,6 +80,10 @@
     font-weight: var(--font-weight-medium);
     border: 1.6px solid transparent;
     border-radius: var(--border-radius-base);
+
+    width:fit-content;          /* Remove fixed 70.40px */
+    padding: 0.5rem 0;    /* Use smaller, consistent padding */
+    flex: 1;
   }
 
   .bottomNav nav ul li a i {
@@ -92,7 +100,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: fit-content;
     height: fit-content;
     padding: var(--padding-base);
   }
@@ -146,10 +154,6 @@
 
 /* Small Mobile Screens */
 @media only screen and (max-width: 320px) {
-  .bottomNav {
-    width: 100%;
-    max-width: 320px;
-  }
 
   .bottomNav nav ul li a i {
     font-size: 1.200rem;

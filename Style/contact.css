@@ -112,7 +112,7 @@ background: var(--bg-cards-primary-light);
 }
   .contactMe>.description {
 
-    padding: var(--padding-lg);
+    padding: var(--padding-xl) var(--padding-lg) var(--padding-lg) var(--padding-lg);
 
   }
 
@@ -138,14 +138,14 @@ background: var(--bg-cards-primary-light);
   width: 100%;
   height: 100%;
   align-items: start;
-  justify-content: center;
+  justify-content: left;
      background-color: var(--bg-div-secondary-light);
 
   }
 
   .contactMe .contactMeimage2 img {
-  width: 100%;
-  height: 100%;
+  width:72%;
+  height: fit-content;
   border-radius: var(--border-radius-xs);
   object-fit: cover;
 

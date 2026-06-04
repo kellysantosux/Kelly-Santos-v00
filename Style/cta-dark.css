@@ -5,7 +5,7 @@
   align-items: center;
   gap: var(--spacing-base);
   justify-content: left;
-  margin: var(--margin-base) 0;
+  margin:   var(--margin-lg) var(--margin-base) var(--margin-base) 0;
 
 }
 
