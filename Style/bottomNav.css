@@ -18,6 +18,7 @@
     inset -1px -1px 1px 1px rgba(255, 255, 255, 0.5);
       background: rgba(255, 255, 255, 0.50); */
       background-color: var(--action-primary-bg-x-light);
+      box-shadow: 0px -4px 20px rgba(0, 0, 0, 0.1);
   }
 
 
@@ -74,7 +75,7 @@
     font-size: var(--font-size-xs);
     font-weight: var(--font-weight-medium);
     border: 1.6px solid transparent;
-    border-radius: var(--border-radius-xs);
+    border-radius: var(--border-radius-base);
   }
 
   .bottomNav nav ul li a i {
@@ -83,7 +84,7 @@
     height: fit-content;
     color: var( --icon-gray);
     text-align: center;
-    font-size: 1.200rem;
+    font-size: 1.500rem;
     font-weight: var(--font-weight-base);
   }
 
@@ -150,7 +151,9 @@
     max-width: 320px;
   }
 
-
+  .bottomNav nav ul li a i {
+    font-size: 1.200rem;
+      }
   .bottomNav nav ul li a {
     font-size: var(--font-size-xxs);
   }
