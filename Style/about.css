@@ -30,8 +30,7 @@
   text-align: left;
 
 }
-
-.aboutMe>.description {
+.container_description {
   display: flex;
   width: 100%;
   height: auto;
@@ -45,19 +44,37 @@
   gap: var(--spacing-base);
   padding: 11%;
 background: var(--bg-cards-primary-light);
+border: 2px solid red;
+}
+
+.about_description {
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  flex-wrap: wrap;
+  text-align: left;
+  border: 2px solid transparent;
+  border-radius: var(--border-radius-xs);
+  gap: var(--spacing-sm);
+
+background: var(--bg-cards-primary-light);
+border: 2px solid blue;
 }
 
 
 
 
 
-.aboutMe>.description>h2 {
+.about_description h2 {
   display: flex;
   width: 100%;
 
 }
 
-.aboutMe>.description>h4 {
+.about_description h4 {
   display: flex;
   width: 100%;
   font-weight: var(--font-weight-black);
@@ -109,7 +126,7 @@ background: var(--bg-cards-primary-light);
    padding-left: var(--padding-lg);
 
 }
-  .aboutMe>.description {
+ .container_description  {
 
     padding: var(--padding-xl) var(--padding-lg) var(--padding-lg) var(--padding-lg);
    
@@ -155,9 +172,9 @@ background: var(--bg-cards-primary-light);
 
    @media only screen and (max-width: 380px) {
 
-  .aboutMe>.description{  
+.container_description {  
     padding: var(--padding-s);
-
+  gap: var(--spacing-sm);
   
 }
 
