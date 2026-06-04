@@ -178,7 +178,6 @@ margin: var(--padding-xs);
         }
 
         .tc-resume{
-   width: 100%;
 
         padding: 0;
      border: none;
@@ -188,13 +187,15 @@ margin: var(--padding-xs);
         
         }
 .resume {
-           width: 100%;
 
-    padding: var( --padding-xxl);
+    padding: 0;
 background-color: transparent;
    gap: var(--spacing-base);
-
-
+    border:0;
+      box-shadow:none;
+      border-radius: 0;
+      border-top:  0.5px solid  var(--border-component-secondary-dark);
+      padding-top: var(--padding-xxl);
 }
         section.resume-section {
         max-width: 768px;
@@ -212,12 +213,9 @@ background-color: transparent;
               
         }
 
-    @media only screen and (max-width: 380px) {
 
-.resume {
-    
-   box-shadow: none;
-    padding: var( --padding-xl);}}
+
+
 
 
     @media only screen and (max-width: 320px) {
@@ -230,14 +228,8 @@ background-color: transparent;
  
           border: none;
         }
-
-        .resume {
-          padding: 0;
-
-  border: none;
-     box-shadow: none;}}
     
-    
+    }
 @media print {
 
             .tc-resume {

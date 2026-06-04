@@ -6,50 +6,62 @@
 /* Tablet & Mobile Screens */
 @media only screen and (max-width: 768px) {
   .bottomNav {
+    display: flex;
+    width: 100%;
     position: fixed;
     bottom: -1px;
     z-index: 4;
-    display: flex;
     flex-direction: column;
     align-items: center;
-      background-color: var(--action-primary-bg-x-light);
-           margin-bottom: var(--margin-xl);
-           justify-content: center;
-               width: fit-content;
-                     box-shadow: 0px -4px 20px rgba(0, 0, 0, 0.1);
-                                border-radius: var(--border-radius-base);
-                                       border: 1.6px solid var(--border-bottom-navigation-light);
-                                           padding: var(--padding-s);
-                                           margin-inline: var(--margin-sm);
-  }
+
+    justify-content: center;
+    padding-inline: var( --padding-xl);
+background: linear-gradient(
+    10deg,
+    transparent,
+    rgba(250, 250, 250, 0.2),
+    transparent
+  );
+  background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(250, 250, 250, 0.2));
+  backdrop-filter: blur(12px);
+
+  padding-bottom: var(--padding-base);
+}
+
+
+  
+  
 
 
   .bottomNav nav {
     display: flex;
+    width: fit-content;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height:fit-content;
-  
+    height: fit-content;
+    flex-direction: row;  
+    background-color: var(--action-primary-bg-x-light);
+    box-shadow: 0px -4px 20px rgba(0, 0, 0, 0.2);
+    border-radius: var(--border-radius-base);
+    border: 1.6px solid var(--border-bottom-navigation-light);
+    padding: var(--padding-s);
+    margin-top: -3.62%;
 
- 
-
-           flex-direction: row; /* Align items horizontally */
-    width: fit-content;
 
 
 
-   
 
   }
 
   .bottomNav nav ul {
     display: flex;
- width: fit-content;
-    justify-content: space-around; /* Distribute items evenly */
+    width: fit-content;
+    justify-content: space-around;
+    /* Distribute items evenly */
     height: fit-content;
-gap:var(--spacing-sm);
-     margin: 0;
+    gap: var(--spacing-sm);
+    margin: 0;
     padding: 0;
     list-style-type: none;
   }
@@ -58,8 +70,8 @@ gap:var(--spacing-sm);
     display: flex;
     align-items: center;
     justify-content: center;
-width:fit-content;     
-  
+    width: fit-content;
+
     margin: 0;
 
   }
@@ -69,7 +81,7 @@ width:fit-content;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-     height: auto;
+    height: auto;
     gap: var(--spacing-xs);
     padding: var(--padding-xxl);
     color: var(--text-anchor-gray);
@@ -80,15 +92,15 @@ width:fit-content;
     font-weight: var(--font-weight-medium);
     border: 1.6px solid transparent;
     border-radius: var(--border-radius-base);
-    width:65.95px;      
-    height:65.95px;     
+    width: 65.95px;
+    height: 65.95px;
   }
 
   .bottomNav nav ul li a i {
     display: block;
     width: fit-content;
     height: fit-content;
-    color: var( --icon-gray);
+    color: var(--icon-gray);
     text-align: center;
     font-size: 1.500rem;
     font-weight: var(--font-weight-base);
@@ -121,7 +133,7 @@ width:fit-content;
     font-weight: var(--font-weight-medium);
     background-color: var(--action-item-quaternary-light);
     border: 1.6px solid var(--border-action-primary-dark);
-  
+
   }
 
   /* 2. Active Icon Styles (Explicitly overrides default dark icon color to white) */
@@ -129,7 +141,7 @@ width:fit-content;
     color: var(--text-anchor-dark);
   }
 
-    .bottomNav nav ul li a.active {
+  .bottomNav nav ul li a.active {
     color: var(--text-anchor-dark);
   }
 
@@ -143,23 +155,25 @@ width:fit-content;
 /* Small Mobile Screens */
 @media only screen and (max-width: 380px) {
 
-    .bottomNav nav ul {
-            gap: var(--spacing-xxs);}
-      
+  .bottomNav nav ul {
+    gap: var(--spacing-xxs);
+  }
+
 
 
   .bottomNav nav ul li a {
     font-size: var(--font-size-xxs);
 
-        width:59px;      
-    height:59px;   
+    width: 59px;
+    height: 59px;
   }
-  }
+}
+
 /* Small Mobile Screens */
 @media only screen and (max-width: 320px) {
 
   .bottomNav nav ul li a i {
     font-size: 1.200rem;
-      }
+  }
 
 }
