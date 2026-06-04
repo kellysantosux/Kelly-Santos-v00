@@ -92,8 +92,8 @@ background: linear-gradient(
     font-weight: var(--font-weight-medium);
     border: 1.6px solid transparent;
     border-radius: var(--border-radius-base);
-    width: 65.95px;
-    height: 65.95px;
+    width: 67px;
+    height: 67px;
   }
 
   .bottomNav nav ul li a i {
