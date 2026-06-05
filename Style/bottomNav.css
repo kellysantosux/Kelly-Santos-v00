@@ -132,7 +132,7 @@ background: linear-gradient(
   .bottomNav nav ul li a.active {
     font-weight: var(--font-weight-medium);
     background-color: var(--action-item-quaternary-light);
-    border: 1.6px solid var(--border-action-primary-dark);
+    border: 1.6px solid var(--border-component-primary-light);
 
   }
 
