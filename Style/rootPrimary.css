@@ -367,31 +367,6 @@
   --font-size-xxs: var(--major-third-xxs); 
 
 
-    /* Scale: 1.2 minor third) */
-    --minor-third-d00: 7.430rem;
---minor-third-d0: 6.192rem;
-  --minor-third-d1: 5.160rem;
-  --minor-third-d2: 4.300rem;
-  --minor-third-d3: 3.583rem; 
-  --minor-third-h1: 2.986rem;
-  --minor-third-h2: 2.488rem; 
-  --minor-third-h3: 2.074rem; 
-  --minor-third-h4: 1.728rem; 
-  --minor-third-h5: 1.440rem; 
-  --minor-third-h6: 1.200rem; 
-  --minor-third-base: 1.000rem;
-  --minor-third-sm: 0.833rem;
-  --minor-third-xs: 0.694rem;
-  --minor-third-xxs: 0.579rem;
-
-
-
-
-
-
-
-
-
 
 
     /* Print Typography */
@@ -510,20 +485,17 @@
   --font-size-d1: var(--minor-third-d1);
   --font-size-d2: var(--minor-third-d2);
   --font-size-d3: var(--minor-third-d3);
-  --font-size-h1: var(--minor-third-h1);
-  --font-size-h2: var(--minor-third-h2);
-  --font-size-h3: var(--minor-third-h3);
-  --font-size-h4: var(--minor-third-h4);
-  --font-size-h5: var(--minor-third-h5);
-  --font-size-h6: var(--minor-third-h6);
-  --font-size-base: var(--minor-third-base);
+  --font-size-h1: var(--major-third-h1);
+  --font-size-h2: var( --major-third-h2);
+  --font-size-h3: var(  --major-third-h3);
+  --font-size-h4: var(--minor-third-h3);
+  --font-size-h5: var(--minor-third-h4);
+  --font-size-h6: var(--minor-third-h5);
+  --font-size-base: var(--minor-third-h6);
   --font-size-sm: var(--minor-third-sm);
   --font-size-xs: var(--minor-third-xs);
   --font-size-xxs: var(--minor-third-xxs); 
 
-
-
-    
 
 }
 }
