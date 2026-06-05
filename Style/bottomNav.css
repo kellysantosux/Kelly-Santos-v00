@@ -133,16 +133,21 @@ background: linear-gradient(
     font-weight: var(--font-weight-medium);
     background-color: var(--action-item-quaternary-light);
     border: 1.6px solid var(--border-component-primary-light);
+        background-color: var(--slate-700);
+     border: 1.6px solid var(--slate-700);
+    
 
   }
 
   /* 2. Active Icon Styles (Explicitly overrides default dark icon color to white) */
   .bottomNav nav ul li a.active i {
     color: var(--text-anchor-dark);
+      color: var(--text-anchor-light);
   }
 
   .bottomNav nav ul li a.active {
     color: var(--text-anchor-dark);
+          color: var(--text-anchor-light);
   }
 
   /* 3. Hover Styles (Uses :not(.active) so hover states do not override the active active border) */
