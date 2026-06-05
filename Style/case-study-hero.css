@@ -10,7 +10,7 @@
     padding: var(--padding-lg);
     border: 1px solid var(--border-banner-secondary-dark);
     box-shadow: var(--box-shadow-cs);
-    background-color: var(--bg-banners-tertiary-light);
+    background-color:var(--bg-banners-quaternary-light);
     box-shadow: 0 1px 4px 0px rgba(5, 8, 34, 0.2);
 
 
@@ -28,6 +28,7 @@
     .containerDescription h1 {
         padding: 0;
         padding-bottom: var(--padding-base);
+
 }
 .containerDescription img {
     display: none;

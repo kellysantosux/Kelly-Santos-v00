@@ -141,7 +141,8 @@ a.table-of-contents__link {
 a.table-of-contents__link:hover {
   border: 1.6px solid var(--border-action-primary-dark-hover);
   background-color: var( --action-item-hover);
-
+      border-color: var(--border-action-primary-dark-hover);
+      border-radius: var(--border-radius-sm);
 
 }
 
@@ -156,6 +157,7 @@ a.table-of-contents__link.--toc-parent-active {
   background-color: var( --action-tertiary-bg-active);
     background-color: var( --border-action-item-light);
 margin-top: var(--spacing-xxs) ;
+background-color: #E8E8E8;
 
 
 }
@@ -202,6 +204,7 @@ span.table-of-contents__span-dropdown {
 
 span.table-of-contents__span-dropdown:hover {
   background-color: rgba(0, 0, 0, 0.2);
+  
 }
 
 
@@ -310,6 +313,8 @@ a.toc-submenu__link:hover {
   color: var(--text-anchor-dark);
   border: 1.6px solid var(--border-action-primary-dark-hover);
   background-color: var(--action-item-hover);
+      border-color: var(--border-action-primary-dark-hover);
+      border-radius: var(--border-radius-sm);
 
 }
 
@@ -317,7 +322,7 @@ a.toc-submenu__link:hover {
   color: var(--text-anchor-dark);
   background-color: var(--action-item-hover);
   border-left: 1.6px solid var(--border-action-primary-dark-hover);
-
+  background-color: #F2F2F2;
 
 
 }
@@ -331,19 +336,24 @@ a.toc-submenu__link.--toc-active {
 }
 a.table-of-contents__link.--toc-active .table-of-contents__span {
   color: var(--text-anchor-dark);
+  
 }
 
 
 
 .--has__toc-submenu:hover a.table-of-contents__link {
   border-color: var(--border-action-primary-dark-hover);
+      border-color: var(--border-action-primary-dark-hover);
+      border-radius: var(--border-radius-sm);
+  
  
 }
 
 
 li.table-of-contents__item:hover a.table-of-contents__link:hover {
   border-color: var(--border-action-primary-dark-hover);
-
+      border-color: var(--border-action-primary-dark-hover);
+      border-radius: var(--border-radius-sm);
 }
 
 .--has__toc-submenu a.table-of-contents__link li.toc-submenu__item .--toc-active {

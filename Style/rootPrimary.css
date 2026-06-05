@@ -18,6 +18,7 @@
 /* Neutrals & Grays */
 --gray-50: #FAFAFA;     /*ultra-light-neutral-gray, very-light-shade-blue-magenta, very-light-shade-gray */
 --gray-100: #FBF8F9;    /*very-light-shade-red */
+--gray-150: #D7D8E0;   
 --gray-200: #E4E5EB;    /*light-shade-blue-magenta */
 --gray-300: #D2D6D1;    /*light-shade-green-cyan */
 --gray-500: #636469;    /*medium-dark-shade-gray */
@@ -31,7 +32,8 @@
 --blue-50: #e6e8f4;     /*light-shade-blue */
 --blue-100: #efeff6;    /*very-light-shade-blue */
 
---blue-200: hsl(218, 29%, 95%);    /*very-light-shade-cyan-blue */
+--blue-200: #eff1f6;    /*very-light-shade-cyan-blue */
+--blue-250: #E4E7EB;    
 --blue-300: #C5C7D3;    /*light-shade-cyan-blue */
 --blue-400: #DADCEB;    /*very-light-shade-orange */
 --blue-500: #4D57B2;    /*medium-dark-shade-cyan-blue */
@@ -88,6 +90,7 @@
   --bg-banners-secondary-light: var(--blue-200);   
   --bg-banners-primary-x-light: var(--white);   
   --bg-banners-tertiary-light: var(--gray-200); 
+  --bg-banners-quaternary-light: var(--gray-150); 
 
   /* cards background */
   --bg-cards-primary-dark: var(--blue-900);            
@@ -141,7 +144,7 @@
     --text-main-gray: var(--gray-500);     
     --text-main-primary-dark: var(--gray-900);     
     --text-main-secondary-dark: var(--blue-900); 
-        --text-main-tertiary-dark: var(--gray-800); 
+    --text-main-tertiary-dark: var(--gray-800); 
     --text-highlighted-blue: var(--blue-600);/* text highlighted */
     --text-highlighted-red: var(--red-500);/* text highlighted */
 
@@ -163,7 +166,7 @@
   --action-primary-bg-dark: var(--blue-900);    /* Solid button background (Contact CTA, Search submit button) */
   --action-primary-bg-gray: var(--gray-50);    /* Solid button background (Contact CTA, Search submit button) */
   --action-primary-bg-active: var(--blue-900);    /* Solid button background (Contact CTA, Search submit button) */
-  --action-tertiary-bg-active: var(--blue-300);    /* Solid button background (Contact CTA, Search submit button) */
+  --action-tertiary-bg-active: var(--blue-400);    /* Solid button background (Contact CTA, Search submit button) */
   --action-primary-bg-x-light: var(--white);    /* Solid button background (Contact CTA, Search submit button) */
   --action-tertiary-bg-light: var(--blue-200);    /* Solid button background (Contact CTA, Search submit button) */
 --action-primary-bg-slate: var(--slate-700);    /* Solid button background (Contact CTA, Search submit button) */
@@ -196,6 +199,7 @@
   --border-section-secondary-light: var(--blue-200);    
   --border-section-secondary-dark: var(--blue-400);        
   --border-section-secondary-light-hover: var(--blue-200);  
+    --border-section-quartenary-light: var(--blue-200);  
   
 
   /* Banner Borders */
@@ -204,7 +208,7 @@
   --border-banner-secondary-dark: var(--blue-400);        
   --border-banner-secondary-light-hover: var(--blue-200);  
   --border-banner-tertiary-light: var(--blue-200);  
-
+ --border-banner-quaternary-light: var(--blue-250);  
   /* div Border*/
   --border-div-primary-dark: var(--blue-900);   
   --border-div-primary-light: var(--gray-50);    
