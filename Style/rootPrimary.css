@@ -492,9 +492,9 @@
   --font-size-h5: var(--minor-third-h4);
   --font-size-h6: var(--minor-third-h5);
   --font-size-base: var(--minor-third-h6);
-  --font-size-sm: var(--minor-third-sm);
-  --font-size-xs: var(--minor-third-xs);
-  --font-size-xxs: var(--minor-third-xxs); 
+  --font-size-sm: var(--minor-third-base);
+  --font-size-xs: var(--minor-third-sm);
+  --font-size-xxs: var(--minor-third-xs); 
 
 
 }
