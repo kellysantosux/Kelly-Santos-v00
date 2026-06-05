@@ -44,7 +44,7 @@
   gap: var(--spacing-base);
   padding: 11%;
 background: var(--bg-cards-primary-light);
-border: 2px solid red;
+
 }
 
 .about_description {
@@ -61,7 +61,7 @@ border: 2px solid red;
   gap: var(--spacing-sm);
 
 background: var(--bg-cards-primary-light);
-border: 2px solid blue;
+
 }
 
 
