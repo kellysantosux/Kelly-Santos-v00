@@ -100,7 +100,7 @@ header>.logo_light {
   }
 
   header {
-    flex-direction: column;
+    flex-direction: row;
     justify-items: center;
     width: 100%;
     align-items: flex-start;
@@ -114,13 +114,13 @@ header>.logo_light {
 
   a.logo {
  
- height: 52px;  
+ height: 42px;  
   
   }
 
     .logo img {
 
-  height: 56px;  
+  height: 42px;  
   
 }
 

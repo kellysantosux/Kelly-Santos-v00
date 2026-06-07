@@ -211,6 +211,11 @@ border-radius: var(--border-radius-xs);
   width: 100%;
           padding-inline: 0;
           margin-top: 172.8px;
+                          margin-top: 102.54px;
+}
+.taglineGrid> .description .container_link-button a{
+
+  width: 50%;
 }
 
 .name_tagline  h1{
@@ -227,16 +232,20 @@ font-weight: var(--font-weight-black) ;
         padding: var(--padding-xxl);
         background-color: var(--bg-cards-primary-light);
         border-radius: var(--border-radius-xs);
+            padding: var(--padding-lg);
     }
 
      .taglineGrid .heroImage2  img {
     width:100%;
     height: auto;
     object-fit: cover;
+             padding: var(--padding-lg);
+    
   }
 
     .taglineGrid>.heroImage {
     display: flex;
+             padding: var(--padding-lg);
   }
 
 .tagline {
@@ -244,10 +253,12 @@ font-weight: var(--font-weight-black) ;
          box-shadow: none;
           padding:var(--padding-xxl) var(--padding-xl);
           border-radius: 0;
+                    padding:var(--padding-xl);
 }
 
   .taglineGrid>.description {
     height: 100%;
+               padding: var(--padding-xl);
   }
 
 
