@@ -18,7 +18,7 @@
 
 .menu2__span2menu {
   display: flex;
-  width:100%;
+  width:fit-content;
   height: fit-content;
   min-height: 32px;
   align-items: center;
@@ -58,8 +58,8 @@
 
 ul.menu2__list {
   display: flex;
-  max-width:220px;
-  width: 96.76%;
+  /* max-width:220px; */
+  width: 100%;
   max-height: 390.83px;
   min-height: fit-content;
   flex-direction: column;
@@ -74,9 +74,11 @@ ul.menu2__list {
 
 li.menu2__item {
   display: flex;
-  max-width:220px;
-  width: 98.38%;
+  /* max-width:220px;
+  width: 98.38%; */
+  width: 100%;
   height: fit-content;
+  
   flex-direction: column;
   justify-content: space-between;
   gap: 0;
@@ -102,6 +104,9 @@ a.menu2__link {
   padding: 0  var(--padding-base);
   border: 1.6px solid transparent;
   border-radius: var(--border-radius-xs);
+       min-height: 45.89px;
+   
+ 
  
 }
 
@@ -119,38 +124,52 @@ a.menu2__link.--menu-parent-active {
   /* Use a differentiated visual state for parent link */
   background-color: var(  --action-primary-bg-active);
   border-color: var(--border-action-primary-dark);
+             color: var(--text-anchor-light);
+                         background-color: var(--action-item-quaternary-light);
+    border: 1.6px solid var(--border-component-primary-light);
+
 
 
 }
 
+
+
+
 a.menu2__link.--menu-parent-active .menu2__span {
   color: var(--text-anchor-light);
-
+    color: var(--text-anchor-dark);
+  
 }
 
 
 a.menu2__link.--menu-parent-active i.--has__submenu2 {
   color: var(--text-anchor-light);
-
+      color: var(--text-anchor-dark);
+      
 }
 
 a.menu2__link.--menu-parent-active:hover {
-  background-color: var(  --action-primary-bg-dark);
+
   border-color: var(--border-action-primary-dark);
   color: var(--text-anchor-dark);
+  
  
 }
 a.menu2__link.--menu-active .menu2__span {
   color: var(--text-anchor-light);
+
+  
 }
 
 .--has__submenu2 {
   width: 100%;
-  max-height: 188px;
+  max-height: 269px;
   height: 100%;
   justify-content: center;
   align-items: center;
   position: relative;
+     min-height: 45.89px;
+  
 
 }
 
@@ -163,6 +182,8 @@ span.menu2__span {
   gap: var(--spacing-sm);
   font-weight: var(--font-weight-medium);
   padding: 10px 0;
+
+
 }
 
 span.menu2__span i{
@@ -170,7 +191,9 @@ font-size: var(--font-weight-base);
 }
 
 a.menu2__link.--menu-active .menu2__span {
-  color: var(--text-anchor-light);
+
+    color:  var(--icon-dark);
+
 
 }
 
@@ -185,11 +208,13 @@ span.menu2__span-dropdown {
   cursor: pointer;
   border-radius: var(--border-radius-xs);
   border: 1.6px solid transparent;
+
 }
 
 span.menu2__span-dropdown:hover {
     color: var(--text-anchor-dark);
       background-color: rgba(0, 0, 0, 0.2);
+      
 
 }
 
@@ -213,11 +238,13 @@ span.menu2__span .--menu i {
   color: var(--text-anchor-dark);
   border: 1.6px solid transparent;
   margin-bottom: -6px;
+  
 }
 
 span.menu2__span.--menu {
   padding: var(--spacing-base) 0;
   font-weight: var(--font-weight-medium);
+
 }
 
 
@@ -227,6 +254,7 @@ span.menu2__span-dropdown i {
   transform: rotate(0deg);
   /* Explicitly set initial rotation */
     font-size: var(--font-size-h6);
+     
 }
 
 
@@ -236,22 +264,27 @@ span.menu2__span-dropdown i {
   display: flex;
   max-height: 1000px;
   transition: max-height 0.3s ease-in-out;
+  
 }
 
 /* Optional: Style the dropdown icon (span-dropdown) */
 .menu2__span-dropdown {
   cursor: pointer;
   /* Add styling for the collapsed state, e.g., a right-pointing arrow */
+
 }
 
 .menu2__span-dropdown.--submenu2-open {
   /* Add styling for the expanded state, e.g., rotate the arrow icon */
   transform: rotate(180deg);
   color:var(--text-main-light);
+
+
 }
 .menu2__span-dropdown.--submenu2-open:hover{
  background-color: rgba(255, 255, 255, 0.2);
-   color:var(--text-main-light);
+   /* color:var(--text-main-light); */
+
 }
 
 ul.submenu2 {
@@ -278,6 +311,7 @@ li.submenu2__item {
   justify-content: center;
 border-radius: var(--border-radius-xs);
 
+
 }
 
 a.submenu2__link {
@@ -292,12 +326,13 @@ a.submenu2__link {
 border-radius: var(--border-radius-xs);
   font-weight: var(--font-weight-base);
   border: 1.6px solid transparent;
-  padding: var(--padding-xl);
-  padding-left: 8.5%;
+  padding: var(--padding-xl) var(--padding-xxl);
+
   margin: var(--margin-xxxs);
 background-color:transparent;
   cursor: pointer;
   transition: var(--transition-duration);
+
 }
 
 
@@ -315,16 +350,22 @@ a.submenu2__link:hover {
     max-width: 220px;
     width: 98.38%;
         border-color:var(--border-action-primary-dark);
+        
+      
 
 }
 
 .--has__submenu2 a.submenu2__link.--menu-parent-active:hover {
   border-color: var(--border-action-primary-dark);
+
+
    
 }
 .--has__submenu2 a.submenu2__link.--menu-active:hover {
   border-color: var(--border-action-primary-dark);
      background-color: var(--action-item-hover);
+
+
    
 }
 
@@ -341,18 +382,23 @@ a.menu2__link.--menu-active .menu2__span {
     color: var( --text-anchor-dark);
     background-color: var(--action-item-hover);
 
+
 }
 .--has__submenu2:hover a.menu2__link.--menu-parent-active:hover {
   color: var( --text-anchor-dark);
-background-color: var(--action-primary-bg-dark);
+         min-height: 45.89px;
+ 
+           
 
 }
 
 
 .--has__submenu2 a.menu2__link li.submenu2__item .--menu-active:hover {
   border-color: var(--action-item-hover);
-
+             background-color: var(--action-item-quaternary-light);
+    border: 1.6px solid var(--border-component-primary-light);
   
+      
 }
 
 
@@ -380,13 +426,15 @@ background-color: var(--action-primary-bg-dark);
   .menu2__container.menu-open {
     /* Apply the requested dimensions and visual style to the container itself */
     align-items: flex-start;
-    max-width: 218.44px;
     /*239.78px Added to ensure it respects the requested width */
-    min-height: 265px;
-      width: 100%;
+width: fit-content;
+
     justify-content: center;
     border: 1.6px solid transparent;
     border-radius: var(--border-radius-xs);
+         min-height: 486px;
+         background-color: transparent;
+      
   }
 
   .menu2__span2menu p {
@@ -402,8 +450,9 @@ background-color: var(--action-primary-bg-dark);
   }
 
   /* NEW RULE: Remove border/radius from the toggle span when the menu is open. */
-  .menu2__container.menu-open .menu2__toogle {display: flex;
-    width: 216px;
+  .menu2__container.menu-open .menu2__toogle {
+    display: flex;
+    width: 274px;
     border: none;
     border-radius: 0;
     /* Use '0' instead of 'none' for border-radius */
@@ -418,13 +467,14 @@ background-color: var(--action-primary-bg-dark);
 
     /* Position the wrapper absolutely so it doesn't inflate the rightContainer's height */
     position: absolute;
+    display: flex;
     right: 0;
     top: 32.5px;
-    width: 220px;
+    /* width: 220px; */
     left: 1px;
       z-index: 9999;
     /* Initial State (CLOSED): Move it off-screen to the left using a transform */
-    transform: translateX(-220px);
+    /* transform: translateX(-220px); */
     transition: transform 0.3s ease-in-out;
     /* Add transition for animation */
     z-index: 63;
@@ -432,6 +482,9 @@ background-color: var(--action-primary-bg-dark);
   background-color: var(--action-item-primary-light);
     overflow-y: auto;
   padding-bottom: 2.82%;
+  padding-inline: var(--padding-lg);
+ 
+  width: 100%;
     /* Ensure wrapper is visible and can animate */
   }
 
