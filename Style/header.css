@@ -90,7 +90,13 @@ header>.logo_light {
     top: 0px;
     margin-top: 0;
     /* background-color: var(--bg-body-mobile); */
-    border-color: var(--border-header-mobile);
+    /* border-color: var(--border-header-mobile); */
+    
+    box-shadow: 0 1px 4px 0px rgba(5, 8, 34, 0.2);
+        box-shadow: 0px -4px 20px rgba(0, 0, 0, 0.2);
+    border-radius: var(--border-radius-base);
+    border: 1.6px solid var(--border-bottom-navigation-light);
+    background-color: var(--border-bottom-navigation-light);
     padding: 0;
     border-radius: 0;
   }
