@@ -22,8 +22,8 @@
 --gray-200: #E4E5EB;    /*light-shade-blue-magenta */
 --gray-300: #D2D6D1;    /*light-shade-green-cyan */
 --gray-500: #636469;    /*medium-dark-shade-gray */
---gray-800: #2F303D;    /*dark-shade-gray */
---gray-900: #0E0F19;    /*dark-desaturate-blue-gray */
+--gray-800: hsl(236, 13%, 21%);    /*dark-shade-gray */
+--gray-900: hsl(235, 28%, 8%);    /*dark-desaturate-blue-gray */
 --white: hsl(0, 0%, 100%);
 
 /* Blues */
@@ -37,7 +37,10 @@
 --blue-300: #C5C7D3;    /*light-shade-cyan-blue */
 --blue-400: #DADCEB;    /*very-light-shade-orange */
 --blue-500: #4D57B2;    /*medium-dark-shade-cyan-blue */
---blue-600: #196CA9;    /*shade-cyan-blue */
+--blue-600: hsl(205, 74%, 38%);    /*shade-cyan-blue */
+/* --blue-650: #2E446F; */
+/* --blue-650: #2750A2; */
+--blue-650: hsl(220, 76%, 38%);
 --blue-900: #282B43;    /*deep-near-black-shade-navy-blue, very-dark-shade-blue */
 
 /* Slates */
@@ -115,6 +118,7 @@
   --icon-dark: var(--blue-900);            
   --icon-light: var(--gray-50);           
   --icon-gray: var(--gray-500);     
+    --icon-blue: var(--blue-650);     
 
   /* component*/
   --surface-component-light: var(--gray-50);           
@@ -138,6 +142,7 @@
     --text-title-primary-dark: var(--gray-900); 
     --text-title-secondary-dark: var(--blue-900);             
     --text-title-light: var(--gray-50);    
+        --text-title-primary-blue: var(--blue-800); 
 
     /* Core body paragraphs, list details, table content */
     --text-main-dark: var(--blue-900);            
@@ -152,8 +157,9 @@
     /* anchor */
     --text-anchor-dark: var(--blue-900);           
     --text-anchor-light: var(--gray-50);            
-    --text-anchor-gray: var(--gray-500);           
-    --anchor-highlighted-blue: var(--blue-600);/* text highlighted */
+    --text-anchor-gray: var(--gray-500);  
+    --text-anchor-dark-secondary: var(--gray-800);        
+    --text-anchor-blue: var(--blue-650);/* text highlighted */
 
   /* text ? */  
   --text-muted: var(--gray-500);           /* Captions, metadata timelines, dates, breadcrumbs, copyrights */

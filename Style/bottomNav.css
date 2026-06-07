@@ -94,6 +94,7 @@ background: linear-gradient(
     border-radius: var(--border-radius-base);
     width: 67px;
     height: 67px;
+        color: var(--text-anchor-dark-secondary);
   }
 
   .bottomNav nav ul li a i {
@@ -104,6 +105,7 @@ background: linear-gradient(
     text-align: center;
     font-size: 1.500rem;
     font-weight: var(--font-weight-base);
+               color: var(--text-anchor-dark-secondary);
   }
 
   .bottomNav nav div {
@@ -141,17 +143,21 @@ background: linear-gradient(
   .bottomNav nav ul li a.active i {
     color: var(--text-anchor-dark);
      color:hsl(233.33, 100%, 59%);
-  
+         color: var(--icon-blue);
+
+   
   }
 
   .bottomNav nav ul li a.active {
     color: var(--text-anchor-dark);
       color:hsl(233.33, 100%, 59%);
+      color: var(--text-anchor-blue);
   }
 
   /* 3. Hover Styles (Uses :not(.active) so hover states do not override the active active border) */
   .bottomNav nav ul li a:not(.active):hover {
     color: var(--text-anchor-dark);
+             color: var(--text-anchor-dark-secondary);
     border: 1px solid var(--border-action-primary-light-hover);
   }
 }
