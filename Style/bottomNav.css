@@ -15,7 +15,7 @@
     align-items: center;
 
     justify-content: center;
-    padding-inline: var( --padding-xl);
+    padding-inline: var( --padding-lg);
 background: linear-gradient(
     10deg,
     transparent,
