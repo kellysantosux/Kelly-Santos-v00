@@ -279,7 +279,8 @@ font-weight: var(--font-weight-black) ;
           border-radius: 0;
                     padding:var(--padding-xl);
                     background-color: var(  --action-primary-bg-x-light);
-  background-image:none
+  background-image:none;
+               padding:var(--padding-base);
 }
 
 
