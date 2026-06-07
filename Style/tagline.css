@@ -122,6 +122,8 @@ border-radius: var(--border-radius-xs);
 .heroImage2 {
   display: none;
 }
+      .taglineGrid>.heroImage3 {
+        display: none;}
 
 /* 
 @media only screen and (max-width: 728px) {
