@@ -16,6 +16,7 @@
 /* 1. COLORS */
 /* --- Primitives (Base Palette) --- */
 /* Neutrals & Grays */
+--gray-25: hsl(0, 0%, 99.5%);    
 --gray-50: #FAFAFA;     /*ultra-light-neutral-gray, very-light-shade-blue-magenta, very-light-shade-gray */
 --gray-100: #FBF8F9;    /*very-light-shade-red */
 --gray-200: #E4E5EB;    /*light-shade-blue-magenta */
@@ -23,7 +24,7 @@
 --gray-500: #636469;    /*medium-dark-shade-gray */
 --gray-800: #2F303D;    /*dark-shade-gray */
 --gray-900: #0E0F19;    /*dark-desaturate-blue-gray */
---white: #FFFFFF;
+--white: hsl(0, 0%, 100%);
 
 /* Blues */
 --blue-15: #ebebef;    
@@ -60,7 +61,8 @@
   /* Body background */
   --bg-body-dark: var(--blue-900);            
   --bg-body-light: var(--gray-50);            
-  --bg-body-mobile: var(--blue-50);    
+  --bg-body-mobile: var(--blue-50); 
+    --bg-body-x-light: var(--gray-25);          
 
   /* Main background */
   --bg-main-dark: var(--blue-900);            

@@ -107,7 +107,8 @@ header>.logo_light {
     gap: 0;
     /*padding:3.49%;*/
     /* padding: var(--padding-medium); */
-    padding:1.684rem var(--padding-xl); 
+    /* padding:1.684rem var(--padding-xl);  */
+    padding: var(--padding-lg); 
     gap: var(--spacing-base);
         border-radius: 0;
   }
