@@ -140,12 +140,14 @@
 
   /* Major editorial page headings and case study titles */
     --text-title-primary-dark: var(--gray-900); 
+        --text-title-primary-dark: var(--gray-800); 
     --text-title-secondary-dark: var(--blue-900);             
     --text-title-light: var(--gray-50);    
         --text-title-primary-blue: var(--blue-800); 
 
     /* Core body paragraphs, list details, table content */
-    --text-main-dark: var(--blue-900);            
+    --text-main-dark: var(--blue-900);   
+        --text-main-dark: var(--blue-800);               
     --text-main-light: var(--gray-50);            
     --text-main-gray: var(--gray-500);     
     --text-main-primary-dark: var(--gray-900);     
@@ -155,7 +157,8 @@
     --text-highlighted-red: var(--red-500);/* text highlighted */
 
     /* anchor */
-    --text-anchor-dark: var(--blue-900);           
+    --text-anchor-dark: var(--blue-900);          
+      --text-anchor-dark: var(--gray-800);     
     --text-anchor-light: var(--gray-50);            
     --text-anchor-gray: var(--gray-500);  
     --text-anchor-dark-secondary: var(--gray-800);        
@@ -171,6 +174,7 @@
 
   /* Backgrounds Action Elements & Navigation Controls */
   --action-primary-bg-dark: var(--blue-900);    /* Solid button background (Contact CTA, Search submit button) */
+    --action-primary-bg-dark: var(--gray-800);    /* Solid button background (Contact CTA, Search submit button) */
   --action-primary-bg-gray: var(--gray-50);    /* Solid button background (Contact CTA, Search submit button) */
   --action-primary-bg-active: var(--blue-900);    /* Solid button background (Contact CTA, Search submit button) */
   --action-tertiary-bg-active: var(--blue-300);    /* Solid button background (Contact CTA, Search submit button) */
@@ -253,6 +257,7 @@
 
   /* Borders Action Elements & Navigation Controls */
   --border-action-primary-dark: var(--blue-900);   
+    --border-action-primary-dark: var(--gray-800);   
   --border-action-primary-light: var(--gray-50); 
    --border-action-primary-gray: var(--gray-200); 
    --border-action-primary-gray-hover: var(--gray-200); 
