@@ -229,7 +229,7 @@ border-radius: var(--border-radius-xs);
   .taglineGrid {
     grid-template-columns: 1fr;
     margin-bottom: var(--margin-sm);
-    border: 4px solid transparent;
+    border: none;
     align-items: center;
     justify-content: center;
     gap: 0; 

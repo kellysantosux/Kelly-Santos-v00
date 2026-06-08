@@ -72,6 +72,7 @@
   --bg-main-light: var(--gray-50);    
     --bg-main-x-light: var(--white);               
   --bg-main-mobile: var(--blue-50);    
+    --bg-main-secondary-light: var(--blue-200); 
 
   /* Section background */
   --bg-section-primary-dark: var(--blue-900);            
