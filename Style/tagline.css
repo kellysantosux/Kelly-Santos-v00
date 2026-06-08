@@ -9,7 +9,7 @@
   text-align: left;
   /* padding: var(--padding-xl); */
   border-radius: var(--border-radius-xs);
-  box-shadow: 0 1px 4px 0px rgba(5, 8, 34, 0.2);
+  /* box-shadow: 0 1px 4px 0px rgba(5, 8, 34, 0.2); */
 
   /* background-color: var(--bg-banners-secondary-light); */
   /* background-image: 
@@ -30,6 +30,8 @@
     contain: paint;*/
   padding: var(--padding-xl);
   background-color: var(--bg-section-primary-light);
+
+        border: 0.62px solid var(--border-action-primary-gray);
   ;
 
 

@@ -11,6 +11,8 @@
   margin-bottom: var(--margin-lg);
   border: 1.6px solid var(--border-section-secondary-light);
   background-color: var(--bg-section-secondary-light);
+      border: 0.62px solid var(--border-action-primary-gray);
+      background-color: var(--bg-section-primary-light);
 }
 
 .contactMe-banner__copy::before {
