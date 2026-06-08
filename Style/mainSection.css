@@ -210,10 +210,15 @@ margin: auto;
         }
 
             .body_portfolio .contactMe_section  {
-             display: none;
+             display: none;}
+             
+             /* .body_portfolio .portfolio_section {
+                padding-inline: var(--padding-xl);
+   
+
+    } */
 
 
-    }
         
 
 

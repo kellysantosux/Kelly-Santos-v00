@@ -14,6 +14,7 @@
 
 }
 
+
 .--p_home{
      padding-top: var(--padding-lg);   
     background-color: var(--bg-section-primary-light);
@@ -232,6 +233,14 @@
 
 @media only screen and (max-width: 768px) {
 
+    .--main_portfolio{
+            width: 100%;
+              margin-top: 86.67px;
+              padding-inline:var(--padding-xl);
+                      background-color: var(--bg-main-dark);
+}
+
+
     .portfolioCards {
 
              grid-template-rows:none;
@@ -242,10 +251,17 @@
 
 
     }
+
+                     .body_portfolio .--main_portfolio h1 {
+              color: var( --text-title-light);
+   
+
+    }
 .portfolioCards a {
     width: auto;
     height: 100%;
     flex-direction: column;
+    background-color: transparent;
 }
 
     .portfolio_container {
