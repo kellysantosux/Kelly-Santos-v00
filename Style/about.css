@@ -117,7 +117,7 @@ background: var(--bg-cards-primary-light);
     border: 0px;
 
     border-radius: var(--border-radius-xs);
-    /* padding: 0; */
+    padding: 0; 
     /* background-color: transparent; */
           gap: var(--spacing-base);
           background: var(--bg-cards-primary-light);
@@ -139,10 +139,9 @@ background: var(--bg-cards-primary-light);
 
 }
  .container_description  {
-
-    padding: var(--padding-xl) var(--padding-lg) var(--padding-lg) var(--padding-lg);
+    padding: var(--padding-lg) var(--padding-xxl) var(--padding-xxl) var(--padding-xxl);
    
-
+    
   }
 
   .aboutMe {
@@ -176,6 +175,7 @@ background: var(--bg-cards-primary-light);
   height: 100%;
   border-radius: 0;
   object-fit: cover;
+          padding: var(--padding-lg);
 
 }
 
