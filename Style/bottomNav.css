@@ -28,6 +28,12 @@ background: linear-gradient(
   padding-bottom: var(--padding-xl);
 }
 
+.--bn_home{
+    background: transparent;
+  backdrop-filter: none;
+
+}
+
 
   
   

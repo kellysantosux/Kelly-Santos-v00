@@ -35,10 +35,7 @@
 
    }
    .main_home{
-
-/* background-color: var(--bg-main-dark); */
-
-background-color: var(--bg-component-secondary-light);
+background-color:var(--bg-component-secondary-light);
 }
 
 /* 
@@ -73,9 +70,10 @@ background-color: var(--bg-component-secondary-light);
      }
 
         .main_home{
-/* background-color: var(--bg-main-dark); */
+background-color: var(--bg-main-dark);
+border-color: transparent;
 
-background-color: var(--bg-component-secondary-light);
+
 }
 
      .homepage .portfolio_section,
