@@ -1,4 +1,4 @@
-.portfolio {
+.portfolio_container {
     display: flex;
     max-width: 1211.19px;
     width: 100%;
@@ -14,7 +14,7 @@
 
 }
 
-.portfolio h2 {
+.portfolio_container h2 {
     display: flex;
     width: 100%;
     padding: 0 var(--padding-base);
@@ -189,19 +189,61 @@
 
 }
 
+@media only screen and (max-width: 1022px) {
+    
 
+
+.portfolioCards {
+    grid-template-columns: none;
+ grid-template-rows: 1fr;
+    height: fit-content;
+
+
+}
+
+
+
+
+.portfolioCards a {
+      width: 100%;
+    height: fit-content;
+    flex-direction: row;
+}
+
+.portfolioCards img {
+    width:38%;
+    height: 100%;
+       object-fit: cover;
+}
+
+.portfolio_contact img {
+    width: 100%;
+    object-fit: cover;
+    align-items: flex-start;
+
+
+}
+}
 
 @media only screen and (max-width: 768px) {
 
     .portfolioCards {
+
+             grid-template-rows:none;
+        height: fit-content;
         margin-bottom: 0;
           grid-template-columns: 1fr;
 
 
 
     }
+.portfolioCards a {
+    width: auto;
+    height: 100%;
+    flex-direction: column;
+}
 
-    .portfolio {
+    .portfolio_container {
         border: none;
         padding:0;
         background: transparent;
@@ -210,7 +252,10 @@
     }
 
 
-
+.portfolioCards img {
+        width: 100%;
+        height: fit-content;
+        object-fit: cover;
 
     .body_portfolio .contactMe_section {
         display: none;
@@ -219,7 +264,7 @@
 }
 
 
-
+}
 @media only screen and (max-width: 380px) {
 
     .portfolioCards {
