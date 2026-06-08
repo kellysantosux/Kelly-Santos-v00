@@ -31,14 +31,12 @@ background: linear-gradient(
 .--bn_home{
     background: transparent;
   backdrop-filter: none;
-  background-color: var(  --action-primary-bg-dark);
+  background-color: var(  --surface-component-dark);
 
 }
 
 
   
-  
-
 
   .bottomNav nav {
     display: flex;
