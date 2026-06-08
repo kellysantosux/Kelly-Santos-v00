@@ -8,6 +8,7 @@
 }
 tbody{
     vertical-align: super;
+
 }
 
 .tables q
@@ -42,15 +43,16 @@ tbody{
 
 
 /* Zebra striping for improved readability (alternating row colors) */
-.tables tbody tr:nth-child(odd) {
-    background-color: var(--bg-component-secondary-light); /* Very light grey for even rows */
-}
+/* .tables tbody tr:nth-child(odd) {
+    background-color: var(--bg-component-secondary-light); Very light grey for even rows
+} */
 
 
 /* Fix for the first column weight */
 .tables tbody tr td:first-child {
     font-weight: bold; 
     min-width: 100px;
+        border: 0.5px solid var( --border-component-secondary-dark); /* Liinght grey border for separation */
 }
 /* Ensure the 'Because' column takes up the most room */
 /*
@@ -58,6 +60,9 @@ tbody{
     width: 100%; 
 }
 */
+.tables th{
+        border: 0.5px solid var( --border-component-secondary-dark); /* Liinght grey border for separation */
+}
 
 
 

@@ -11,7 +11,6 @@
   padding: var(--padding-xxs) 2.28% var(--padding-xs)  2.28%;
    background-color: var(--bg-navigation-primary-light);
   border-radius: var(--border-radius-xs);
-      border: 0.62px solid var(--border-action-primary-gray);
 }
 
 .--new-border_breadcrumb {  
@@ -63,7 +62,7 @@
   text-underline-offset: 3px;
   text-decoration-thickness: 1.67px;
     font-weight: var(--font-weight-bold);
-      color: var(--text-anchor-blue);
+
 
 }
 
