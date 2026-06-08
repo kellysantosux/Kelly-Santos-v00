@@ -122,7 +122,7 @@ background: var(--bg-cards-primary-light);
           gap: var(--spacing-base);
           background: var(--bg-cards-primary-light);
           border: 0.62px solid var(--border-action-primary-gray);
-              padding: var(--padding-xl);
+     
   }
 
       .--main_about{
