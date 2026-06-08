@@ -209,6 +209,12 @@ margin: auto;
             display: none;
         }
 
+            .body_portfolio .contactMe_section  {
+             display: none;
+
+
+    }
+        
 
 
         .sectionHeader a {

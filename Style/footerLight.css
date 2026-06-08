@@ -5,9 +5,11 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: left;
-    background-color: var(--bg-footer-medium);
+    /* background-color: var(--bg-footer-medium); */
        gap: var(--spacing-lg);
     margin-top: var(--spacing-lg);
+
+    background-color: var(--bg-footer-blue-light);
 
  }
 

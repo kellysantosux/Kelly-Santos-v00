@@ -110,6 +110,7 @@
   --bg-footer-light: var(--gray-50);   
   --bg-footer-medium: var(--blue-50);    
   --bg-footer-dark: var(--gray-900); 
+    --bg-footer-blue-light: var(--blue-200);   
 
   /*breadcrumbs */             
   --bg-navigation-primary-light: var(--gray-200);              
