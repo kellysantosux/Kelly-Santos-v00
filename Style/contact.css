@@ -126,7 +126,7 @@ background: var(--bg-cards-primary-light);
 }
   .contactMe>.description {
 
-    padding: var(--padding-lg) var(--padding-xxl) var(--padding-xxl) var(--padding-xxl);
+ padding: var(--padding-lg) var(--padding-lg) var(--padding-xxl) var(--padding-lg);
 
   }
 
@@ -154,7 +154,7 @@ background: var(--bg-cards-primary-light);
   align-items: start;
   justify-content: left;
      background-color: var(--bg-div-secondary-light);
-        margin: var(--margin-xl);
+        margin: var(--margin-lg);
 
   }
 
