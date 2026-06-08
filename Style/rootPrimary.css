@@ -17,20 +17,20 @@
 /* --- Primitives (Base Palette) --- */
 /* Neutrals & Grays */
 --gray-25: hsl(0, 0%, 99.5%);    
---gray-50: #FAFAFA;     /*ultra-light-neutral-gray, very-light-shade-blue-magenta, very-light-shade-gray */
---gray-100: #FBF8F9;    /*very-light-shade-red */
---gray-200: #E4E5EB;    /*light-shade-blue-magenta */
---gray-300: #D2D6D1;    /*light-shade-green-cyan */
---gray-500: #636469;    /*medium-dark-shade-gray */
+--gray-50: hsl(0, 0%, 98%);     /*ultra-light-neutral-gray, very-light-shade-blue-magenta, very-light-shade-gray */
+--gray-100: hsl(340, 27%, 98%);    /*very-light-shade-red */
+--gray-200: hsl(231, 15%, 91%);    /*light-shade-blue-magenta */
+--gray-300: hsl(108, 6%, 83%);    /*light-shade-green-cyan */
+--gray-500: hsl(230, 3%, 40%);    /*medium-dark-shade-gray */
 --gray-800: hsl(236, 13%, 21%);    /*dark-shade-gray */
 --gray-900: hsl(235, 28%, 8%);    /*dark-desaturate-blue-gray */
 --white: hsl(0, 0%, 100%);
 
 /* Blues */
---blue-15: #ebebef;    
---blue-25: #f4f4f6;     /*very-light-shade-blue-magenta-darken */
---blue-50: #e6e8f4;     /*light-shade-blue */
---blue-100: #efeff6;    /*very-light-shade-blue */
+--blue-15: hsl(240, 11%, 93%);    
+--blue-25: hsl(240, 10%, 96%);     /*very-light-shade-blue-magenta-darken */
+--blue-50: hsl(231, 39%, 93%);     /*light-shade-blue */
+--blue-100: hsl(240, 28%, 95%);    /*very-light-shade-blue */
 
 --blue-200: #eff1f6;    /*very-light-shade-cyan-blue */
 --blue-250: #E2E6EE;    
@@ -136,7 +136,7 @@
   --bg-component-secondary-brown: var(--brown-500); 
   --bg-component-tertiary-brown: var(--brown-200); 
   --bg-component-quinary-light: var(--gray-100); 
-
+  --bg-component-blue-light: var(--blue-100); 
   /* Typography Hierarchy */
 
   /* Major editorial page headings and case study titles */
@@ -244,6 +244,7 @@
   --border-component-primary-green: var(--gray-300); 
   --border-component-primary-brown: var(--brown-50); 
   --border-component-primary-red: var(--red-500); 
+   --border-component-secondary-blue: var(--blue-650);
 
   --border-component-secondary-light: var(--blue-25); 
   --border-component-secondary-dark: var(--blue-400); 
