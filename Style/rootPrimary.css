@@ -32,11 +32,11 @@
 --blue-50: hsl(231, 39%, 93%);     /*light-shade-blue */
 --blue-100: hsl(240, 28%, 95%);    /*very-light-shade-blue */
 
---blue-200: #eff1f6;    /*very-light-shade-cyan-blue */
---blue-250: #E2E6EE;    
---blue-300: #C5C7D3;    /*light-shade-cyan-blue */
---blue-400: #DADCEB;    /*very-light-shade-orange */
---blue-500: #4D57B2;    /*medium-dark-shade-cyan-blue */
+--blue-200: hsl(223, 28%, 95%);    /*very-light-shade-cyan-blue */
+--blue-250: hsl(220, 26%, 91%);    
+--blue-300: hsl(231, 14%, 80%);    /*light-shade-cyan-blue */
+--blue-400: hsl(233, 30%, 89%);    /*very-light-shade-orange */
+--blue-500: hsl(234, 40%, 50%);    /*medium-dark-shade-cyan-blue */
 --blue-600: hsl(205, 74%, 38%);    /*shade-cyan-blue */
 /* --blue-650: #2E446F; */
 /* --blue-650: #2750A2; */
@@ -52,8 +52,8 @@
 --brown-500: #FFB24D;   /*medium-light-shade-brown */
 
 /* Greens */
---green-50: #E8F2EC;    /*very-light-shade-green-cyan */
---green-100: #F6F7F3;   /*light-shade-yellow-green */
+--green-50: hsl(144, 28%, 93%);    /*very-light-shade-green-cyan */
+--green-100: hsl(75, 20%, 96%);   /*light-shade-yellow-green */
 
 /* Reds */
 --red-500: #FB5061;     /*medium-light-shade-red */
@@ -95,7 +95,7 @@
   --bg-banners-secondary-light: var(--blue-200);   
   --bg-banners-primary-x-light: var(--white);   
   --bg-banners-tertiary-light: var(--gray-200); 
-  
+    --bg-banners-quaternary-light: var(--gray-200); 
 
   /* cards background */
   --bg-cards-primary-dark: var(--blue-900);            

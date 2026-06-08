@@ -16,9 +16,7 @@
 .--new-border_breadcrumb {  
   border-radius: var(--border-radius-xs) var(--border-radius-xs) 0 0   ;
   box-shadow: none;
-  background-color: var(--bg-component-secondary-light);
-
-  background-color:#e8e8e8;
+  background-color: var(  --bg-component-tertiary-light);
 
 }
 
