@@ -138,30 +138,25 @@ background: linear-gradient(
   /* 1. Active Link Container Styles */
   .bottomNav nav ul li a.active {
     font-weight: var(--font-weight-medium);
-    background-color: var(--action-item-quaternary-light);
-    border: 1.6px solid var(--border-component-primary-light);
+    background-color: var(--action-item-quaternary-light); 
+    /* border: 1.6px solid var(--border-component-primary-light); */
     
 
   }
 
   /* 2. Active Icon Styles (Explicitly overrides default dark icon color to white) */
   .bottomNav nav ul li a.active i {
-    color: var(--text-anchor-dark);
-     color:hsl(233.33, 100%, 59%);
          color: var(--icon-blue);
 
    
   }
 
   .bottomNav nav ul li a.active {
-    color: var(--text-anchor-dark);
-      color:hsl(233.33, 100%, 59%);
       color: var(--text-anchor-blue);
   }
 
   /* 3. Hover Styles (Uses :not(.active) so hover states do not override the active active border) */
   .bottomNav nav ul li a:not(.active):hover {
-    color: var(--text-anchor-dark);
              color: var(--text-anchor-dark-secondary);
     border: 1px solid var(--border-action-primary-light-hover);
   }

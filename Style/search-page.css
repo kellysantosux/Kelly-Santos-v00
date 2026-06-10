@@ -99,7 +99,8 @@ color: var(--medium-light-shade-red);}
 }
 
 #search-input {
-  padding: 10px 40px 10px 16px;
+  display: flex;
+  padding: 15px 10px 15px 16px;
   /* cite: 3, 36 */
   max-width: 608px;
   /* cite: 4, 36 */
@@ -107,60 +108,73 @@ color: var(--medium-light-shade-red);}
   /* cite: 4, 36 */
   width: 100%;
   /* cite: 4, 36 */
-  height: fit-content;
+  height: 46px;
   /* cite: 4, 37 */
   border-radius: var(--spacing-lg);
   /* cite: 5, 37 */
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
   border-style: none;
   border: 2px solid var(--border-component-primary-dark);
-  appearance: auto;
-  /* ARIA: Ensure this element has role="combobox" and aria-controls set via JS */
+  appearance: auto; 
+  border-radius: var(--border-radius-lg);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+font-size: 1.125rem;
+    align-items: center;
 }
 
+
+/* Directly target the input to change its border when container is active */
+.search-container:focus-within #search-input {
+  border-color:var(--border-blue-active);
+}
+
+/* Defines the visual state when the input field is active/focused by the user */
 #search-input:focus {
-
-  background-color: var( --action-tertiary-bg-light);
-  /* IMPROVED: Prominent, accessible focus indicator (WCAG 2.1) */
   max-width: 608px;
-  /* cite: 17, 48 */
+  background-color: var(--action-primary-bg-gray);
+  outline: none;
 }
 
+/* Styles the placeholder text within the search input */
+input::placeholder {
+font-size: 1.125rem;
+}
+/* --- Search Button --- */
+/* The clickable button to submit the search form */
 .search-button {
   display: flex;
-  /* cite: 9, 41 */
-  width: fit-content;
-  /* cite: 9, 41 */
-  height: 100%;
-  /* IMPROVED: Fill the container height */
-  /* height: 39.33px; was fixed and removed */
   position: absolute;
-  /* cite: 9, 42 */
   top: 0;
-  /* cite: 9, 42 */
-  right: 0px;
-  /* cite: 9, 42 */
-  padding: 10px;
-  /* cite: 10, 43 */
+  right: -0.6px;
+  width: 46px;
+  height: 46px;
+  padding: 11.5px;
   background-color: var(--action-primary-bg-dark);
-  /* cite: 11, 43 */
- color: var(--text-main-light);
-  /* cite: 11, 43 */
-  border: none;
-  cursor: pointer;
-  /* Use a radius that matches the container's radius on the right side */
+  color: var(--icon-light);
+  border: 1.6px solid transparent;
   border-radius: var(--border-radius-lg);
+  cursor: pointer;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
-
 }
 
 
-/* IMPROVED: Add a subtle lift on hover for better feedback */
-.search-button:hover, i:hover {
-opacity: 0.8;
 
+/* Change the background of the button when the container is active */
+.search-container:focus-within .search-button {
+  background-color:var(--bg-component-blue-active);
+  /* Ensure the icon color remains visible against the new background */
+  color: #FFFFFF; 
 }
 
+/* Manages the size of the search icon inside the button */
+.search-button i {
+  font-size: 1.5rem;
+}
+
+/* Provides visual feedback when hovering over the search button */
+.search-button:hover {
+  background-color: var(--action-primary-bg-slate);
+}
 
 .search-container .search-button i {
   font-size: var(--font-size-h6);
@@ -462,7 +476,7 @@ span.highlight-term {
     width: 426px;
     width: 100%;
 
-    background-color: var(--bg-component-secondary-dark);
+
     /* IMPROVED: Prominent, accessible focus indicator (WCAG 2.1) */
 
   }

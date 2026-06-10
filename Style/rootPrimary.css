@@ -32,15 +32,16 @@
 --blue-50: hsl(231, 39%, 93%);     /*light-shade-blue */
 --blue-100: hsl(240, 28%, 95%);    /*very-light-shade-blue */
 
---blue-200: hsl(223, 28%, 95%);    /*very-light-shade-cyan-blue */
---blue-250: hsl(220, 26%, 91%);    
+--blue-200: #eff1f6;    /*very-light-shade-cyan-blue */
+--blue-250: #e2e6ee;    
 --blue-300: hsl(231, 14%, 80%);    /*light-shade-cyan-blue */
 --blue-400: hsl(233, 30%, 89%);    /*very-light-shade-orange */
 --blue-500: hsl(234, 40%, 50%);    /*medium-dark-shade-cyan-blue */
 --blue-600: hsl(205, 74%, 38%);    /*shade-cyan-blue */
-/* --blue-650: #2E446F; */
-/* --blue-650: #2750A2; */
---blue-650: hsl(220, 76%, 38%);
+/* --blue-650: #2E446F;  */
+ /* --blue-650: #2750A2; */
+/* --blue-650: #1748ab;  */
+--blue-650:#004991;
 --blue-900: #282B43;    /*deep-near-black-shade-navy-blue, very-dark-shade-blue */
 
 /* Slates */
@@ -57,6 +58,46 @@
 
 /* Reds */
 --red-500: #FB5061;     /*medium-light-shade-red */
+
+/* 26 web-safe link-contrast colors pass at 3:1 vs black and 5:1 vs. white */
+
+/* Reds & Pinks */
+
+--link-red-dark: #CC0000;
+--link-red-pink: #CC0033;
+--link-magenta: #CC0066;
+--link-deep-pink: #CC0099;
+--link-red-orange: #CC3300;
+--link-soft-red: #CC3333;
+
+/* Purples & Violets */
+
+--link-purple-deep: #9900CC;
+--link-violet-dark: #6600FF;
+--link-violet: #9900FF;
+--link-purple-pink: #993366;
+--link-purple: #993399;
+--link-purple-light: #9933CC;
+--link-brand-blue: #3333FF;
+--link-indigo: #6633FF;
+
+/* Greens & Earth Tones */
+
+--link-green-olive: #336600;
+--link-olive: #666600;
+--link-green-muted: #336633;
+--link-khaki-muted: #666633;
+
+/* Blues, Teals & Greys */
+
+--link-teal-dark: #006666;
+--link-teal-muted: #336666;
+--link-grey: #666666;
+--link-blue-teal: #006699;
+--link-blue-muted: #336699;
+--link-blue-grey: #666699;
+--link-blue-deep: #0066CC;
+--link-blue-royal: #3366CC;
 
 /* 2. SEMANTIC TOKENS */
   /* Layout & Page Canvas Backdrops */
@@ -121,7 +162,8 @@
   --icon-dark: var(--blue-900);            
   --icon-light: var(--gray-50);           
   --icon-gray: var(--gray-500);     
-    --icon-blue: var(--blue-650);     
+  --icon-blue: var(--blue-650);     
+  --icon-blue-active: var(--blue-650);     
 
   /* component*/
   --surface-component-light: var(--gray-50);           
@@ -138,12 +180,14 @@
   --bg-component-secondary-brown: var(--brown-500); 
   --bg-component-tertiary-brown: var(--brown-200); 
   --bg-component-quinary-light: var(--gray-100); 
-  --bg-component-blue-light: var(--blue-100); 
+  --bg-component-blue-light: var(--blue-250); 
+     --bg-component-blue-active: var(--link-blue-muted);    
+     
+     
   /* Typography Hierarchy */
 
   /* Major editorial page headings and case study titles */
     --text-title-primary-dark: var(--gray-900); 
-        --text-title-primary-dark: var(--gray-800); 
     --text-title-secondary-dark: var(--blue-900);             
     --text-title-light: var(--gray-50);    
         --text-title-primary-blue: var(--blue-800); 
@@ -155,18 +199,18 @@
     --text-main-gray: var(--gray-500);     
     --text-main-primary-dark: var(--gray-900);     
     --text-main-secondary-dark: var(--blue-900); 
-        --text-main-tertiary-dark: var(--gray-800); 
     --text-highlighted-blue: var(--blue-600);/* text highlighted */
     --text-highlighted-red: var(--red-500);/* text highlighted */
 
     /* anchor */
     --text-anchor-dark: var(--blue-900);          
-      --text-anchor-dark: var(--gray-800);     
     --text-anchor-light: var(--gray-50);            
     --text-anchor-gray: var(--gray-500);  
     --text-anchor-dark-secondary: var(--gray-800);        
     --text-anchor-blue: var(--blue-650);/* text highlighted */
 
+     --text-anchor-blue-muted: var(--link-blue-muted);   
+     --text-anchor-purple-light: var(--link-purple-light ); 
   /* text ? */  
   --text-muted: var(--gray-500);           /* Captions, metadata timelines, dates, breadcrumbs, copyrights */
   --text-link: var(--blue-600);            /* Active inline text hyperlinks or action arrows */
@@ -177,7 +221,6 @@
 
   /* Backgrounds Action Elements & Navigation Controls */
   --action-primary-bg-dark: var(--blue-900);    /* Solid button background (Contact CTA, Search submit button) */
-    --action-primary-bg-dark: var(--gray-800);    /* Solid button background (Contact CTA, Search submit button) */
   --action-primary-bg-gray: var(--gray-50);    /* Solid button background (Contact CTA, Search submit button) */
   --action-primary-bg-active: var(--blue-900);    /* Solid button background (Contact CTA, Search submit button) */
   --action-tertiary-bg-active: var(--blue-300);    /* Solid button background (Contact CTA, Search submit button) */
@@ -259,9 +302,10 @@
   --border-component-quaternary-light: var(--blue-300); 
   --border-component-quinary-light: var(--gray-100); 
 
+  
+
   /* Borders Action Elements & Navigation Controls */
   --border-action-primary-dark: var(--blue-900);   
-    --border-action-primary-dark: var(--gray-800);   
   --border-action-primary-light: var(--gray-50); 
    --border-action-primary-gray: var(--gray-200); 
    --border-action-primary-gray-hover: var(--gray-200); 
@@ -273,6 +317,8 @@
   --border-action-primary-dark-hover: var(--blue-900);   
   --border-action-tertiary-red-hover: var(--red-500);   
   --border-action-quaternary-light: var(--blue-50);  
+   --border-action-secondary-blue: var(--blue-650);
+   --border-blue-active: var(--link-blue-muted);     
   
   
  /* outlines*/

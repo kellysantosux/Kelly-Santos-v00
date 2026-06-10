@@ -162,7 +162,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const observerOptions = {
         root: null, // viewport
-        rootMargin: '0px 0px -60% 0px', // Target the top 40% of the viewport (or adjust margin as needed)
+        rootMargin: '0px 0px -90% 0px', // Target the top 40% of the viewport (or adjust margin as needed)
         threshold: 0 // As soon as the element enters or exits the rootMargin
     };
 

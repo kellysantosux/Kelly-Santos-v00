@@ -124,7 +124,7 @@ a.menu2__link.--menu-parent-active {
   /* Use a differentiated visual state for parent link */
   background-color: var(  --action-primary-bg-active);
   border-color: var(--border-action-primary-dark);
-             color: var(--text-anchor-light);
+             color: var(--text-anchor-dark);
                          background-color: var(--action-item-quaternary-light);
     border: 1.6px solid var(--border-component-primary-light);
 
@@ -277,7 +277,7 @@ span.menu2__span-dropdown i {
 .menu2__span-dropdown.--submenu2-open {
   /* Add styling for the expanded state, e.g., rotate the arrow icon */
   transform: rotate(180deg);
-  color:var(--text-main-light);
+  color:var(--text-main-dark);
 
 
 }

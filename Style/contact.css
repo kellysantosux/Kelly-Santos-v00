@@ -102,7 +102,7 @@ background: var(--bg-cards-primary-light);
               --bg-main-secondary-light);
                    
 }
-    }
+   
 
   .containerContactMe {
     width: 100%;
@@ -129,6 +129,7 @@ background: var(--bg-cards-primary-light);
  padding: var(--padding-lg) var(--padding-lg) var(--padding-xxl) var(--padding-lg);
 
   }
+
 
   .contactMe {
       grid-template-columns: 1fr;
@@ -167,7 +168,7 @@ background: var(--bg-cards-primary-light);
 }
 
 
-
+}
 /* 
    @media only screen and (max-width: 380px) {
 

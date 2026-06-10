@@ -16,7 +16,7 @@
 .--new-border_breadcrumb {  
   border-radius: var(--border-radius-xs) var(--border-radius-xs) 0 0   ;
   box-shadow: none;
-  background-color: var(  --bg-component-tertiary-light);
+  background-color: var(--bg-component-blue-light);
 
 }
 
@@ -36,12 +36,12 @@
 }
 
 .container_breadcrumb>.breadcrumb>li>a:hover {
-  color:var(--anchor-highlighted-blue);
   text-decoration: underline;
   text-underline-offset: 3px;
-    text-decoration-thickness: 1.67px;
-        font-weight: var(--font-weight-bold);
-
+  text-decoration-thickness: 1.67px;
+  /* font-weight: var(--font-weight-bold); */
+    color: var(--text-anchor-purple-light);
+  
 }
 
 .container_breadcrumb>.breadcrumb li+li:before {
@@ -62,6 +62,7 @@
   text-underline-offset: 3px;
   text-decoration-thickness: 1.67px;
     font-weight: var(--font-weight-bold);
+  color: var(--text-anchor-blue);
 
 
 }
