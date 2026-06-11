@@ -183,9 +183,8 @@
   --bg-component-tertiary-brown: var(--brown-200); 
   --bg-component-quinary-light: var(--gray-100); 
   --bg-component-blue-light: var(--blue-250); 
-     --bg-component-blue-active: var(--blue-650);    
+     --bg-component-blue-active: var(--link-blue-muted);    
      
-        --bg-component-secondary-blue-active: var(--blue-650);  
   /* Typography Hierarchy */
 
   /* Major editorial page headings and case study titles */
