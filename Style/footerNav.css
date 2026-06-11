@@ -73,8 +73,22 @@
 
 /* Corrected hover state selector */
 .footerNav > nav > ul > li > a:hover {
-  border: 1.6px solid var(--border-action-primary-dark-hover);
+           border: 1.6px solid var(--border-action-blue-hover);
+
 }
+
+/* When the portfolio link is hovered, find the material icon inside it and make it blue */
+.footerNav li:hover .material-icons-outlined,
+.footerNav li:hover .material-icons {
+      color: var(--text-anchor-blue); 
+    }
+
+    .footerNav li:hover a:hover {
+     border: 1.6px solid var(--border-action-primary-dark);
+      color: var(--text-anchor-blue);
+            background-color: var(--action-item-hover);
+           border: 1.6px solid var(--border-action-blue-hover);
+          }
 
 /* Corrected active class selector (the class is on the a tag itself) 
 .footerNav > nav > ul > li > a.active {

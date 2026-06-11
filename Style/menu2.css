@@ -51,7 +51,7 @@
   width: 33.33px;
   height: 33.33px;
   font-size:28px;
-  color:  var(--icon-dark);
+  color:  var(--icon-x-light);
   background-color: var(--action-item-primary-light);
 }
 
@@ -82,9 +82,18 @@ li.menu2__item {
   flex-direction: column;
   justify-content: space-between;
   gap: 0;
-  border-top: 1px solid var(--very-light-shade-orange);
+  border-top: 1px solid var(--border-action-primary-gray);
+
+
 
 }
+
+.--active {
+    border: 1.6px solid var(--border-action-primary-dark);
+    
+  background-color: var(--action-item-quaternary-light); 
+}
+
 
 a.menu2__link {
   display: flex;
@@ -112,21 +121,29 @@ a.menu2__link {
 
 
 a.menu2__link:hover {
- border-color:var(--border-action-primary-dark);
-        background-color:var(--action-item-hover);
+      color: var(--text-anchor-blue); 
+        border: 1.6px solid     var(--border-action-blue-hover);
+  
+      }
 
+ a.menu2__link.--active .menu2__span {
+     color: var(--icon-blue);
+      font-weight: var(--font-weight-medium);
 
+}
+
+a.menu2__link.--active i {  
+  color: var(--icon-blue);
 }
 
 
 /* Style applied to a parent/main menu link when a child submenu2 item is active */
 a.menu2__link.--menu-parent-active {
   /* Use a differentiated visual state for parent link */
-  background-color: var(  --action-primary-bg-active);
-  border-color: var(--border-action-primary-dark);
-             color: var(--text-anchor-dark);
-                         background-color: var(--action-item-quaternary-light);
-    border: 1.6px solid var(--border-component-primary-light);
+
+             color: var(--text-anchor-blue);
+               
+    border: 1.6px solid  var(--border-action-blue-hover);
 
 
 
@@ -136,27 +153,26 @@ a.menu2__link.--menu-parent-active {
 
 
 a.menu2__link.--menu-parent-active .menu2__span {
-  color: var(--text-anchor-light);
-    color: var(--text-anchor-dark);
+
+    color: var(--text-anchor-blue);
   
 }
 
 
 a.menu2__link.--menu-parent-active i.--has__submenu2 {
-  color: var(--text-anchor-light);
+
       color: var(--text-anchor-dark);
       
 }
 
 a.menu2__link.--menu-parent-active:hover {
 
-  border-color: var(--border-action-primary-dark);
-  color: var(--text-anchor-dark);
-  
+  border-color:  var(--border-action-blue-hover);
+      color: var(--text-anchor-blue);
  
 }
 a.menu2__link.--menu-active .menu2__span {
-  color: var(--text-anchor-light);
+      color: var(--icon-blue);
 
   
 }
@@ -169,7 +185,7 @@ a.menu2__link.--menu-active .menu2__span {
   align-items: center;
   position: relative;
      min-height: 45.89px;
-  
+      
 
 }
 
@@ -179,11 +195,10 @@ span.menu2__span {
   height: fit-content;
   align-items: center;
   justify-content: left;
-  gap: var(--spacing-sm);
+  gap: var(--spacing-xs);
   font-weight: var(--font-weight-medium);
   padding: 10px 0;
-
-
+    padding-left: 2px;
 }
 
 span.menu2__span i{
@@ -192,10 +207,37 @@ font-size: var(--font-weight-base);
 
 a.menu2__link.--menu-active .menu2__span {
 
-    color:  var(--icon-dark);
+    color:  var(--icon-dblue);
 
 
 }
+
+/* When the portfolio link is hovered, find the material icon inside it and make it blue */
+.menu2__link:hover .material-icons-outlined,
+.menu2__link:hover .material-icons {
+      color: var(--text-anchor-blue); 
+    }
+
+    li.menu2__item a.menu2__link:hover {
+     border: 1.6px solid var(--border-action-primary-dark);
+      color: var(--text-anchor-blue);
+            background-color: var(--action-item-hover);
+           border: 1.6px solid var(--border-action-blue-hover);
+          }
+
+          
+a.submenu2__link:hover {
+      color: var(--text-anchor-blue); 
+        border: 1.6px solid     var(--border-action-blue-hover);
+  
+      }
+            
+
+/* Target the link on hover, and apply the color to everything inside it */
+a.menu2__link:hover .menu2__span {
+      color: var(--text-anchor-blue); }
+
+
 
 span.menu2__span-dropdown {
   display: flex;
@@ -211,9 +253,10 @@ span.menu2__span-dropdown {
 
 }
 
+
 span.menu2__span-dropdown:hover {
     color: var(--text-anchor-dark);
-      background-color: rgba(0, 0, 0, 0.2);
+      background-color: hsla(237, 40%, 50%, 0.2);
       
 
 }
@@ -238,7 +281,7 @@ span.menu2__span .--menu i {
   color: var(--text-anchor-dark);
   border: 1.6px solid transparent;
   margin-bottom: -6px;
-  
+     
 }
 
 span.menu2__span.--menu {
@@ -264,7 +307,7 @@ span.menu2__span-dropdown i {
   display: flex;
   max-height: 1000px;
   transition: max-height 0.3s ease-in-out;
-  
+    background-color:var( --bg-component-secondary-light);
 }
 
 /* Optional: Style the dropdown icon (span-dropdown) */
@@ -282,7 +325,7 @@ span.menu2__span-dropdown i {
 
 }
 .menu2__span-dropdown.--submenu2-open:hover{
- background-color: rgba(255, 255, 255, 0.2);
+ background-color: hsla(237, 40%, 50%, 0.2);
    /* color:var(--text-main-light); */
 
 }
@@ -298,9 +341,11 @@ ul.submenu2 {
   padding-inline-start: 0;
     padding:var(--padding-xs);
   margin:var(--padding-base) 0 ;
-    background-color:var(--action-item-secondary-light);
-  border: 1.6px solid transparent;
+
 border-radius: var(--border-radius-xs);
+/* 
+    border: 1.6px solid var( --border-component-secondary-dark) */
+
 
 }
 
@@ -340,8 +385,8 @@ background-color:transparent;
 
 
 a.submenu2__link:hover {
-    color: var( --text-anchor-dark);
-    border-color:var(--border-action-primary-dark);
+    color: var( --text-anchor-blue);
+    border-color:var(--border-action-blue-hover);
     background-color: var( --action-item-hover);
 
 }
@@ -350,22 +395,26 @@ a.submenu2__link:hover {
     max-width: 220px;
     width: 98.38%;
         border-color:var(--border-action-primary-dark);
+            border: 1.6px solid var(--border-action-primary-dark);
+    
+  background-color: var(--action-item-quaternary-light);
         
       
 
 }
 
 .--has__submenu2 a.submenu2__link.--menu-parent-active:hover {
-  border-color: var(--border-action-primary-dark);
 
-
+    border: 1.6px solid var(--border-action-blue-hover);
+      background-color: var(--action-item-quaternary-light);
    
 }
 .--has__submenu2 a.submenu2__link.--menu-active:hover {
-  border-color: var(--border-action-primary-dark);
-     background-color: var(--action-item-hover);
 
 
+    border: 1.6px solid var(--border-action-blue-hover);
+    
+  background-color: var(--action-item-quaternary-light);
    
 }
 
@@ -385,9 +434,11 @@ a.menu2__link.--menu-active .menu2__span {
 
 }
 .--has__submenu2:hover a.menu2__link.--menu-parent-active:hover {
-  color: var( --text-anchor-dark);
+  color: var( --text-anchor-blue);
          min-height: 45.89px;
- 
+     border: 1.6px solid var(--border-action-blue-hover);
+    
+  background-color: var(--action-item-quaternary-light);
            
 
 }
@@ -414,12 +465,13 @@ a.menu2__link.--menu-active .menu2__span {
     display: flex;
     position: absolute;
     left: 0;
-    top: 3.4px;
+    top: 2px;
     z-index: 9999;
     overflow: hidden;
       background-color: var(--action-item-primary-light);
   border: 1px solid transparent;
     border-radius: var(--border-radius-xxs);
+
   }
 
   /* 1. APPLY WIDER WIDTH AND BORDERS TO THE MAIN CONTAINER WHEN OPEN */
@@ -434,6 +486,7 @@ width: fit-content;
     border-radius: var(--border-radius-xs);
          min-height: 486px;
          background-color: transparent;
+
       
   }
 
@@ -457,9 +510,10 @@ width: fit-content;
     border-radius: 0;
     /* Use '0' instead of 'none' for border-radius */
     justify-content: right;
-    background-color: var(--action-primary-bg-dark);
+    background-color: var( --bg-component-blue-active);
   border-color: var(--border-action-primary-dark);
     justify-content: right;
+
   }
 
   /* 2. The Content Wrapper (The sliding menu) */
@@ -469,7 +523,7 @@ width: fit-content;
     position: absolute;
     display: flex;
     right: 0;
-    top: 32.5px;
+    top: 36.5px;
     /* width: 220px; */
     left: 1px;
       z-index: 9999;
@@ -483,7 +537,7 @@ width: fit-content;
     overflow-y: auto;
   padding-bottom: 2.82%;
   padding-inline: var(--padding-lg);
- 
+    
   width: 100%;
     /* Ensure wrapper is visible and can animate */
   }
@@ -515,7 +569,7 @@ width: fit-content;
 }
   .menu2__toogle-close {
     display: none;
-    color: var(--action-item-primary-light);
+    color: var(--icon-x-light);
         border: 1px solid transparent;
          padding: 4px;
          margin-right: 4px;
@@ -544,7 +598,7 @@ width: fit-content;
  .menu2__toogle-close:hover{
 
  background-color: rgba(255, 255, 255, 0.2);
-   color:var(--action-item-primary-dark);
+
 
 
 

@@ -34,11 +34,7 @@ font-weight: var(--font-weight-medium);
 }
 
 
-      
-.backButton a:hover {
-     border-color:  var(--border-action-primary-dark);
-         background-color: var(--action-tertiary-bg-light);
-}
+
 
     .backButton i {
 justify-content: left;
@@ -46,6 +42,18 @@ display: block;
 font-size: var(--major-third-base);
 align-items: center;
 }
+
+/* When the portfolio link is hovered, find the material icon inside it and make it blue */
+.backButton a:hover .material-icons-outlined,
+.backButton a:hover .material-icons {
+      color: var(--text-anchor-blue); 
+    }
+
+   .backButton a:hover {
+      color: var(--text-anchor-blue);
+            background-color: var(--action-item-hover);
+           border: 1.6px solid var(--border-action-blue-hover);
+          }
 @media only screen and (max-width: 768px) {
 
   .backButton{

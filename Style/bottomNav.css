@@ -147,12 +147,12 @@ background: linear-gradient(
   /* 2. Active Icon Styles (Explicitly overrides default dark icon color to white) */
   .bottomNav nav ul li a.active i {
          color: var(--icon-blue);
-
    
   }
 
   .bottomNav nav ul li a.active {
       color: var(--text-anchor-blue);
+ 
   }
 
   /* 3. Hover Styles (Uses :not(.active) so hover states do not override the active active border) */

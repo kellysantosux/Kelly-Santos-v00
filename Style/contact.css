@@ -11,6 +11,7 @@
   background-color: var(--bg-section-secondary-light);
   padding: var(--padding-xl);
   margin-bottom: var(--margin-lg);
+      border: 0.62px solid var(--border-action-primary-gray);
 }
 
 .--padding-top-0 {

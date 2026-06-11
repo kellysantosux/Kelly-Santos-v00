@@ -24,7 +24,7 @@
 /* When the search-container is focused (or contains a focused input) */
 .search-container:focus-within {
   /* Change the border color of the input */
-  border-color:var(--border-blue-active);
+  border-color: var(--border-blue-active);
 }
 
 /* --- Search Input --- */
@@ -38,21 +38,22 @@
   border-radius: var(--border-radius-lg);
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
   appearance: auto;
-font-size: 1.125rem;
+  font-size: 1.125rem;
 
 
-    align-items: center;
+  align-items: center;
 
 
 }
+
 /* Directly target the input to change its border when container is active */
 .search-container:focus-within #search-input {
-  border-color:var(--border-blue-active);
+  border-color: var(--border-blue-active);
 }
 
 /* Defines the visual state when the input field is active/focused by the user */
 #search-input:focus {
-width: 260.06px;
+  width: 260.06px;
 
   background-color: var(--action-primary-bg-gray);
   outline: none;
@@ -60,7 +61,7 @@ width: 260.06px;
 
 /* Styles the placeholder text within the search input */
 input::placeholder {
-font-size: 1.125rem;
+  font-size: 1.125rem;
 }
 
 /* --- Search Button --- */
@@ -83,9 +84,9 @@ font-size: 1.125rem;
 
 /* Change the background of the button when the container is active */
 .search-container:focus-within .search-button {
-  background-color:var(--bg-component-blue-active);
+  background-color: var(--bg-component-blue-active);
   /* Ensure the icon color remains visible against the new background */
-  color: #FFFFFF; 
+  color: var(--icon-x-light)
 }
 
 /* Provides visual feedback when hovering over the search button */
@@ -100,38 +101,34 @@ font-size: 1.125rem;
 
 /* --- Search Button link--- */
 /* The clickable button to submit the search form */
-.search-button-link
- {
+.search-button-link {
   display: none;
   width: 46px;
   height: 46px;
   padding: 11.5px;
   background-color: var(--action-primary-bg-dark);
   color: var(--icon-light);
-  border: 1.6px solid var( --border-component-primary-dark);
+  border: 1.6px solid var(--border-component-primary-dark);
   border-radius: var(--border-radius-lg);
   cursor: pointer;
-      box-shadow: 0 1px 4px 0px rgba(5, 8, 34, 0.2);
+  box-shadow: 0 1px 4px 0px rgba(5, 8, 34, 0.2);
 
 }
 
 /* Change the background of the button when the container is active */
-.search-container:focus-within .search-button-link
- {
-  background-color:var(--bg-component-blue-active);
+.search-container:focus-within .search-button-link {
+  background-color: var(--bg-component-blue-active);
   /* Ensure the icon color remains visible against the new background */
-  color: #FFFFFF; 
+  color: var(--icon-x-light)
 }
 
 /* Provides visual feedback when hovering over the search button */
-.search-button-link
-:hover {
+.search-button-link:hover {
   background-color: var(--action-primary-bg-slate);
 }
 
 /* Manages the size of the search icon inside the button */
-.search-button-link
- i {
+.search-button-link i {
   font-size: 1.5rem;
 }
 
@@ -167,22 +164,38 @@ font-size: 1.125rem;
 
 /* --- Responsive Adjustments --- */
 @media only screen and (max-width: 1280px) {
-  .search-wrapper { width: 100%; }
-  .search-container { margin-left: auto; }
+  .search-wrapper {
+    width: 100%;
+  }
+
+  .search-container {
+    margin-left: auto;
+  }
+}
+
+@media only screen and (max-width: 1048px) {
+  #search-input {
+
+    width: 287px;
+  }
+
+  #search-input:focus {
+    width: 300px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
-.search-wrapper{
-  display: none;
-}
+  .search-wrapper {
+    display: none;
+  }
 
 
-/* --- Search Button link--- */
-/* The clickable button to submit the search form */
-.search-button-link{
-  display: flex;
-}
-  
+  /* --- Search Button link--- */
+  /* The clickable button to submit the search form */
+  .search-button-link {
+    display: flex;
+  }
+
   .recent-searches-dropdown {
     left: 18.08px;
     width: 371.11px;

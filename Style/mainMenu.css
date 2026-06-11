@@ -7,7 +7,6 @@
       z-index: 10000;
 }
 
-
 .menu__main ul {
   margin-block-start: 0;
   margin-block-end: 0;
@@ -57,19 +56,8 @@ li.menu__item {
   gap: 0;
   border-radius: var(--border-radius-xs);
   border: 1.6px solid transparent;
-  
+    transition: all var(--transition-speed) ease;
 
-
-}
-.menu__span>i{
-    display: block;
-    width: fit-content;
-    height: fit-content;
-    color: var(--icon-dark);
-    text-align: center;
-    text-decoration: none;
-    font-size: var(--font-size-base);
-    font-weight: var(--font-weight-base);
 }
 
 a.menu__link {
@@ -84,7 +72,7 @@ color: var(--text-anchor-dark);
   text-decoration: none;
   font-weight: var(--font-weight-base);
   gap: 3px;
-  padding: 8px;
+  padding: 8px 10px 8px 8px;
 
   border: 1.6px solid transparent;
   border-radius: var(--border-radius-xs);
@@ -94,68 +82,14 @@ color: var(--text-anchor-dark);
 }
 
 .--active {
-  background-color: var(--action-primary-bg-dark);
     border: 1.6px solid var(--border-action-primary-dark);
-  padding-right: 12px;  
+    
+  background-color: var(--action-item-quaternary-light); 
 }
 
 
-.--active i {
-  color: var(--icon-light);
-  font-size: var(--font-size-base);
-}
 
-.--has-submenu {
-  width: fit-content;
-  height: auto;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  padding: 0;
-    z-index: 10000;
- 
-}
-
-span.menu__span {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: left;
-  font-weight: var(--font-weight-base);
-  gap: 3px;
-
-}
-
-a.menu__link.--active .menu__span {
-  color: var(--icon-light);
-
-}
-
-span.menu__span-dropdown {
-    display: flex;
-    width: fit-content;
-    height: fit-content;
-    align-items: center;
-    justify-content: center;
-    gap: var(--spacing-sm);
-    margin-top: var(--padding-lg);
-    cursor: pointer;
-    border-radius: var(--border-radius-xs);
-    border: 1px solid transparent;
-}
-
-span.menu__span-dropdown i {
-align-self: center;
-display: block;
-    width: fit-content;
-    height: fit-content;
-
-    text-align: center;
-    text-decoration: none;
-font-size: var(--font-size-h6);
-    font-weight: var(--font-weight-base);
-}
-
+/* Submenu Styling */
 ul.submenu {
   display: none;
   width: fit-content;
@@ -168,8 +102,8 @@ ul.submenu {
   border-radius: var(--border-radius-xs);
   border: 1.6px solid var(--border-action-primary-light-hover);
   position: absolute;
-  top: 44.26px;
-  left:0;
+  top: 46.26px;
+    left:0;
   padding: var(--spacing-xs);
 }
 
@@ -179,7 +113,83 @@ li.submenu__item {
   height: fit-content;
   justify-content: space-between;
   border-radius: var(--border-radius-xs);
+    color: var(--text-anchor-blue);
+    position: relative; /* Acts as an anchor for the dropdown */
 }
+.--has-submenu {
+  width: fit-content;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 0;
+    z-index: 10000;
+ 
+}
+
+.--has-submenu:hover .submenu {
+  display: flex;
+   color: var(--text-anchor-dark);
+   background-color: var(--action-item-primary-light);
+    border: 1.6px solid var( --border-component-secondary-dark)
+
+}
+
+span.menu__span {
+  display: inline-flex;
+
+  width: 100%;
+  height: fit-content;
+  justify-content: left;
+  font-weight: var(--font-weight-base);
+  gap: 3px;
+  align-items: center; /* This forces both the icon and text to stay perfectly centered vertically */
+
+}
+
+.menu__span>i{
+    display: block;
+    width: fit-content;
+    height: fit-content;
+    color: var(--icon-dark);
+    text-align: center;
+    text-decoration: none;
+  font-size: 1.25rem;;
+    font-weight: var(--font-weight-base);
+
+}
+a.menu__link.--active i {  
+  color: var(--icon-blue);
+}
+a.menu__link.--active .menu__span {
+  color: var(--icon-light);
+
+       margin-top: 0;
+
+}
+
+span.menu__span-dropdown {
+    display: flex;
+    width: 1.25rem;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: var(--border-radius-xs);
+   
+}
+
+span.menu__span-dropdown i {
+align-self: center;
+display: block;
+    width: fit-content;
+    height: fit-content;
+
+    text-align: center;
+    text-decoration: none;
+    font-weight: var(--font-weight-base);
+}
+
 
 a.submenu__link {
   display: flex;
@@ -197,46 +207,39 @@ a.submenu__link {
   padding: 12px var(--spacing-base);
 }
 
-  a.submenu__link.--active {
-  background-color: var(--action-item-primary-dark);
-
-}
-
-.--has-submenu:hover .submenu {
-  display: flex;
-   color: var(--text-anchor-dark);
-   background-color: var(--action-item-primary-light);
-    border: 1.6px solid var( --border-component-secondary-dark)
-
-}
-
-.--has-submenu:hover a.menu__link {
-    
-      color: var(--text-anchor-dark);
 
 
-   }
+/* Target the link on hover, and apply the color to everything inside it */
+a.menu__link:hover .menu__span {
+      color: var(--text-anchor-blue); }
 
-li.menu__item:hover a.menu__link.--active:hover {
-background-color: var(--action-primary-bg-dark);
+
+
+/* When the portfolio link is hovered, find the material icon inside it and make it blue */
+.menu__link:hover .material-icons-outlined,
+.menu__link:hover .material-icons {
+      color: var(--text-anchor-blue); 
     }
 
-li.menu__item:hover a.menu__link:hover {
+  
+li.menu__item a.menu__link:hover {
      border: 1.6px solid var(--border-action-primary-dark);
-      color: var(--text-anchor-dark);
+      color: var(--text-anchor-blue);
             background-color: var(--action-item-hover);
-           border: 1.6px solid var(--border-action-primary-dark);
-     }
+           border: 1.6px solid var(--border-action-blue-hover);
+          }
 
 a.submenu__link:hover {
-     border: 1.6px solid var(--border-action-primary-dark); 
-      color: var(--text-anchor-dark); 
-            background-color: var(--action-item-hover);   
+      color: var(--text-anchor-blue); 
+        border: 1.6px solid     var(--border-action-blue-hover);
+     background-color: var( --action-item-hover);
+      }
             
-}
+
 
  a.menu__link.--active .menu__span {
-  color: var(--icon-light);
+      color: var(--text-anchor-blue);
+      font-weight: var(--font-weight-medium);
 
 }
 
@@ -279,11 +282,21 @@ a.submenu__link:hover {
 
   }
 
-  a.menu__link:hover {
+    ul.menu__list>li.menu__item {
+    width: 100%;
+    margin-inline: var(--spacing-sm);
+
+  }
+
+
+.menu__item .menu__link .menu__span:hover {
     border: 1.6px solid var(--border-action-primary-dark);
-     color: var(--text-anchor-dark);
+
+    color: var(--text-anchor-blue);
+     
     
   }
+
 
   a.menu__link {
     width: 100%;
@@ -292,6 +305,14 @@ a.submenu__link:hover {
     z-index: 10000;
 
   }
+
+.menu__item a.menu__link .menu__span:hover {
+  border-left: 2px solid var( --border-blue-active);
+                         background-color: var(--action-item-quaternary-light);
+
+    color: var(  --text-anchor-blue);
+     
+}
 
   ul.submenu {
     width: 100%;
@@ -315,13 +336,13 @@ a.submenu__link:hover {
     border-color: transparent;
     margin-top: -02px;
     padding-top: var(--spacing-xs);
-     color: var(--text-anchor-dark);
+       color: var(--text-anchor-blue);
   }
 
   li.menu__item.--has-submenu:hover {
     border-color: transparent;
     background-color: var(--action-item-hover);
-     color: var(--text-anchor-dark);
+  color: var(--text-anchor-blue);
 
 
   }
@@ -330,7 +351,9 @@ a.submenu__link:hover {
   li.menu__item:hover {
     border: 1.6px solid transparent;
     border-radius: var(--border-radius-xs);
-     color: var(--text-anchor-dark);
+      color: var(--text-anchor-blue);
+                               background-color: var(--action-item-quaternary-light);
+
 
   }
 

@@ -56,8 +56,6 @@
   /* IMPROVED: Prominent, accessible focus indicator (WCAG 2.1) */
   width: 297.06px;
     background-color: var(--action-primary-bg-gray);
-
-  background-color: var(--green-50);
   /* cite: 17, 48 */
 }
 

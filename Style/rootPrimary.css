@@ -152,7 +152,7 @@
   --bg-footer-light: var(--gray-50);   
   --bg-footer-medium: var(--blue-50);    
   --bg-footer-dark: var(--gray-900); 
-    --bg-footer-blue-light: var(--blue-200);   
+  --bg-footer-blue-light: var(--blue-200);   
 
   /*breadcrumbs */             
   --bg-navigation-primary-light: var(--gray-200);              
@@ -160,7 +160,9 @@
 
   /* icons */
   --icon-dark: var(--blue-900);            
-  --icon-light: var(--gray-50);           
+  --icon-light: var(--gray-50);    
+  
+    --icon-x-light: var(--white);      
   --icon-gray: var(--gray-500);     
   --icon-blue: var(--blue-650);     
   --icon-blue-active: var(--blue-650);     
@@ -181,9 +183,9 @@
   --bg-component-tertiary-brown: var(--brown-200); 
   --bg-component-quinary-light: var(--gray-100); 
   --bg-component-blue-light: var(--blue-250); 
-     --bg-component-blue-active: var(--link-blue-muted);    
+     --bg-component-blue-active: var(--blue-650);    
      
-     
+        --bg-component-secondary-blue-active: var(--blue-650);  
   /* Typography Hierarchy */
 
   /* Major editorial page headings and case study titles */
@@ -195,7 +197,8 @@
     /* Core body paragraphs, list details, table content */
     --text-main-dark: var(--blue-900);   
         --text-main-dark: var(--blue-800);               
-    --text-main-light: var(--gray-50);            
+    --text-main-light: var(--gray-50);  
+    --text-x-light: var(--white);              
     --text-main-gray: var(--gray-500);     
     --text-main-primary-dark: var(--gray-900);     
     --text-main-secondary-dark: var(--blue-900); 
@@ -204,7 +207,8 @@
 
     /* anchor */
     --text-anchor-dark: var(--blue-900);          
-    --text-anchor-light: var(--gray-50);            
+    --text-anchor-light: var(--gray-50);    
+    --text-anchor--x-light: var(--white);            
     --text-anchor-gray: var(--gray-500);  
     --text-anchor-dark-secondary: var(--gray-800);        
     --text-anchor-blue: var(--blue-650);/* text highlighted */
@@ -318,8 +322,8 @@
   --border-action-tertiary-red-hover: var(--red-500);   
   --border-action-quaternary-light: var(--blue-50);  
    --border-action-secondary-blue: var(--blue-650);
+   --border-action-blue-hover: var(--blue-650);   
    --border-blue-active: var(--link-blue-muted);     
-  
   
  /* outlines*/
   --outline-action-primary-dark: var(--blue-900);    /* Outline (Contact CTA, Search submit button) */
@@ -502,6 +506,8 @@
   --border-radius-xxs: 0.125rem;
 
   --transition-duration: 0.3s;
+
+  --transition-speed: 0.2s;
 
   --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   --box-shadow-hover: 0 6px 12px rgba(0, 0, 0, 0.2);

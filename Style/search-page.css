@@ -48,7 +48,7 @@ color: var(--medium-light-shade-red);}
 .results h1{
   padding: 0;
 }
-.--result_1 .h1 {
+.--result_1 .h2 {
     display: flex;
     width: 100%;
     justify-content: center;
@@ -456,10 +456,6 @@ span.highlight-term {
     /* cite: 2, 34 */
 
   }
-
-
-
-
 
 
   #search-input {

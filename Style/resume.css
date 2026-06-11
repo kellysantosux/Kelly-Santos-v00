@@ -45,12 +45,12 @@ display: flex;
     border-radius: var(--border-radius-xs);
     padding: 5.87% var(--padding-lg);
     counter-reset: section 0;
-       position: sticky;
+    position: sticky;
     top: var(--spacing-base);
     border: 0.5px solid  var(--border-component-secondary-dark);
-     box-shadow: 0 1px 4px 0px rgba(5, 8, 34, 0.1);
-            margin-bottom: var(--margin-base);
-
+    box-shadow: 0 1px 4px 0px rgba(5, 8, 34, 0.1);
+    margin-bottom: var(--margin-base);
+  scroll-margin-bottom: auto;
 }
 
 section.resume-section {

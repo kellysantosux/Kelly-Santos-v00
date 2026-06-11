@@ -1,6 +1,6 @@
 .rightContainer {
   display: flex;
-  max-width: 820px;
+  max-width: 840px;
   width: 100%;
   justify-content: space-between;
   align-items: center;
@@ -147,6 +147,7 @@
 .rightContainer {
     min-height: 40.67px;
     height: 100%;
+        max-width: 1048px;
             width: 100%;
     flex-direction: row-reverse;
     align-items: center;
