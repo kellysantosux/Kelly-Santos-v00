@@ -173,23 +173,27 @@ margin: var(--padding-xs);
     @media only screen and (max-width: 768px) {
 
 
+    .--main-resume{
+        background-color: var(--bg-main-secondary-light);
+    }
+
+
         .Resume{
 
             width: 100%;
         }
-.body_resume h1{
+/* .body_resume h1{
               border-bottom:  0.5px solid  var(--border-component-secondary-dark);
 
-              }
+              } */
 
         .tc-resume{
 width: 100%;
-        padding: 0;
+  
         border: none;
-        background-color: transparent;
-        padding:0;
-        border: none;
-        padding-inline: var(--padding-base);
+        /* padding-inline: var(--padding-base); */
+
+              padding:var(--padding-medium);
         
         }
 .resume {
@@ -200,7 +204,6 @@ background-color: transparent;
     border:0;
       box-shadow:none;
       border-radius: 0;
-
       padding-top: var(--padding-base);
 }
         section.resume-section {
