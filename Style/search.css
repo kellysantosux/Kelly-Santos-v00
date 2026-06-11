@@ -103,15 +103,16 @@ input::placeholder {
 /* The clickable button to submit the search form */
 .search-button-link {
   display: none;
-  width: 46px;
-  height: 46px;
-  padding: 11.5px;
-  background-color: var(--action-primary-bg-dark);
+width: 48px;
+        height: 48px;
+  /* background-color: var(--action-primary-bg-dark); */
   color: var(--icon-light);
-  border: 1.6px solid var(--border-component-primary-dark);
+  border: 1.6px solid transparent;
   border-radius: var(--border-radius-lg);
   cursor: pointer;
-  box-shadow: 0 1px 4px 0px rgba(5, 8, 34, 0.2);
+  /* box-shadow: 0 1px 4px 0px rgba(5, 8, 34, 0.2); */
+  align-items: center;
+  justify-content: center;
 
 }
 
@@ -123,15 +124,22 @@ input::placeholder {
 }
 
 /* Provides visual feedback when hovering over the search button */
-.search-button-link:hover {
-  background-color: var(--action-primary-bg-slate);
+.search-button-link:hover{
+  background-color: hsla(237, 40%, 50%, 0.2);
+    border:3.2px solid var(--border-blue-active);
+  color: var(--text-anchor-blue); 
 }
 
 /* Manages the size of the search icon inside the button */
 .search-button-link i {
-  font-size: 1.5rem;
+  font-size: 2.074rem;
+   color: var(--text-anchor-dark-secondary);
 }
+.search-button-link i:hover {
 
+   
+  color: var(--text-anchor-blue); 
+}
 
 /* --- Dropdown --- */
 /* The container for displaying recent or suggested search results */
