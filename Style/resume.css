@@ -175,8 +175,14 @@ margin: var(--padding-xs);
 
     .--main-resume{
         background-color: var(--bg-main-secondary-light);
+               padding-inline: 0;
     }
 
+
+        .--main-resume h1{
+    
+               padding-inline: var(--padding-medium);
+    }
 
         .Resume{
 
@@ -191,9 +197,9 @@ margin: var(--padding-xs);
 width: 100%;
   
         border: none;
-        /* padding-inline: var(--padding-base); */
+        padding:var(--padding-medium) var(--padding-lg); 
 
-              padding:var(--padding-medium);
+          
         
         }
 .resume {
