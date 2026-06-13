@@ -176,12 +176,30 @@ margin: var(--padding-xs);
     .--main-resume{
         background-color: var(--bg-main-secondary-light);
                padding-inline: 0;
+               gap: 0;
+               justify-content: left;
     }
 
-
+    .--main-resume main{
+    
+               gap: 0;
+    }
         .--main-resume h1{
     
                padding-inline: var(--padding-medium);
+               background-color: var(--link-blue-muted);
+               color: var(--text-main-light);
+               width: fit-content;
+             
+               z-index: 2;
+               margin-right: auto;
+               margin-left:var(--margin-xxl); 
+               font-size: var(--font-size-h6);
+               padding-bottom:var(--padding-base); 
+  padding-top:var(--padding-base); 
+  border-radius: var(--border-radius-xs) var(--border-radius-xs) var(--border-radius-base)var(--border-radius-base);
+           margin-top: 48px;   
+       box-shadow: 0 1px 4px 0px rgba(5, 8, 34, 0.2);
     }
 
         .Resume{
@@ -197,9 +215,9 @@ margin: var(--padding-xs);
 width: 100%;
   
         border: none;
-        padding:var(--padding-medium) var(--padding-lg); 
-
-          
+        padding: var(--padding-xxl); 
+        margin-top: 0;     
+          margin-top: -36px;    
         
         }
 .resume {
@@ -233,17 +251,19 @@ background-color: transparent;
 
 
 
-    @media only screen and (max-width: 320px) {
+    @media only screen and (max-width: 380px) {
+
+    .--main-resume h1{
+          border-radius: var(--border-radius-xs) var(--border-radius-xs) var(--border-radius-sm)var(--border-radius-sm);
+            margin-top: 32px;  
+    }
 
 
-        .tc-resume{
-
-        padding: 0;
-
- 
-          border: none;
-        }
+          .tc-resume{
     
+          margin-top:-20px;    
+        
+        }
     }
 @media print {
 
