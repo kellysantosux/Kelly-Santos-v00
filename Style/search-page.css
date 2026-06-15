@@ -48,12 +48,13 @@ color: var(--medium-light-shade-red);}
 .results h1{
   padding: 0;
 }
-.--result_1 .h2 {
+.results h2 {
     display: flex;
     width: 100%;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     padding: 0 0;
+    text-decoration: none;
      }
 
 .--result_1 em  {
@@ -247,6 +248,7 @@ font-size: 1.5rem;
   cursor: pointer;
   font-size: 16px;
   color: #333;
+ 
   line-height: 1.5;
 }
 
@@ -284,15 +286,49 @@ font-size: 1.5rem;
   display: flex;
   width: 100%;
   flex-direction: row;
+  
 }
+
+.search-results li h1, h2, h3, h4, h5 ,h6 {
+  font-size: var(--font-size-sm);
+
+  color: var(--text-highlighted-blue);
+  font-style: normal; /* Removes default italics if you don't want them */
+  font-weight:var(--font-weight-medium);
+    text-decoration: underline;
+     text-underline-offset: 4.25px; /* Adjust distance (px, em, rem, %) */
+    padding-bottom: var(--padding-base);
+
+}
+
+.search-results li p em {
+  color: var(--text-highlighted-blue);
+  font-style: normal; /* Removes default italics if you don't want them */
+  font-weight: bold;  /* Makes the blue word pop out */
+
+}
+
+
+.search-results-card li p  {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+       color:var(--text-highlighted-blue);
+    
+    
+}
+
+
 .search-results li p  {
   color: var(--text-highlighted-red);
     font-weight: var(--font-weight-medium);
+  
 }
 
 .search-results a p {
   font-weight: var(--font-weight-medium);
   color: var(--text-anchor-dark);
+
 }
 
 .search-results-card {
@@ -333,8 +369,7 @@ font-size: 1.5rem;
 #extract-text {
   display: flex;
   width: 100%;
-  width: fit-content;
-  text-wrap: nowrap;
+
   padding-inline: 4px;
 
   color: var(--medium-dark-shade-gray);
