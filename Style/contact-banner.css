@@ -14,8 +14,16 @@
     justify-content: center;
     
     /* FIX: Added 'center /' before contain, and closed the bracket */
-    background: url("Assets/00-contact-banner-ks.svg") center / cover no-repeat;
-}
+background-image: url('../Assets/00-contact-banner-ks.svg'); /* Or your correct path */
+    
+    /* Center the image horizontally and vertically */
+    background-position: center center;
+    
+    /* Scale the image to cover the entire background area */
+    background-size: cover;
+    
+    /* Prevent the image from repeating if the container is larger than the SVG */
+    background-repeat: no-repeat;}
 .contactMe-banner__copy::before {
   content: "";
   position: absolute;
