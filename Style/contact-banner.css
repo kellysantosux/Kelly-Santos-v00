@@ -14,7 +14,7 @@
     justify-content: center;
     
     /* FIX: Added 'center /' before contain, and closed the bracket */
-    background: url("/Assets/00-contact-banner-ks.svg") center / cover no-repeat;
+    background: url("Assets/00-contact-banner-ks.svg") center / cover no-repeat;
 }
 .contactMe-banner__copy::before {
   content: "";

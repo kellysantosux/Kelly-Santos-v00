@@ -262,7 +262,7 @@ input::placeholder {
 
 .search-container:focus-within .search-button {
   background-color:var(--bg-component-blue-active);
-  color: #FFFFFF;
+  color: var(--icon-light);
 }
 
 .search-button i {
