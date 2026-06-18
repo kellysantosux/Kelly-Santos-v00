@@ -26,7 +26,8 @@
   color: var(--text-anchor-light);
   font-weight: var(--font-weight-medium);
   background-color: transparent;
-border: 1.6px solid var(--border-action-primary-dark);
+    border: 3px solid transparent;
+    outline: transparent solid 6px;
   align-items: center;
   justify-content: center;
   cursor: pointer;
@@ -39,13 +40,21 @@ background-color: var(--action-primary-bg-dark);
 
 
 
-.contactMemail a.primary:hover {
-  outline: 1.6px solid var(--outline-action-primary-dark-hover);
-  background-color: var(--action-primary-bg-dark);
-border: 1.6px solid var(--border-action-primary-dark-hover);
-  color: var(--text-anchor-light);
-   opacity: 0.8;
+
+  .contactMemail a.primary:hover {
+      border-color: var(--border-blue-active);
+  outline: 6px solid var(--border-component-quaternary-light);
+      border-color: var(--border-blue-active);
+    box-shadow: 0 4px 12px 0px rgba(5, 8, 34, 0.4);
+  }
+
+
+ .contactMemail a.primary:focus{
+  border-color: var(--border-blue-active);
+  outline: 6px solid var(--border-component-quaternary-light);
+      box-shadow: 0 0 0 .2rem rgba(64, 77, 102, .25);
 }
+
 
 .contactMemail a.secondary {
   text-decoration: none;
@@ -55,7 +64,8 @@ border: 1.6px solid var(--border-action-primary-dark-hover);
   color: var(--text-anchor-dark);
   font-weight: var(--font-weight-medium);
   background-color: transparent;
-  border: 1.6px solid var(--border-action-primary-dark-hover);
+    border: 3px solid transparent;
+    outline: transparent solid 6px;
   align-items: center;
   justify-content: center;
   cursor: pointer;
@@ -65,12 +75,21 @@ border: 1.6px solid var(--border-action-primary-dark-hover);
     gap: var(--spacing-sm);
 }
 
-.contactMemail a.secondary:hover {
-  opacity: 0.8;
-  outline: 1.6px solid var(--outline-action-primary-dark-hover);
-  border: 1.6px solid var(--border-action-secondary-light-hover);
-  color: var(--text-anchor-light);
+
+  .contactMemail a.secondary:hover {
+      border-color: var(--border-blue-active);
+  outline: 6px solid var(--border-component-quaternary-light);
+      border-color: var(--border-blue-active);
+    box-shadow: 0 4px 12px 0px rgba(5, 8, 34, 0.4);
+  }
+
+
+ .contactMemail a.secondary:focus{
+  border-color: var(--border-blue-active);
+  outline: 6px solid var(--border-component-quaternary-light);
+      box-shadow: 0 0 0 .2rem rgba(64, 77, 102, .25);
 }
+
 
 .contactMemail a.tertiary{
   text-decoration: none;
@@ -79,7 +98,8 @@ border: 1.6px solid var(--border-action-primary-dark-hover);
   padding: 4.97% 6.95%;
   color: var(--text-anchor-light);
   background-color: transparent;
-  border: 1.6px solid var(--border-action-primary-light);
+    border: 3px solid transparent;
+    outline: transparent solid 6px;
   align-items: center;
   justify-content: center;
   cursor: pointer;
@@ -89,13 +109,20 @@ border: 1.6px solid var(--border-action-primary-dark-hover);
     gap: var(--spacing-xs);
 }
 
-.contactMemail a.tertiary:hover {
-  border: 1.6px solid var(--border-action-primary-dark-hover);
+  .contactMemail a.tertiary:hover {
+      border-color: var(--border-blue-active);
+  outline: 6px solid var(--border-component-quaternary-light);
+      border-color: var(--border-blue-active);
+    box-shadow: 0 4px 12px 0px rgba(5, 8, 34, 0.4);
+  }
 
-     background-color: var(--border-action-secondary-light);  
-     color:  var(--text-anchor-light);
 
+ .contactMemail a.tertiary:focus{
+  border-color: var(--border-blue-active);
+  outline: 6px solid var(--border-component-quaternary-light);
+      box-shadow: 0 0 0 .2rem rgba(64, 77, 102, .25);
 }
+
 
    @media only screen and (max-width: 380px) {
 

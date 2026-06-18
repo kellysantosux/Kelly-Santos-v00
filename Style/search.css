@@ -48,8 +48,14 @@
 
 /* Directly target the input to change its border when container is active */
 .search-container:focus-within #search-input {
+  border-color: var(--border-blue-active);}
+  
+.search-container:focus-within #search-input {
   border-color: var(--border-blue-active);
+  outline: 6px solid var(--border-component-quaternary-light);
+      box-shadow: 0 0 0 .2rem rgba(64, 77, 102, .25);
 }
+
 
 /* Defines the visual state when the input field is active/focused by the user */
 #search-input:focus {
@@ -82,6 +88,28 @@ input::placeholder {
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
+
+.search-button {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: -0.6px;
+  width: 46px;
+  height: 46px;
+  padding: 11.5px;
+  background-color: var(--action-primary-bg-dark);
+  color: var(--icon-light);
+  border: 3px solid transparent;
+  border-radius: var(--border-radius-lg);
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.search-container:focus-within .search-button {
+  background-color:var(--bg-component-blue-active);
+  color: #FFFFFF;
+}
+
 /* Change the background of the button when the container is active */
 .search-container:focus-within .search-button {
   background-color: var(--bg-component-blue-active);
@@ -107,7 +135,7 @@ width: 48px;
         height: 48px;
   /* background-color: var(--action-primary-bg-dark); */
   color: var(--icon-light);
-  border: 1.6px solid transparent;
+  border: 3px solid transparent;
   border-radius: var(--border-radius-lg);
   cursor: pointer;
   /* box-shadow: 0 1px 4px 0px rgba(5, 8, 34, 0.2); */
@@ -115,6 +143,8 @@ width: 48px;
   justify-content: right;
 
 }
+
+
 
 /* Change the background of the button when the container is active */
 .search-container:focus-within .search-button-link {
@@ -126,7 +156,6 @@ width: 48px;
 /* Provides visual feedback when hovering over the search button */
 .search-button-link:hover{
   background-color: hsla(237, 40%, 50%, 0.2);
-    border:3.2px solid var(--border-blue-active);
   color: var(--text-anchor-blue); 
 }
 

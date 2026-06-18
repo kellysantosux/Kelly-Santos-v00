@@ -255,7 +255,7 @@
   </div>
   <!-- header_container -->
   <!-- main_container -->
-  <div class="main_container">
+  <div class="main_container --main_search-results ">
 
     <!--main-->
     <main>
@@ -278,17 +278,15 @@
         </a>
       </div>
       <!--backButton-->
-
+      
+      <h1 >Search</h1>
       <!-- section -->
       <section class="search_section">
 
-                    <h1 >Search Results</h1>
         <!-- Results -->
         <div class="results">
-          <div class="results-header">
-          <h2 class="s5 ">Results for:</h2>
-           <em id="search-term-header">...</em>
-           </div>
+               <!-- results-details -->
+           <div class="results-header">
           <!-- Search -->
           <div class="search-wrapper">
             <form class="search-container" onsubmit="event.preventDefault(); performSearch();">
@@ -297,14 +295,38 @@
                 <i class="material-icons">search</i>
               </button>
             </form>
-            
+                  <!-- search-results-characters -->
+            <div class="search-results-characters" style="display: none;">
+              <p class="sm">Please enter more than 3 characters.</p>
+           </div>
+                     <!-- search-results-characters -->
           </div>
-          
- 
+   <!-- Search -->
+
+ </div>'
+     <!-- results-details-wrapper -->
+<div class="results-details-wrapper" id="results-details-wrapper" style="display: none;">
+              <!-- results-details -->
+           <div class="results-details">
+                      <!-- results-for -->
+          <div class="results-for">
+          <h2 class="sm">Results for:</h2>
+           <em class="sm" id="search-term-header">...</em>
+           </div>
+                 <!-- results-for -->
+                                      <!-- results-qty -->
+          <div class="results-qty">
+            <em class="sm" id="search-term-qty">...</em>
+            <p class="sm">results found</p>
+           </div>
+                 <!-- results-qty -->
+ </div>
+     <!-- results-details -->
+      </div>
+            <!-- results-details-wrapper -->
           <!-- Search results found or not found -->
 
           <ul id="search-results" class="search-results"> 
-            <h1 class=".s3">Search Results for: <em id="search-term-header">...</em> </h1>
 
 
           </ul>

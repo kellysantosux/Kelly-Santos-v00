@@ -120,6 +120,8 @@
   --bg-section-primary-light: var(--gray-50);            
   --bg-section-secondary-light: var(--blue-200); 
 
+    --bg-section-primary-x-light: var(--white);     
+
     /* Article background */
   --bg-article-primary-dark: var(--blue-900);            
   --bg-article-primary-light: var(--gray-50);            
@@ -129,6 +131,8 @@
   --bg-div-primary-dark: var(--blue-900);            
   --bg-div-primary-light: var(--gray-50);            
   --bg-div-secondary-light: var(--blue-200); 
+    --bg-div-tertiary-light: var(--blue-250); 
+    --bg-div-quaternary-light: var(--blue-300); 
   
   /* Banner background */
   --bg-banners-primary-dark: var(--blue-900);            

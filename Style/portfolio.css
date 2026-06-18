@@ -66,13 +66,23 @@
     -moz-transition: all .3s;
     -o-transition: all .3s;
     transition: all .3s;
-    outline: 1px solid transparent;
-    border: 0.62px solid var(--border-action-primary-gray);
+
+    border: 3px solid transparent;
+      outline: 6px solid transparent;
 }
 
 .portfolioCards a:hover {
+      border-color: var(--border-blue-active);
+  outline: 6px solid var(--border-component-quaternary-light);
+      border-color: var(--border-blue-active);
     box-shadow: 0 4px 12px 0px rgba(5, 8, 34, 0.4);
 
+}
+
+.portfolioCards a:focus{
+  border-color: var(--border-blue-active);
+  outline: 6px solid var(--border-component-quaternary-light);
+      box-shadow: 0 0 0 .2rem rgba(64, 77, 102, .25);
 }
 
 
@@ -187,6 +197,7 @@
     object-fit: cover;
     padding: var(--padding-lg);
     background-color: var(--bg-cards-primary-x-light);
+    border-radius: var(--border-radius-xs) var(--border-radius-xs) 0 0;
 }
 
 .portfolio_contact img {

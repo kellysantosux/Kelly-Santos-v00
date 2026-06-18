@@ -1,20 +1,21 @@
 .contactMe-banner {
-  position: relative;
-  color: var(--white);
-  border-radius: var(--border-radius-xs);
-  overflow: hidden;
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  align-items: center;
-  padding: var(--padding-xl);
-  gap: var(--spacing-base);
-  margin-bottom: var(--margin-lg);
-  border: 1.6px solid var(--border-section-secondary-light);
-  background-color: var(--bg-section-secondary-light);
-      border: 0.62px solid var(--border-action-primary-gray);
-      background-color: var(--bg-section-primary-light);
+    position: relative;
+    color: var(--white);
+    border-radius: var(--border-radius-xs);
+    overflow: hidden;
+    display: flex;
+    width: 100%;
+      align-items: center;
+    padding: var(--padding-xl);
+    gap: var(--spacing-base);
+    margin-bottom: var(--margin-lg);
+    border: 0.62px solid var(--border-action-primary-gray);
+    background-color: var(--bg-section-primary-light);
+    justify-content: center;
+    
+    /* FIX: Added 'center /' before contain, and closed the bracket */
+    background: url("/Assets/00-contact-banner-ks.svg") center / cover no-repeat;
 }
-
 .contactMe-banner__copy::before {
   content: "";
   position: absolute;
@@ -28,10 +29,14 @@
 
 .contactMe-banner__copy {
   display: flex;
-  width: 100%;
+  width:62%;
   height: fit-content;
   flex-direction: column;
   gap: var(--spacing-base);
+     padding: var(--padding-xl);
+     background-color: white;
+        opacity: 0.9;
+
 
 }
 
@@ -43,13 +48,15 @@
   text-underline-offset: 4px;
   font-weight: var(--font-weight-bold);
   text-decoration-thickness: 2.62px;
+  text-align: center;
+
 
 }
 
 .contactMe-banner__copy p,
 .contactMe-banner__copy .--s6 {
   display: flex;
-  width: 92%;
+  width: 100%;
   height: fit-content;
   flex-direction: column;
 
@@ -101,7 +108,8 @@
   font-weight: var(--font-weight-medium);
   background-color: transparent;
       border-radius: var(--border-radius-lg);
-  border: 1.6px solid var(--border-action-primary-light);
+    border: 3px solid transparent;
+    outline: transparent solid 6px;
   align-items: center;
   justify-content: center;
   cursor: pointer;
@@ -109,15 +117,21 @@
   background-color: var( --action-primary-bg-dark);
 }
 
-.contactMemail-banner a.primary-banner:hover {
-  outline: 1.6px solid var(  --border-action-primary-dark-hover);
-  background-color:  var( --action-primary-bg-dark);
 
-  opacity: 0.8;
 
+ .contactMemail-banner a.primary-banner:hover{
+      border-color: var(--border-blue-active);
+  outline: 6px solid var(--border-component-quaternary-light);
+      border-color: var(--border-blue-active);
+    box-shadow: 0 4px 12px 0px rgba(5, 8, 34, 0.4);
+  }
+
+
+  .contactMemail-banner a.primary-banner:focus{
+  border-color: var(--border-blue-active);
+  outline: 6px solid var(--border-component-quaternary-light);
+      box-shadow: 0 0 0 .2rem rgba(64, 77, 102, .25);
 }
-
-
 
 @media only screen and (max-width: 728px) {
 

@@ -31,7 +31,8 @@ body,
 .body_portfolio h1,
 .body_contactMe h1,
 .body_resume h1,
-.body_aboutMe h1 {
+.body_aboutMe h1,
+.body_searchresults h1 {
     margin-top: var(--padding-base);
 }
 
@@ -322,6 +323,8 @@ body,
         min-height: 1dvh;
         background-color: var(--bg-body-x-light);
 }
+
+
    }
 
 

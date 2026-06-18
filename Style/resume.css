@@ -174,12 +174,12 @@ margin: var(--padding-xs);
 
 
     .--main-resume{
-        background-color: var(--bg-main-secondary-light);
+        background-color: var(--bg-main-x-light);
                padding-inline: 0;
                gap: 0;
                justify-content: left;
                          margin-bottom: 6.88%;
-             background-color: transparent;
+
     }
 
 
@@ -189,6 +189,8 @@ margin: var(--padding-xs);
     
                gap: 0;
     }
+
+
         .title-2{
             display: flex;
     
@@ -200,7 +202,7 @@ margin: var(--padding-xs);
                z-index: 2;
                margin-right: auto;
             
-               font-size: var(--font-size-sm);
+               font-size: var(--font-size-base);
                font-weight: var(--font-weight-base);
    
        
@@ -209,7 +211,13 @@ margin: var(--padding-xs);
 
 
        box-shadow: 0 1px 4px 0px rgba(5, 8, 34, 0.2);
+
+             margin: var(--margin-xxl) auto auto var(--margin-xxl);
+             margin-bottom: -26.4px;
     }
+
+    .body_resume h1 {
+    margin-top:  var(--margin-xxl) ;}
 
         .Resume{
     

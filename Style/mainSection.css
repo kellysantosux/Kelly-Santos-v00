@@ -207,17 +207,23 @@
             gap: var(--spacing-sm);
         }
 
+
         h1 {
 
             padding: var(--padding-lg) 0;
         }
 
         .search_section {
-            padding: var(--padding-sm) var(--padding-base);
+            padding:0;
             border: none;
                 width: 100%;
+                gap:0;
 
         }
+
+                /* .search_section h1 {
+    margin-top: var(--padding-base);
+} */
 
 
         .homepage>.contactMe_section {
