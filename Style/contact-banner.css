@@ -73,11 +73,12 @@ background-image: url('../Assets/00-contact-banner-ks.svg'); /* Or your correct 
 
 .contactMemail-banner {
   display: flex;
-  width: fit-content;
+  width: 100%;
   height: auto;
   align-items: center;
   gap: var(--spacing-sm);
   flex-direction: column;
+  padding-inline: var(--padding-lg);
 
 }
 
@@ -140,7 +141,11 @@ background-image: url('../Assets/00-contact-banner-ks.svg'); /* Or your correct 
   outline: 6px solid var(--border-component-quaternary-light);
       box-shadow: 0 0 0 .2rem rgba(64, 77, 102, .25);
 }
-
+@media only screen and (max-width: 1048px) {
+.contactMe-banner{
+    background-size:auto;
+}
+}
 @media only screen and (max-width: 728px) {
 
 
