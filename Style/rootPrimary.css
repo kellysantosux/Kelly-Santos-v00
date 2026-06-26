@@ -253,6 +253,7 @@
   --border-body-mobile: var(--blue-50);            /* Body background small devices */
   
   /* Borders navigation */
+  --border-header-dark:  var(--blue-900);     
   --border-header: var(--gray-50);              
   --border-header-mobile: var(--blue-50);            
   --border-bottom-navigation-light: var(--gray-50);              
@@ -357,7 +358,7 @@
   /* Typography */
   --primary-font: "Montserrat", sans-serif;
 
-  /* Scale: 1.067 minor second) */
+  /* Scale: 1.067 minor second */
   --minor-second-d0: 1.913rem;
   --minor-second-d1: 1.793rem; 
   --minor-second-d2: 1.680rem;
@@ -373,7 +374,7 @@
   --minor-second-xs: 0.878rem;
   --minor-second-xxs: 0.823rem; 
 
-    /* Scale: 1.125 major second) */
+    /* Scale: 1.125 major second */
   --major-second-d0:  3.247rem;
   --major-second-d1: 2.887rem; 
   --major-second-d2: 2.566rem;
