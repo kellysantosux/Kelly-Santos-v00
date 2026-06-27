@@ -98,7 +98,7 @@ font-size: var(--font-size-h6);
 
       main{
         width: 100%;
-                padding-inline: var(--padding-xl);
+                padding-inline: 0;
       }
      main .pageTitle {
     padding-left:0;

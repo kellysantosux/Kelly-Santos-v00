@@ -858,7 +858,8 @@ ul.action-list {
         border: none;
         box-shadow: none;
         gap: var(--spacing-sm);
-            padding-inline:0;
+   
+                 padding-inline: var(--padding-xl);
     }
 
     section.article-section {

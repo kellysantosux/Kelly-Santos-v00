@@ -123,10 +123,10 @@ tbody{
     }
 
     /* Use pseudo-elements to re-add the labels to each card item */
-    .tables td:nth-of-type(1)::before { content: "Name: "; font-weight: bold; }
+    /* .tables td:nth-of-type(1)::before { content: "Name: "; font-weight: bold; }
     .tables td:nth-of-type(2)::before { content: "Occupation: "; font-weight: bold; }
     .tables td:nth-of-type(3)::before { content: "Who needs: "; font-weight: bold; display: block; }
-    .tables td:nth-of-type(4)::before { content: "Because: "; font-weight: bold; display: block; }
+    .tables td:nth-of-type(4)::before { content: "Because: "; font-weight: bold; display: block; } */
 }
     }
 

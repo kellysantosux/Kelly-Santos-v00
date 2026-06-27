@@ -123,7 +123,8 @@ header>.logo_light {
     padding: 1.2rem var(--padding-xl); 
     gap: var(--spacing-base);
         border-radius: 0;
-             box-shadow: 0px -4px 20px rgba(255, 255, 255, 0.2);
+  
+               box-shadow: 0 8px 6px -6px rgba(87, 100, 112, 0.3);
   }
 
   a.logo {

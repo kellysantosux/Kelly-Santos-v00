@@ -161,7 +161,7 @@ width: 48px;
 
 /* Manages the size of the search icon inside the button */
 .search-button-link i {
-  font-size: 3rem;
+  font-size: 1.853rem;
    color: var(--text-anchor-light);
 }
 .search-button-link i:hover {
