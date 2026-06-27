@@ -120,13 +120,15 @@ align-items: center;
   }
 
   .thanks-banner {
-      background-color: var(--bg-component-primary-light);
 
-
+       background-color: var(  --bg-component-blue-light);
+     padding: var(--padding-xxl) 0;
   }
 
   .banner-description{
      padding: var(--padding-xxl);
+    
+
   }
 }
 

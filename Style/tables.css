@@ -73,48 +73,51 @@ tbody{
 }
 
 @media only screen and (max-width:768px) {
+    .tables{
+        overflow-x: auto;
+    }
 
 .tables tbody tr td:first-child {
 
     min-width: 10px;
-}
+} 
 
-/* Styling for the table header cells (td in thead) and body cells (td in tbody) */
+/* Styling for the table header cells (td in thead) and body cells (td in tbody)
 .tables td {
   
     padding: 0.25rem; /* Switched to fixed units for guaranteed spacing  */
 
 
-}
+ } 
 
-@media only screen and (max-width: 768px) {
+/* @media only screen and (max-width: 768px) {
 
 .tables tbody tr td:first-child {
     font-weight: var(--font-weight-base);
    
 }
 
-    /* Hide the original header */
+    /* Hide the original header 
     .tables thead {
         display: none;
     }
 
-    /* Make the table and rows act as container blocks */
+    /* Make the table and rows act as container blocks 
     .tables, .tables tbody, .tables tr {
         display: block;
         width: 100%;
     }
 
-    /* Treat each row as an individual card */
+    /* Treat each row as an individual card 
     .tables tr {
         margin-bottom: 1.5rem;
           padding: 1rem;
-        background: #fff; /* Ensures card stands out */
+        background: #fff; /* Ensures card stands out 
 
         border-radius: var(--border-radius-xs);
     }
 
-    /* Convert cells into labels + data pairs */
+    /* Convert cells into labels + data pairs 
     .tables td {
         display: block;
         width: 100% !important;
@@ -122,13 +125,13 @@ tbody{
         border: none !important;
     }
 
-    /* Use pseudo-elements to re-add the labels to each card item */
-    /* .tables td:nth-of-type(1)::before { content: "Name: "; font-weight: bold; }
+    /* Use pseudo-elements to re-add the labels to each card item 
+    .tables td:nth-of-type(1)::before { content: "Name: "; font-weight: bold; }
     .tables td:nth-of-type(2)::before { content: "Occupation: "; font-weight: bold; }
     .tables td:nth-of-type(3)::before { content: "Who needs: "; font-weight: bold; display: block; }
-    .tables td:nth-of-type(4)::before { content: "Because: "; font-weight: bold; display: block; } */
+    .tables td:nth-of-type(4)::before { content: "Because: "; font-weight: bold; display: block; }
 }
-    }
+    } */
 
 
 @media print {

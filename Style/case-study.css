@@ -850,7 +850,7 @@ ul.action-list {
 @media only screen and (max-width: 768px) {
 
         .tc-casestudy {
-        padding-inline:  var(--padding-xl);
+        padding-inline:  var(--padding-lg);
     }
 
     .casestudy {
@@ -859,7 +859,7 @@ ul.action-list {
         box-shadow: none;
         gap: var(--spacing-sm);
    
-                 padding-inline: var(--padding-xl);
+                 padding-inline:var(--padding-base);
     }
 
     section.article-section {

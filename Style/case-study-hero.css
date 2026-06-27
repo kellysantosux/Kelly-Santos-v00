@@ -104,7 +104,8 @@
    
             background-color: var(--bg-cards-secondary-light);
             border-radius: 0;
-            padding: var(--padding-xl) var(--padding-xxl) var(--padding-xxl) var(--padding-xxl);
+            padding: var(--padding-xl);
+            
          
 }
         
@@ -129,7 +130,7 @@
 
 
 .containerDescription h1 {
-    padding: 11.74%  var(--padding-xxl) 0 var(--padding-xxl) ;
+    padding: 11.74%  var(--padding-lg) 0 var(--padding-lg) ;
     order: 3;
 
 }
