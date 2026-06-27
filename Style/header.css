@@ -123,17 +123,18 @@ header>.logo_light {
     padding: 1.2rem var(--padding-xl); 
     gap: var(--spacing-base);
         border-radius: 0;
+             box-shadow: 0px -4px 20px rgba(255, 255, 255, 0.2);
   }
 
   a.logo {
  
- height: 42px;  
+ height: 3rem;
   
   }
 
     .logo img {
 
-  height: 42px;  
+  height: 3rem;
   
 }
 
@@ -150,7 +151,7 @@ header>.logo_light {
 }
 
 .logo_light img {
-  max-height: 32px;
+  height: 3rem;
   object-fit: cover;
 
 }
