@@ -105,6 +105,7 @@ header>.logo_light {
 
     background-color: var(--surface-component-dark);
     border-color:var(--border-header-dark) ;
+                   box-shadow: 0 8px 6px -6px rgba(87, 100, 112, 0.3);
   }
 
   header>a {
@@ -126,7 +127,8 @@ header>.logo_light {
         border-radius: 0;
         justify-content: space-between;
   
-               box-shadow: 0 8px 6px -6px rgba(87, 100, 112, 0.3);
+
+        
   }
 
   a.logo {
