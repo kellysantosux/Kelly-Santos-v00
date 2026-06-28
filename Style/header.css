@@ -122,7 +122,7 @@ header>.logo_light {
     /* padding: var(--padding-medium); */
     /* padding:1.684rem var(--padding-xl);  */
     /* padding: 1.2rem var(--padding-lg);  */
-    padding: var(--padding-lg);
+    padding: 19px;
     /* gap: var(--spacing-base); */
         border-radius: 0;
         justify-content: space-between;
