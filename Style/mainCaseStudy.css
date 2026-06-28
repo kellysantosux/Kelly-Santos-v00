@@ -82,9 +82,10 @@ font-size: var(--font-size-h5);
             width: 100%;
            padding-bottom: 98px;
                gap: var(--spacing-sm);
-                      margin-top: 172.8px;
+                      /* margin-top: 172.8px;
                       margin-top: 102.54px;
-   margin-top: 86.67px;
+   margin-top: 86.67px; */
+           margin-top: 70.90px;
 
      }
 

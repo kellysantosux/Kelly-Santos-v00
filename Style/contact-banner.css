@@ -110,9 +110,10 @@ background-image: url('../Assets/00-contact-banner-ks.svg'); /* Or your correct 
 .contactMemail-banner a.primary-banner {
   text-decoration: none;
   display: flex;
-  width: 100%;
+  width: fit-content;
   gap: var(--spacing-sm);
-  padding: 14px 20px;
+  /* padding: 14px 20px; */
+        padding: var(--padding-lg) var(--padding-xl);
   color: var(--text-anchor-light);
   font-weight: var(--font-weight-medium);
   background-color: transparent;

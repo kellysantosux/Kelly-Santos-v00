@@ -156,6 +156,8 @@ background: var(--bg-cards-primary-light);
   align-items: start;
   justify-content: left;
      background-color: var(--bg-div-secondary-light);
+          background-color: var(--bg-div-fiftnary-light);
+     
         margin: var(--margin-lg);
 
   }

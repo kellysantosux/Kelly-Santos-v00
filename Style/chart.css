@@ -240,6 +240,10 @@ figure.chart-container {
 
 
 @media (max-width: 768px) {
+
+    figure.chart-container {
+          width: 100%;}
+          
 .chart-title {
     width: 100%;
     padding-inline: 0;

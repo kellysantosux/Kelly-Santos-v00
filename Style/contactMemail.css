@@ -22,7 +22,8 @@
   text-decoration: none;
   display: flex;
   width: fit-content;
- padding: 4.97% 6.95%;
+ /* padding: 4.97% 6.95%; */
+       padding: var(--padding-lg) var(--padding-xl);
   color: var(--text-anchor-light);
   font-weight: var(--font-weight-medium);
   background-color: transparent;
@@ -60,7 +61,8 @@ background-color: var(--action-primary-bg-dark);
   text-decoration: none;
   display: flex;
   width: 100%;
-  padding: 4.97% 6.95%;
+  /* padding: 4.97% 6.95%; */
+        padding: var(--padding-lg) var(--padding-xl);
   color: var(--text-anchor-dark);
   font-weight: var(--font-weight-medium);
   background-color: transparent;
@@ -94,8 +96,9 @@ background-color: var(--action-primary-bg-dark);
 .contactMemail a.tertiary{
   text-decoration: none;
   display: flex;
-  width: 100%;
-  padding: 4.97% 6.95%;
+  width:fit-content;
+  /* padding: 4.97% 6.95%; */
+        padding: var(--padding-lg) var(--padding-xl);
   color: var(--text-anchor-light);
   background-color: transparent;
     border: 3px solid transparent;

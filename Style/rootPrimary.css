@@ -133,6 +133,7 @@
   --bg-div-secondary-light: var(--blue-200); 
     --bg-div-tertiary-light: var(--blue-250); 
     --bg-div-quaternary-light: var(--blue-300); 
+    --bg-div-fiftnary-light: var(--link-teal-muted); 
   
   /* Banner background */
   --bg-banners-primary-dark: var(--blue-900);            

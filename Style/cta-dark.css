@@ -13,7 +13,9 @@
   text-decoration: none;
   display: flex;
   width: fit-content;
-  padding: 1.89% 3.78%;
+  /* padding: 1.89% 3.78%; */
+
+      padding: var(--padding-lg) var(--padding-xl);
   color: var(--text-anchor-light);
   font-weight: var(--font-weight-medium);
     border: 1.6px solid transparent;
@@ -47,7 +49,8 @@
   text-decoration: none;
   display: flex;
   width: fit-content;
-  padding: 1.89% 3.78%;
+  /* padding: 1.89% 3.78%; */
+      padding: var(--padding-lg) var(--padding-xl);
   color: var(--text-anchor-dark);
   font-weight: var(--font-weight-medium);
   background-color: transparent;
@@ -88,7 +91,9 @@
   margin: 8px 8px;
   border: 1px solid var(--border-action-primary-light);
   background-color: var(--action-item-primary-light);
-  padding: 1.89% 3.78%;
+  /* padding: 1.89% 3.78%; */
+
+      padding: var(--padding-lg) var(--padding-xl);
   color: var(--text-main-dark);
   font-weight: var(--font-weight-base);
 }
