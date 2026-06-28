@@ -131,7 +131,7 @@
 
 .containerDescription h1 {
     padding: 11.74%  var(--padding-lg) 0 var(--padding-lg) ;
-    /* order: 3; */
+    order: 3;
 
 }
     }
