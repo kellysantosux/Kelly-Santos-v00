@@ -140,7 +140,7 @@ background: var(--bg-cards-primary-light);
 
 }
  .container_description  {
-    padding: var(--padding-base) var(--padding-lg) var(--padding-xl) var(--padding-lg);
+    padding: var(--padding-base) var(--padding-xl) var(--padding-xl) var(--padding-xl);
    
     
   }

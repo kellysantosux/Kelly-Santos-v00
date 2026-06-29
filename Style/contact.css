@@ -127,7 +127,7 @@ background: var(--bg-cards-primary-light);
 }
   .contactMe>.description {
 
- padding: var(--padding-lg) var(--padding-lg) var(--padding-xxl) var(--padding-lg);
+ padding: var(--padding-lg) var(--padding-xl) var(--padding-xxl) var(--padding-xl);
 
   }
 
