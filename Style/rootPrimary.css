@@ -420,12 +420,13 @@
   --major-third-h5: 1.500em;
   --major-third-h6: 1.250rem;
   --major-third-base: 1.000rem;
+  --px-16: 16px;
   --major-third-sm: 0.800rem;
   --major-third-xs: 0.640rem;
   --major-third-xxs: 0.512rem; 
 
   /* Desktop-Scale: 1.25 major third) */
-    --font-size-d0: var(--major-third-d0);
+  --font-size-d0: var(--major-third-d0);
   --font-size-d1: var(--major-third-d1);
   --font-size-d2: var(--major-third-d2);
   --font-size-d3: var(--major-third-d3);
@@ -561,9 +562,11 @@
   --font-size-d1: var(--minor-third-d1);
   --font-size-d2: var(--minor-third-d3);
   --font-size-d3: var(--minor-third-d3);
+
   --font-size-h1: var(--major-third-h1);
   --font-size-h2: var( --major-third-h2);
   --font-size-h3: var(  --major-third-h3);
+  
   --font-size-h4: var(--minor-third-h3);
   --font-size-h5: var(--minor-third-h4);
   --font-size-h6: var(--minor-third-h5);

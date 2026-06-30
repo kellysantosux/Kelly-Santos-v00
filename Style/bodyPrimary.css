@@ -157,6 +157,7 @@ p,
     font-weight: var(--font-weight-base);
     margin: 0;
    line-height: 1.618;
+    line-height: 2;
 }
 
 .--sm,
