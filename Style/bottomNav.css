@@ -89,7 +89,7 @@ background: linear-gradient(
     height: auto;
     gap: var(--spacing-xs);
     padding: var(--padding-xxl);
-    color: var(--text-anchor-gray);
+    color: var(--text-anchor-dark);
     text-align: center;
     text-decoration: none;
     text-wrap: nowrap;
@@ -99,18 +99,18 @@ background: linear-gradient(
     border-radius: var(--border-radius-base);
     width: 69px;
     height: 69px;
-        color: var(--text-anchor-dark-secondary);
+
   }
 
   .bottomNav nav ul li a i {
     display: block;
     width: fit-content;
     height: fit-content;
-    color: var(--icon-gray);
+    color: var(--icon-dark);
     text-align: center;
     font-size: 1.500rem;
     font-weight: var(--font-weight-base);
-               color: var(--text-anchor-dark-secondary);
+
   }
 
   .bottomNav nav div {
